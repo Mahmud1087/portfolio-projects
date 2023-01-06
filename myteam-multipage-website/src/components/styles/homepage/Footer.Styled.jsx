@@ -54,7 +54,7 @@ export const FooterSectionBottom = styled.div`
 
     .content-left {
       display: flex;
-      gap: 8rem;
+      gap: 10rem;
 
       .links {
         display: flex;
@@ -66,7 +66,6 @@ export const FooterSectionBottom = styled.div`
         font-size: 13px;
         color: #fff;
         opacity: 0.6;
-        font-weight: 600;
         line-height: 1.5rem;
       }
     }

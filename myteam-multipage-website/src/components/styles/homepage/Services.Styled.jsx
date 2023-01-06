@@ -65,6 +65,7 @@ export const RightContent = styled.div`
 
       p {
         color: white;
+        opacity: 0.8;
         font-size: 13px;
       }
     }

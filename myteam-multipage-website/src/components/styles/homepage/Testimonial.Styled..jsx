@@ -57,6 +57,7 @@ export const TestimonialsContainer = styled.div`
       .author-title {
         font-size: 12px;
         color: #fff;
+        opacity: 0.8;
       }
     }
 
