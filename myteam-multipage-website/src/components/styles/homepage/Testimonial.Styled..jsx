@@ -4,7 +4,7 @@ import testimonialBG from '../../../assets/“.png'
 
 export const TestimonialStyled = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
