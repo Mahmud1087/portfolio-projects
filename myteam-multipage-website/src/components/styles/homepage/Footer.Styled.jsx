@@ -5,7 +5,6 @@ import footerBG2 from '../../../assets/homeBG5.png'
 export const FooterStyled = styled.section`
   width: 100%;
   height: 63vh;
-  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,8 +80,13 @@ export const FooterSectionBottom = styled.div`
         align-self: flex-end;
         gap: 1.1rem;
 
-        img {
-          width: 1.1rem;
+        .icon {
+          font-size: 1.3rem;
+          transition: all 0.25s ease-in-out;
+
+          &:hover {
+            color: #f67e7e;
+          }
         }
       }
 

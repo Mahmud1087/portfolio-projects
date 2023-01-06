@@ -6,9 +6,10 @@ import {
 import { Button, Logo, NavLinks } from '../styles/homepage/Hero.Styled'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/myteam 2.svg'
-import facebook from '../../assets/facebook.svg'
-import pinterest from '../../assets/pinterest.svg'
-import twitter from '../../assets/Twitter.svg'
+import { FaFacebookSquare, FaPinterest, FaTwitter } from 'react-icons/fa'
+// import facebook from '../../assets/facebook.svg'
+// import pinterest from '../../assets/pinterest.svg'
+// import twitter from '../../assets/Twitter.svg'
 
 export default function Footer() {
   return (
@@ -47,13 +48,13 @@ export default function Footer() {
           <div className='content-right'>
             <div className='socials'>
               <a href='#facebook'>
-                <img src={facebook} alt='facebook' />
+                <FaFacebookSquare className='icon' />
               </a>
               <a href='#pinterest'>
-                <img src={pinterest} alt='pinterest' />
+                <FaPinterest className='icon' />
               </a>
               <a href='#twitter'>
-                <img src={twitter} alt='twitter' />
+                <FaTwitter className='icon' />
               </a>
             </div>
             <p className='copyright'>Copyright 2020. All Rights Reserved</p>
