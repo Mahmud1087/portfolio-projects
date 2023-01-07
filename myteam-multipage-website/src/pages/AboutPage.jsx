@@ -1,3 +1,9 @@
+import AboutHero from '../components/about-me/AboutHero'
+
 export default function AboutPage() {
-  return <div>AboutPage</div>
+  return (
+    <>
+      <AboutHero />
+    </>
+  )
 }
