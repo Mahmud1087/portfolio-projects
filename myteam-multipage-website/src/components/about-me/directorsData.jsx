@@ -33,6 +33,7 @@ const details = [
     name: 'Drake Heaton',
     title: 'Business Development Lead',
     desc: '“Unique perspectives shape unique products, which is what you need to survive these days.”',
+    open: false,
   },
   {
     id: 5,
@@ -40,6 +41,7 @@ const details = [
     name: 'Griffin Wise',
     title: 'Marketing Lead',
     desc: '“Unique perspectives shape unique products, which is what you need to survive these days.”',
+    open: false,
   },
   {
     id: 6,
@@ -47,6 +49,7 @@ const details = [
     name: 'Aden Allen',
     title: 'Head of talent',
     desc: '“Empowered teams create truly amazing products. Set the north star and let them follow it.”',
+    open: false,
   },
 ]
 

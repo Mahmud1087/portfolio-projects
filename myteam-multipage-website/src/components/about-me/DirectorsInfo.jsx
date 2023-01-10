@@ -43,7 +43,7 @@ export default function DirectorsInfo() {
                 )}
               </div>
               <button
-                className={isMoreDetails && 'close'}
+                className='close'
                 onClick={() => setIsMoreDetails(!isMoreDetails)}>
                 {isMoreDetails ? <FaTimes /> : <FaPlus />}
               </button>

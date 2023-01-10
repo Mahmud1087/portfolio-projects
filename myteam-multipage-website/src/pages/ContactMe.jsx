@@ -1,3 +1,9 @@
+import ContactHero from '../components/contact-me/ContactHero'
+
 export default function ContactMe() {
-  return <div>ContactMe</div>
+  return (
+    <>
+      <ContactHero />
+    </>
+  )
 }
