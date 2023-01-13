@@ -55,4 +55,13 @@ export const FormContainer = styled.form`
     color: #f67e7e;
     margin-top: 1rem;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding: 0 6rem;
+
+    input,
+    textarea {
+      font-size: 0.9rem;
+    }
+  }
 `

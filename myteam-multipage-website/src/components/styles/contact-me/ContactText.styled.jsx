@@ -42,7 +42,7 @@ export const TextContainer = styled.div`
     .inquiry-container {
       .inquiries {
         img {
-          width: 5rem;
+          width: 4.5rem;
         }
 
         p {
