@@ -1,13 +1,20 @@
 import styled from 'styled-components'
 import homeBG1 from '../../../assets/homeBG1.png'
+import tabHomeBG1 from '../../../assets/tabHomeBG1.png'
 
 export const HeroStyled = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 68vh;
   background: url(${homeBG1});
   background-position: center;
   background-size: cover;
   padding: 0 10rem;
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding: 0 3rem;
+    background: url(${tabHomeBG1});
+    background-repeat: no-repeat;
+  }
 `
 
 export const Navbar = styled.nav`
@@ -91,6 +98,31 @@ export const HeroText = styled.div`
       color: white;
       font-size: 1.15rem;
       line-height: 1.3;
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      text-align: center;
+      font-size: 3.5rem;
+      max-width: 20rem;
+    }
+
+    div {
+      hr {
+        display: none;
+      }
+      p {
+        padding-top: 0;
+        line-height: 1.5;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
     }
   }
 `
