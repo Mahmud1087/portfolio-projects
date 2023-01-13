@@ -10,6 +10,10 @@ export const FooterStyled = styled.section`
   justify-content: center;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    height: 45vh;
+  }
 `
 
 export const FooterSectionTop = styled.div`
@@ -38,6 +42,11 @@ export const FooterSectionTop = styled.div`
         color: white;
       }
     }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding: 0 7rem;
+    height: 60%;
   }
 `
 export const FooterSectionBottom = styled.div`
@@ -94,6 +103,41 @@ export const FooterSectionBottom = styled.div`
         font-size: 13px;
         color: #fff;
         opacity: 0.6;
+      }
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding: 0 3rem;
+
+    .bottom-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 3rem;
+
+      .content-left {
+        width: 100%;
+        justify-content: space-between;
+
+        .links {
+          row-gap: 2rem;
+        }
+
+        .address {
+          text-align: right;
+        }
+      }
+
+      .content-right {
+        width: 100%;
+        height: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .socials {
+          align-self: center;
+        }
       }
     }
   }
