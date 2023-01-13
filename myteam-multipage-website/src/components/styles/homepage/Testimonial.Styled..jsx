@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import homeBG3 from '../../../assets/homeBG3.png'
+import tabHomeBG3 from '../../../assets/tabHomeBG3.png'
 import testimonialBG from '../../../assets/“.png'
 
 export const TestimonialStyled = styled.section`
   width: 100%;
-  height: 110vh;
+  height: 117vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,6 +13,11 @@ export const TestimonialStyled = styled.section`
   background-position: center;
   background-size: cover;
   padding: 0 10rem;
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding: 0 7rem;
+    background: url(${tabHomeBG3});
+  }
 `
 
 export const Title = styled.h1`
@@ -24,6 +30,11 @@ export const Title = styled.h1`
 
   span {
     color: #79c8c7;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    font-size: 2rem;
+    line-height: 1.2;
   }
 `
 
@@ -63,6 +74,32 @@ export const TestimonialsContainer = styled.div`
 
     img {
       width: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    flex-direction: column;
+    row-gap: 3.3rem;
+    margin-top: 3.3rem;
+
+    .testimonials {
+      row-gap: 1.3rem;
+      .texts {
+        font-size: 0.95rem;
+      }
+
+      .author-details {
+        .author {
+          font-size: 1rem;
+        }
+        .author-title {
+          font-size: 0.85rem;
+        }
+      }
+
+      img {
+        width: 4rem;
+      }
     }
   }
 `
