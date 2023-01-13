@@ -35,4 +35,20 @@ export const TextContainer = styled.div`
       }
     }
   }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding: 0 7rem;
+
+    .inquiry-container {
+      .inquiries {
+        img {
+          width: 5rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 `
