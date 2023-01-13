@@ -14,7 +14,7 @@ export const ServiceStyled = styled.section`
 
   @media screen and (min-width: 481px) and (max-width: 768px) {
     height: 68vh;
-    padding: 0 5rem;
+    padding: 0 7rem;
     background: url(${tabHomeBG2});
     background-repeat: no-repeat;
   }
@@ -99,7 +99,7 @@ export const RightContent = styled.div`
   @media screen and (min-width: 481px) and (max-width: 768px) {
     .container {
       img {
-        width: 5rem;
+        width: 4.6rem;
       }
 
       .textContent {
@@ -107,7 +107,7 @@ export const RightContent = styled.div`
 
         h4,
         p {
-          font-size: 1.05rem;
+          font-size: 0.95rem;
           line-height: 1.5;
         }
       }
