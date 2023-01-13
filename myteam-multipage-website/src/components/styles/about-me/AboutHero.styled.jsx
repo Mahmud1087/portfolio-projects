@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import aboutBG1 from '../../../assets/aboutBG1.png'
+import tabAboutBG1 from '../../../assets/tabAboutBG1.png'
 
 export const AboutHeroSection = styled.section`
   width: 100%;
@@ -8,11 +9,17 @@ export const AboutHeroSection = styled.section`
   background-position: center;
   background-size: cover;
   padding: 0 10rem;
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding: 0 3rem;
+    background: url(${tabAboutBG1});
+    background-repeat: no-repeat;
+    height: 54vh;
+  }
 `
 
 export const AboutText = styled.div`
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   gap: 4rem;
   margin-top: 3rem;
@@ -35,10 +42,32 @@ export const AboutText = styled.div`
 
     p {
       padding-top: 2rem;
-      /* max-width: 50rem; */
       color: white;
       font-size: 1.1rem;
       line-height: 1.3;
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    flex-direction: column;
+    row-gap: 2rem;
+    text-align: center;
+
+    h1 {
+      font-size: 3.8rem;
+    }
+
+    div {
+      hr {
+        display: none;
+      }
+
+      p {
+        padding-top: 0;
+        line-height: 1.5;
+        max-width: 75%;
+        margin: auto;
+      }
     }
   }
 `
