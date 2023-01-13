@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import aboutBG2 from '../../../assets/aboutBG2.png'
+import tabAboutBG2 from '../../../assets/tabAboutBG2.png'
 
 export const DirectorsInfoSection = styled.section`
   width: 100%;
@@ -12,6 +13,12 @@ export const DirectorsInfoSection = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 10rem;
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    height: 118vh;
+    padding: 0 6rem;
+    background: url(${tabAboutBG2});
+  }
 `
 
 export const CardContainer = styled.div`
@@ -20,6 +27,11 @@ export const CardContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem 2rem;
   margin-top: 4rem;
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 1rem;
+  }
 `
 
 export const Card = styled.div`
@@ -113,6 +125,16 @@ export const Card = styled.div`
       a:hover {
         color: #f67e7e;
       }
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    height: 16rem;
+
+    button {
+      width: 3.5rem;
+      height: 3.5rem;
+      font-size: 1.2rem;
     }
   }
 `
