@@ -15,23 +15,33 @@ import { details } from './directorsData'
 import { useState } from 'react'
 
 export default function DirectorsInfo() {
-  const [isMoreDetails, setIsMoreDetails] = useState(false)
+  const [data, setData] = useState(details)
+  function handleOpen(id) {
+    const newItem = details.map((item) =>
+      item.id === id ? { ...item, open: true } : item
+    )
+    setData(newItem)
+  }
+  function handleClose(id) {
+    const newItem = details.map((item) =>
+      item.id === id ? { ...item, open: false } : item
+    )
+    setData(newItem)
+  }
+
   return (
     <DirectorsInfoSection>
       <Title>Meet the directors</Title>
       <CardContainer>
-        {details.map((item) => {
-          const { id, image, name, title, desc } = item
+        {data.map((item) => {
+          const { id, image, name, title, desc, open } = item
           return (
             <Card key={id}>
-              {!isMoreDetails && <img src={image} alt={`director ${id}`} />}
-              <div
-                className={`${
-                  !isMoreDetails ? 'director-details' : 'more-details'
-                }`}>
+              {!open && <img src={image} alt={`director ${id}`} />}
+              <div className={`${!open ? 'director-details' : 'more-details'}`}>
                 <h4>{name}</h4>
-                <p>{!isMoreDetails ? title : desc}</p>
-                {isMoreDetails && (
+                <p>{!open ? title : desc}</p>
+                {open && (
                   <div className='icons'>
                     <a href='#twitter'>
                       <FaTwitter />
@@ -42,10 +52,12 @@ export default function DirectorsInfo() {
                   </div>
                 )}
               </div>
-              <button
-                className='close'
-                onClick={() => setIsMoreDetails(!isMoreDetails)}>
-                {isMoreDetails ? <FaTimes /> : <FaPlus />}
+              <button className='btn'>
+                {open ? (
+                  <FaTimes onClick={() => handleClose(id)} />
+                ) : (
+                  <FaPlus onClick={() => handleOpen(id)} />
+                )}
               </button>
             </Card>
           )

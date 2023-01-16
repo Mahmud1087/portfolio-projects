@@ -4,16 +4,18 @@ import tabHomeBG1 from '../../../assets/tabHomeBG1.png'
 
 export const HeroStyled = styled.section`
   width: 100%;
-  height: 68vh;
+  height: 100vh;
   background: url(${homeBG1});
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   padding: 0 10rem;
 
   @media screen and (min-width: 481px) and (max-width: 768px) {
     padding: 0 3rem;
     background: url(${tabHomeBG1});
-    background-repeat: no-repeat;
+
+    height: 68vh;
   }
 `
 
