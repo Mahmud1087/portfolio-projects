@@ -52,13 +52,16 @@ export default function DirectorsInfo() {
                   </div>
                 )}
               </div>
-              <button className='btn'>
-                {open ? (
-                  <FaTimes onClick={() => handleClose(id)} />
-                ) : (
-                  <FaPlus onClick={() => handleOpen(id)} />
-                )}
-              </button>
+
+              {open ? (
+                <button className='close' onClick={() => handleClose(id)}>
+                  <FaTimes />
+                </button>
+              ) : (
+                <button className='btn' onClick={() => handleOpen(id)}>
+                  <FaPlus />
+                </button>
+              )}
             </Card>
           )
         })}
