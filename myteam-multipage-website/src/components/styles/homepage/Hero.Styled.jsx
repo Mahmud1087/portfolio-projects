@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import homeBG1 from '../../../assets/homeBG1.png'
 import tabHomeBG1 from '../../../assets/tabHomeBG1.png'
+import phoneHomeBG1 from '../../../assets/phoneHomeBG1.png'
 
 export const HeroStyled = styled.section`
   width: 100%;
@@ -14,8 +15,15 @@ export const HeroStyled = styled.section`
   @media screen and (min-width: 481px) and (max-width: 768px) {
     padding: 0 3rem;
     background: url(${tabHomeBG1});
-
     height: 68vh;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    /* width: 100%; */
+    padding: 0 1.5rem;
+    background: url(${phoneHomeBG1});
+    /* background-size: 100%; */
+    height: 85vh;
   }
 `
 
@@ -24,10 +32,35 @@ export const Navbar = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 4rem 0;
+
+  .menuBtn {
+    display: none;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    padding: 2.5rem 0;
+
+    .menuBtn {
+      display: block;
+      background: transparent;
+      border: none;
+      font-size: 1.2rem;
+      color: white;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
 `
 
 export const Logo = styled.img`
   width: 8rem;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 4.5rem;
+  }
 `
 
 export const NavLinks = styled.ul`
@@ -43,6 +76,10 @@ export const NavLinks = styled.ul`
 
   li a:hover {
     color: #f67e7e;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: none;
   }
 `
 
@@ -64,6 +101,10 @@ export const Button = styled.button`
   &:hover {
     color: #000;
     background: white;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: none;
   }
 `
 
@@ -123,6 +164,32 @@ export const HeroText = styled.div`
         line-height: 1.5;
         font-size: 0.9rem;
         margin-top: 2rem;
+        text-align: center;
+      }
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      max-width: 18rem;
+    }
+
+    div {
+      hr {
+        display: none;
+      }
+      p {
+        padding-top: 0;
+        line-height: 1.8;
+        font-size: 1rem;
+        margin-top: 1rem;
         text-align: center;
       }
     }

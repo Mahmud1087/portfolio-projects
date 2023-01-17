@@ -27,7 +27,7 @@ export default function Footer() {
               <Link to='/'>
                 <Logo src={logo} />
               </Link>
-              <NavLinks>
+              <NavLinks className='navlinks'>
                 <li>
                   <Link to='/'>home</Link>
                 </li>

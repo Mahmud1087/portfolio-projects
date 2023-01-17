@@ -8,6 +8,7 @@ import {
   NavLinks,
 } from '../styles/homepage/Hero.Styled'
 import logo from '../../assets/myteam 2.svg'
+import { FaBars } from 'react-icons/fa'
 
 export default function Hero() {
   return (
@@ -29,6 +30,9 @@ export default function Hero() {
         <Link to='contact'>
           <Button>contact us</Button>
         </Link>
+        <button className='menuBtn'>
+          <FaBars />
+        </button>
       </Navbar>
 
       <HeroText>

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import homeBG2 from '../../../assets/homeBG2.png'
 import tabHomeBG2 from '../../../assets/tabHomeBG2.png'
+import phoneHomeBG2 from '../../../assets/phoneHomeBG2.png'
 
 export const ServiceStyled = styled.section`
   width: 100%;
@@ -18,6 +19,13 @@ export const ServiceStyled = styled.section`
     background: url(${tabHomeBG2});
     background-repeat: no-repeat;
   }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 160vh;
+    padding: 0 1.5rem;
+    background: url(${phoneHomeBG2});
+    background-repeat: no-repeat;
+  }
 `
 
 export const Container = styled.div`
@@ -25,6 +33,11 @@ export const Container = styled.div`
   gap: 8rem;
 
   @media screen and (min-width: 481px) and (max-width: 768px) {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     flex-direction: column;
     row-gap: 1rem;
   }
@@ -60,6 +73,19 @@ export const LeftContent = styled.div`
       font-size: 2rem;
       margin-top: 0.5rem;
       max-width: 30rem;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    hr {
+      height: 0.2rem;
+      width: 2.3rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 0.3rem;
+      max-width: 15rem;
     }
   }
 `
@@ -109,6 +135,34 @@ export const RightContent = styled.div`
         p {
           font-size: 0.95rem;
           line-height: 1.5;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    row-gap: 3rem;
+    .container {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1rem;
+
+      img {
+        width: 4rem;
+      }
+
+      .textContent {
+        row-gap: 0.7rem;
+        text-align: center;
+
+        h4,
+        p {
+          font-size: 1.1rem;
+          line-height: 1.5;
+        }
+
+        p {
+          font-size: 0.95rem;
         }
       }
     }
