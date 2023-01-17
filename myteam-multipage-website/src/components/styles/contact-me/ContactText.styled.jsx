@@ -51,4 +51,32 @@ export const TextContainer = styled.div`
       }
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    row-gap: 1rem;
+    padding: 0 1.5rem;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h4 {
+      margin-bottom: 1.5rem;
+    }
+
+    .inquiry-container {
+      row-gap: 1.5rem;
+
+      .inquiries {
+        img {
+          width: 4rem;
+        }
+
+        p {
+          text-align: left;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 `

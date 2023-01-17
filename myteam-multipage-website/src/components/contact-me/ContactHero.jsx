@@ -8,6 +8,7 @@ import logo from '../../assets/myteam 2.svg'
 import ContactText from './ContactText'
 import ContactForm from './ContactForm'
 import Footer from '../homepage/Footer'
+import { FaBars } from 'react-icons/fa'
 export default function ContactHero() {
   return (
     <>
@@ -30,6 +31,9 @@ export default function ContactHero() {
           <Link to='contact'>
             <Button>contact us</Button>
           </Link>
+          <button className='menuBtn'>
+            <FaBars />
+          </button>
         </Navbar>
         <Container>
           <ContactText />
