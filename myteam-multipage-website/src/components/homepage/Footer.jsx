@@ -17,7 +17,9 @@ export default function Footer() {
       <FooterSectionTop>
         <div className='container'>
           <h1>Ready to get started?</h1>
-          <Button className='contact-btn'>contact us</Button>
+          <Link to='contact'>
+            <Button className='contact-btn'>contact us</Button>
+          </Link>
         </div>
       </FooterSectionTop>
       <FooterSectionBottom>
