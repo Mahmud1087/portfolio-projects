@@ -5,6 +5,7 @@ import {
 } from '../styles/about-me/AboutHero.styled'
 import { Button, Logo, Navbar, NavLinks } from '../styles/homepage/Hero.Styled'
 import logo from '../../assets/myteam 2.svg'
+import { FaBars } from 'react-icons/fa'
 
 export default function AboutHero() {
   return (
@@ -26,6 +27,9 @@ export default function AboutHero() {
         <Link to='contact'>
           <Button>contact us</Button>
         </Link>
+        <button className='menuBtn'>
+          <FaBars />
+        </button>
       </Navbar>
       <AboutText>
         <h1>About</h1>

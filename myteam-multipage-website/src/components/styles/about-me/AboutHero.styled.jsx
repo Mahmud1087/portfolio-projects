@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import aboutBG1 from '../../../assets/aboutBG1.png'
 import tabAboutBG1 from '../../../assets/tabAboutBG1.png'
+import phoneAboutBG1 from '../../../assets/phoneAboutBG1.png'
 
 export const AboutHeroSection = styled.section`
   width: 100%;
@@ -10,11 +11,11 @@ export const AboutHeroSection = styled.section`
   background-size: cover;
   padding: 0 10rem;
 
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    padding: 0 3rem;
-    background: url(${tabAboutBG1});
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    padding: 0 1.5rem;
+    background: url(${phoneAboutBG1});
     background-repeat: no-repeat;
-    height: 54vh;
+    height: 78vh;
   }
 `
 
@@ -67,6 +68,30 @@ export const AboutText = styled.div`
         line-height: 1.5;
         max-width: 75%;
         margin: auto;
+      }
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 376px) {
+    flex-direction: column;
+    row-gap: 2rem;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    div {
+      hr {
+        display: none;
+      }
+
+      p {
+        padding-top: 0;
+        line-height: 1.8;
+        font-size: 1rem;
+        text-align: center;
       }
     }
   }
