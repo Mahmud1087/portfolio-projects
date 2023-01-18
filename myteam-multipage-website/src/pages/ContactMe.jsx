@@ -1,9 +1,9 @@
 import ContactHero from '../components/contact-me/ContactHero'
 
-export default function ContactMe() {
+export default function ContactMe({ open, setOpen }) {
   return (
     <>
-      <ContactHero />
+      <ContactHero open={open} setOpen={setOpen} />
     </>
   )
 }

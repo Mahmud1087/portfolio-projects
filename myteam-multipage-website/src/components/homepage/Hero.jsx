@@ -9,10 +9,12 @@ import {
 } from '../styles/homepage/Hero.Styled'
 import logo from '../../assets/myteam 2.svg'
 import { FaBars } from 'react-icons/fa'
+import SideBar from '../SideBar'
 
-export default function Hero() {
+export default function Hero({ open, setOpen }) {
   return (
     <HeroStyled>
+      {open && <SideBar open={open} setOpen={setOpen} />}
       <Navbar>
         <div style={{ display: 'flex', gap: '3.5rem' }}>
           <Link to='/'>
@@ -30,7 +32,9 @@ export default function Hero() {
         <Link to='contact'>
           <Button>contact us</Button>
         </Link>
-        <button className='menuBtn'>
+        <button
+          className='menuBtn'
+          onClick={() => setOpen((prevOpen) => !prevOpen)}>
           <FaBars />
         </button>
       </Navbar>

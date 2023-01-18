@@ -3,10 +3,10 @@ import Services from '../components/homepage/Services'
 import Testimonial from '../components/homepage/Testimonial'
 import Footer from '../components/homepage/Footer'
 
-export default function Home() {
+export default function Home({ open, setOpen }) {
   return (
     <>
-      <Hero />
+      <Hero open={open} setOpen={setOpen} />
       <Services />
       <Testimonial />
       <Footer />
