@@ -11,6 +11,13 @@ export const AboutHeroSection = styled.section`
   background-size: cover;
   padding: 0 10rem;
 
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding: 0 3rem;
+    background: url(${tabAboutBG1});
+    /* background-repeat: no-repeat; */
+    height: 52vh;
+  }
+
   @media screen and (min-width: 320px) and (max-width: 480px) {
     padding: 0 1.5rem;
     background: url(${phoneAboutBG1});
