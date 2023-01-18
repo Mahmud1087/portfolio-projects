@@ -25,6 +25,7 @@ export const DirectorsInfoSection = styled.section`
     height: 306vh;
     padding: 0 1.5rem;
     background: url(${phoneAboutBG2});
+    align-items: center;
   }
 `
 

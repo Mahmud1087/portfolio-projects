@@ -14,7 +14,7 @@ export const AboutHeroSection = styled.section`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     padding: 0 1.5rem;
     background: url(${phoneAboutBG1});
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     height: 78vh;
   }
 `
