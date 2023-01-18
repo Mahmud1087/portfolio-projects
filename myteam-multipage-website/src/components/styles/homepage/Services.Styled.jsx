@@ -21,8 +21,8 @@ export const ServiceStyled = styled.section`
   }
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    height: 160vh;
-    padding: 0 1.5rem;
+    height: 100%;
+    padding: 0 1.5rem 7rem;
     background: url(${phoneHomeBG2});
     background-repeat: no-repeat;
   }
