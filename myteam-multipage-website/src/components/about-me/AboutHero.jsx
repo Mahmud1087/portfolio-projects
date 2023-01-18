@@ -6,10 +6,12 @@ import {
 import { Button, Logo, Navbar, NavLinks } from '../styles/homepage/Hero.Styled'
 import logo from '../../assets/myteam 2.svg'
 import { FaBars } from 'react-icons/fa'
+import SideBar from '../SideBar'
 
-export default function AboutHero() {
+export default function AboutHero({ open, setOpen }) {
   return (
     <AboutHeroSection>
+      {open && <SideBar open={open} setOpen={setOpen} />}
       <Navbar>
         <div style={{ display: 'flex', gap: '3.5rem' }}>
           <Link to='/about'>
@@ -27,7 +29,9 @@ export default function AboutHero() {
         <Link to='contact'>
           <Button>contact us</Button>
         </Link>
-        <button className='menuBtn'>
+        <button
+          className='menuBtn'
+          onClick={() => setOpen((prevOpen) => !prevOpen)}>
           <FaBars />
         </button>
       </Navbar>

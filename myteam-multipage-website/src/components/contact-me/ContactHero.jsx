@@ -9,11 +9,13 @@ import ContactText from './ContactText'
 import ContactForm from './ContactForm'
 import Footer from '../homepage/Footer'
 import { FaBars } from 'react-icons/fa'
-export default function ContactHero() {
+import SideBar from '../SideBar'
+export default function ContactHero({ open, setOpen }) {
   return (
     <>
       {' '}
       <ContactHeroSection>
+        {open && <SideBar open={open} setOpen={setOpen} />}
         <Navbar>
           <div style={{ display: 'flex', gap: '3.5rem' }}>
             <Link to='/about'>
@@ -31,7 +33,9 @@ export default function ContactHero() {
           <Link to='contact'>
             <Button>contact us</Button>
           </Link>
-          <button className='menuBtn'>
+          <button
+            className='menuBtn'
+            onClick={() => setOpen((prevOpen) => !prevOpen)}>
             <FaBars />
           </button>
         </Navbar>
