@@ -24,7 +24,7 @@ export const ServiceStyled = styled.section`
     height: 100%;
     padding: 5rem 1.5rem 4rem;
     background: url(${phoneHomeBG2});
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
   }
 `
 
