@@ -20,10 +20,10 @@ export const HeroStyled = styled.section`
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     /* width: 100%; */
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 10rem;
     background: url(${phoneHomeBG1});
     /* background-size: 100%; */
-    height: 85vh;
+    height: 100%;
   }
 `
 
