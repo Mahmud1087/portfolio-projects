@@ -7,12 +7,12 @@ import cartImage from '../assets/cart.png'
 export default function Navbar() {
   return (
     <div className='bg-dark-100'>
-      <section className='container text-light-100 lg:w-[1109.83px] md:w-[689px] sm:w-[327px]'>
+      <section className='container text-light-100 lg:w-[1109.83px] md:w-[689px] sm:w-[300px]'>
         <nav
           className='border-b-light-200 flex
        justify-between items-center md:py-6 sm:py-5 lg:py-8'>
           <div className='flex items-center'>
-            <FaBars className='text-lg sm:text-[1rem] sm:mr-24 md:text-sm md:mr-8 lg:hidden' />
+            <FaBars className='text-lg sm:text-[1rem] sm:mr-20 md:text-sm md:mr-8 lg:hidden' />
             <img
               src={logo}
               alt='audiophile logo'

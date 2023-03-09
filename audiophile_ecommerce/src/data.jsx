@@ -1,3 +1,7 @@
+import headphone1 from './assets/headphone1.png'
+import speaker1 from './assets/speaker1.png'
+import earphone1 from './assets/earphone1.png'
+
 export const products = [
   {
     id: 1,
@@ -187,7 +191,7 @@ export const links = [
 ]
 
 export const shop = [
-  { id: 1, img: '../assests/xx99-mark1.png', url: '/headphones' },
-  { id: 2, img: '../assests/zx9.png', url: '/speakers' },
-  { id: 2, img: '../assests/yx1.png', url: '/earphones' },
+  { id: 1, img: headphone1, url: '/headphones' },
+  { id: 2, img: speaker1, url: '/speakers' },
+  { id: 3, img: earphone1, url: '/earphones' },
 ]

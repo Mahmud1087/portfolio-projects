@@ -1,5 +1,9 @@
-import React from 'react'
+import ShopProducts from '../components/ShopProducts'
 
 export default function Homepage() {
-  return <div>Homepage</div>
+  return (
+    <>
+      <ShopProducts />
+    </>
+  )
 }
