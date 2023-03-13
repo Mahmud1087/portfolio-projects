@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom'
 import { links } from '../data'
 import logo from '../assets/logo.svg'
 import cartImage from '../assets/cart.png'
+import { useProductsContex } from '../context/products_context'
 
 export default function Navbar() {
+  const { toggleSideBar } = useProductsContex()
+
   return (
     <div className='bg-dark-100'>
       <section className='container text-light-100 lg:w-[1109.83px] md:w-[689px] sm:w-[300px]'>
@@ -12,7 +15,10 @@ export default function Navbar() {
           className='border-b-light-200 flex
        justify-between items-center md:py-6 sm:py-5 lg:py-8'>
           <div className='flex items-center'>
-            <FaBars className='text-lg sm:text-[1rem] sm:mr-20 md:text-sm md:mr-8 lg:hidden' />
+            <FaBars
+              className='text-lg sm:text-[1rem] sm:mr-20 md:text-sm md:mr-8 lg:hidden'
+              onClick={toggleSideBar}
+            />
             <img
               src={logo}
               alt='audiophile logo'

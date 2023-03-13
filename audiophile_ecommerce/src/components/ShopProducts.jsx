@@ -13,11 +13,11 @@ export default function ShopProducts() {
           return (
             <div
               key={id}
-              className='w-full flex flex-col justify-center items-center bg-light-300 mt-14 gap-3 rounded-md py-6'>
+              className='w-full h-[160px] flex flex-col justify-center items-center bg-light-300 mt-14 gap-3 rounded-lg py-6 lg:h-[190px]'>
               <img
                 src={img}
                 alt={text}
-                className='w-[4rem] md:w-[5rem] lg:w-[6rem] -mt-16 md:-mt-18 lg:-mt-20'
+                className='mb-2 w-[4.5rem] md:w-[5rem] lg:w-[6rem] -mt-16 md:-mt-18 lg:-mt-20 lg:mb-4'
               />
               <h4 className='text-[0.89rem] tracking-[1.07px] font-bold text-center mt-5'>
                 {text}
