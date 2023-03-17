@@ -6,10 +6,14 @@ import cartImage from '../assets/cart.png'
 import { useProductsContex } from '../context/products_context'
 
 export default function Navbar() {
-  const { toggleSideBar } = useProductsContex()
+  const { isSideBarOpen, toggleSideBar } = useProductsContex()
 
   return (
-    <div className='bg-dark-100'>
+    // <div className='bg-dark-100'>
+    <div
+      className={`${
+        isSideBarOpen ? 'fixed top-0 z-[9999] left-0 right-0' : ''
+      } bg-dark-100`}>
       <section className='container text-light-100 lg:w-[1109.83px] md:w-[689px] sm:w-[300px]'>
         <nav
           className='border-b-light-200 flex
