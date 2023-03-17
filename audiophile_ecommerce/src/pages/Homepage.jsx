@@ -6,7 +6,9 @@ export default function Homepage() {
   const { isSideBarOpen } = useProductsContex()
   return (
     <div
-      className={`${isSideBarOpen ? 'fixed top-[66px] left-0 right-0' : ''}`}>
+      className={`${
+        isSideBarOpen ? 'fixed top-[58px] left-0 right-0 md:top-[66px]' : ''
+      }`}>
       <Hero />
       <ShopProducts />
       <ShopProducts />
