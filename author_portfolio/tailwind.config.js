@@ -9,6 +9,9 @@ export default {
         lato: 'Lato',
         poppins: 'Poppins',
       },
+      backgroundImage: {
+        heroBg: "url('./src/assets/heroBg.jpg')",
+      },
     },
   },
   plugins: [],
