@@ -6,3 +6,9 @@ body {
   font-family: 'Lato', sans-serif;
   /* background-color: black; */
 }
+
+.container {
+  width: 70vw;
+  margin: auto;
+  padding: 4rem 0;
+}
