@@ -5,10 +5,19 @@
 body {
   font-family: 'Lato', sans-serif;
   /* background-color: black; */
+  scroll-behavior: smooth;
 }
 
 .container {
   width: 70vw;
   margin: auto;
   padding: 4rem 0;
+}
+
+.heading {
+  font-family: 'Chelsea Market';
+  color: black;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
