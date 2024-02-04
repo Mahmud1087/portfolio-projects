@@ -11,6 +11,7 @@ export default {
       },
       backgroundImage: {
         heroBg: "url('./src/assets/heroBg.jpg')",
+        reviewBg: "url('./src/assets/reviewImg1.jpg')",
       },
     },
   },
