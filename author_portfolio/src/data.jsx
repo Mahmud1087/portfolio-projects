@@ -5,7 +5,7 @@ export const menuLinks = [
   { id: 2, text: 'About me', link: 'aboutme' },
   { id: 3, text: 'Books', link: 'latestbook' },
   { id: 4, text: 'Reviews', link: 'reviews' },
-  { id: 5, text: 'Contact', link: 'contactme' },
+  { id: 5, text: 'Contact', link: 'footer' },
 ];
 
 export const socials = [
