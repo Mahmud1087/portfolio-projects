@@ -1,21 +1,24 @@
 import { useState } from 'react';
 
 const ContactMe = () => {
-  const [recvdMessage, setRecvdMessage] = useState({
+  const defaultState = {
     fullname: '',
     email: '',
     message: '',
-  });
+  };
+  const [recvdMessage, setRecvdMessage] = useState(defaultState);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(recvdMessage);
+    setRecvdMessage(defaultState);
   };
 
   const handleChange = (e) => {
-    const val = e.target;
-    setRecvdMessage({ ...recvdMessage });
-    console.log(val.value);
+    const { name, value } = e.target;
+    setRecvdMessage((prevState) => {
+      return { ...prevState, [name]: value };
+    });
   };
 
   return (
@@ -35,14 +38,13 @@ const ContactMe = () => {
         />
         <input
           type='text'
-          name='fullname'
+          name='email'
           value={recvdMessage.email}
           onChange={handleChange}
           placeholder='Your email'
         />
-        <input
-          type='text'
-          name='fullname'
+        <textarea
+          name='message'
           value={recvdMessage.message}
           onChange={handleChange}
           placeholder='Your message'
