@@ -5,14 +5,12 @@ import BuyMyBook from './components/BuyMyBook';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import LatestBook from './components/LatestBook';
-import Navbar from './components/Navbar';
 import Reviews from './components/Reviews';
 import MoreReviews from './components/MoreReviews';
 
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route
           path='/'
