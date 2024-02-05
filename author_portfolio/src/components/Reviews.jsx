@@ -17,7 +17,10 @@ const Reviews = () => {
           return <SingleReview key={rev.id} {...rev} />;
         })}
       </div>
-      <Link className=' border-4 border-slate-700 px-10 py-1 font-lilita'>
+      <Link
+        to='/more_reviews'
+        className=' border-4 border-slate-700 px-10 py-1 font-lilita'
+      >
         More Reviews
       </Link>
     </section>
