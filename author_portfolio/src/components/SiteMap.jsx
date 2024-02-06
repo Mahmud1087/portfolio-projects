@@ -2,7 +2,7 @@ import { menuLinks } from '../data';
 
 const SiteMap = () => {
   return (
-    <div>
+    <div className='w-full'>
       <aside>
         <h1 className='font-chelsea text-2xl text-white'>Sitemap</h1>
         <p className='text-slate-300 font-poppins'>

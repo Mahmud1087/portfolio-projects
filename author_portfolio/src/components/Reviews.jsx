@@ -8,7 +8,7 @@ const newArr = Array.from(arrLen, (v, i) => reviews[i]);
 const Reviews = () => {
   return (
     <section
-      id='#reviews'
+      id='reviews'
       className='container flex flex-col justify-center items-center gap-8'
     >
       <h1 className='heading'>Praise for Dare To Thrive</h1>
@@ -21,7 +21,7 @@ const Reviews = () => {
         to='/more_reviews'
         className=' border-4 border-slate-700 px-10 py-1 font-lilita'
       >
-        More Reviews
+        MORE REVIEWS
       </Link>
     </section>
   );

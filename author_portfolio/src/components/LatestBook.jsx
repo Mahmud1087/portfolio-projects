@@ -3,7 +3,7 @@ import latest_book from '../assets/frontCover.jpg';
 
 const LatestBook = () => {
   return (
-    <div id='#latestbook' className='bg-[#f3f3f3] pb-[4rem]'>
+    <div id='latestbook' className='bg-[#f3f3f3] pb-[4rem]'>
       <section className='container flex gap-24 '>
         <div className='w-2/3 flex flex-col justify-center gap-5 font-poppins text-sm text-slate-500 leading-6'>
           <aside className='w-full leading-10'>
