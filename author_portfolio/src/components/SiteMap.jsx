@@ -13,7 +13,7 @@ const SiteMap = () => {
         {menuLinks.map((menu) => {
           const { id, link, text } = menu;
           return (
-            <a key={id} href={link}>
+            <a key={id} href={link} className='w-fit'>
               - {text}
             </a>
           );

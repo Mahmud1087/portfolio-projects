@@ -11,17 +11,17 @@ export const menuLinks = [
 export const socials = [
   {
     id: 1,
-    social: 'twitter',
+    link: 'twitter',
     icon: <FaInstagram />,
   },
   {
-    id: 3,
-    social: 'facebook',
+    id: 2,
+    link: 'facebook',
     icon: <FaFacebook />,
   },
   {
-    id: 4,
-    social: 'twitter',
+    id: 3,
+    link: 'twitter',
     icon: <FaLinkedin />,
   },
 ];
