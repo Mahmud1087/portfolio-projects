@@ -33,7 +33,7 @@ const LatestBook = () => {
         </article>
       </section>
       <a
-        href='order_now'
+        href='https://www.amab.com.ng/products/dare-to-thrive'
         className=' font-lilita text-white text-sm bg-[#141414] w-fit py-2 px-10 ml-[15vw] block hover:bg-[#1b1b1b] transition-all'
       >
         ORDER NOW
