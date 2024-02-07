@@ -11,7 +11,11 @@ function Navbar({ bg }) {
             {menuLinks.map((menu) => {
               const { id, text, link } = menu;
               return (
-                <a key={id} href={link}>
+                <a
+                  key={id}
+                  href={link}
+                  className='relative before:absolute before:w-0 before:h-full before:border-orange-400 before:border-b-2 py-[2px] before:rounded-base hover:before:w-full before:transition-all delay-700'
+                >
                   {text}
                 </a>
               );
