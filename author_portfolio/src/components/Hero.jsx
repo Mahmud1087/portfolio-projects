@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import heroBg from '../assets/heroBg.jpg';
+import HeroContent from './HeroContent';
 
 const Hero = () => {
   return (
@@ -10,6 +11,7 @@ const Hero = () => {
         className='absolute left-0 top-0 w-full h-full mix-blend-overlay'
       />
       <Navbar />
+      <HeroContent />
     </section>
   );
 };

@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export const menuLinks = [
   { id: 1, text: 'Home', link: '#' },
-  { id: 2, text: 'About me', link: '#aboutme' },
+  { id: 2, text: 'About Me', link: '#aboutme' },
   { id: 3, text: 'Latest Book', link: '#latestbook' },
   { id: 4, text: 'Reviews', link: '#reviews' },
   { id: 5, text: 'Contact Me', link: '#footer' },
