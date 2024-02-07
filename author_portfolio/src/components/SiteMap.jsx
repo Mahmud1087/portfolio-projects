@@ -6,7 +6,7 @@ const SiteMap = () => {
       <aside>
         <h1 className='font-chelsea text-2xl text-white'>Sitemap</h1>
         <p className='text-slate-300 font-poppins'>
-          Navigate through the sections
+          Navigate through this page
         </p>
       </aside>
       <div className='flex flex-col gap-1 mt-8 text-gray-300 font-poppins'>

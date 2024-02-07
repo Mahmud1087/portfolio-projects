@@ -5,8 +5,8 @@ const HeroContent = () => {
         Umm Noorayn
       </h1>
       <p className='text-lg text-center text-gray-200 font-poppins mt-8 leading-7'>
-        HELLO AND WELCOME TO MY WEBSITE. <br /> HERE YOU WILL FIND INFORMATION
-        ABOUT ME, MY BOOK, AND LINKS TO ALL MY SOCIAL MEDIA
+        Hello and welcome to my website. <br /> Here you will find information
+        about me, my book, and links to all my social media
       </p>
       <section className='relative w-full flex justify-center items-center gap-5 mt-[5rem]'>
         <a
