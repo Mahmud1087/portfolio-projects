@@ -10,8 +10,8 @@ const SingleReview = ({ review, occupation, name }) => {
       </section>
       <p>{review}</p>
       <div className='flex flex-col gap-1 text-center'>
-        <p className='font-chelsea'>{name}</p>
-        <p className='font-poppins text-sm'>- {occupation}</p>
+        <p className='font-chelsea text-orange-400'>{name}</p>
+        <p className='font-poppins text-sm text-gray-400'>- {occupation}</p>
       </div>
     </section>
   );

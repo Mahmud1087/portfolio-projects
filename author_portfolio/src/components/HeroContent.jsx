@@ -1,7 +1,7 @@
 const HeroContent = () => {
   return (
     <div className='mt-24 w-full flex flex-col items-center justify-center'>
-      <h1 className='font-chelsea font-bold text-4xl text-orange-300'>
+      <h1 className='font-chelsea font-bold text-6xl text-orange-300'>
         Umm Noorayn
       </h1>
       <p className='text-lg text-center text-gray-200 font-poppins mt-8 leading-7'>

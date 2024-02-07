@@ -5,8 +5,8 @@ import SingleReview from './SingleReview';
 const MoreReviews = () => {
   return (
     <>
-      <Navbar />
-      <div className='flex gap-5'>
+      <Navbar bg='bg-gray-900' />
+      <div className='grid grid-cols-3 gap-5 container'>
         {reviews.map((rev) => {
           return <SingleReview key={rev.id} {...rev} />;
         })}

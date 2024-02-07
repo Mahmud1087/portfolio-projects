@@ -1,9 +1,9 @@
 import logo from '../assets/logoo.png';
 import { menuLinks, socials } from '../data';
 
-function Navbar() {
+function Navbar({ bg }) {
   return (
-    <nav>
+    <nav className={`${bg}`}>
       <div className='w-[70vw] m-auto py-6 flex justify-between gap-6 relative'>
         <img src={logo} alt='Logo' className='w-12' />
         <article className='flex gap-16 text-sm text-[#f3f3f3e3] font-chelsea'>
