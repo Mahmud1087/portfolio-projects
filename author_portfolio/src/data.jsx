@@ -11,17 +11,17 @@ export const menuLinks = [
 export const socials = [
   {
     id: 1,
-    link: 'twitter',
+    link: 'https://www.instagram.com/umm_noorayn?igsh=ZTg1dWs4dnhlOGQ=',
     icon: <FaInstagram />,
   },
   {
     id: 2,
-    link: 'facebook',
+    link: 'https:www.facebook.com/profile.php?id=61550745339843&mibextid=ZbWKwL',
     icon: <FaFacebook />,
   },
   {
     id: 3,
-    link: 'twitter',
+    link: 'https://linked.in/ummnoorayn',
     icon: <FaLinkedin />,
   },
 ];

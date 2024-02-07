@@ -11,7 +11,7 @@ const ContactDetails = () => {
       </div>
       <div className='flex gap-5 items-center text-white'>
         <FaEnvelope className=' text-slate-400' />
-        <h1 className='font-poppins text-sm'>ummnuraynwrites@gmail.com</h1>
+        <h1 className='font-poppins text-sm'>ummnooraynwrites@gmail.com</h1>
       </div>
     </div>
   );
