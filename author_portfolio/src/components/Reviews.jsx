@@ -9,10 +9,10 @@ const Reviews = () => {
   return (
     <section
       id='reviews'
-      className='container flex flex-col justify-center items-center gap-8'
+      className='container-md-others text-center lg:text-start lg:container flex flex-col justify-center items-center gap-8'
     >
       <h1 className='heading'>Praise for Dare To Thrive</h1>
-      <div className='flex gap-5'>
+      <div className='grid sm:grid-cols-2 lg:flex gap-5 lg:flex-row'>
         {newArr.map((rev) => {
           return <SingleReview key={rev.id} {...rev} />;
         })}
