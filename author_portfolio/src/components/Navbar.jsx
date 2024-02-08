@@ -1,7 +1,14 @@
+// import { useState } from 'react';
 import logo from '../assets/logoo.png';
 import { menuLinks, socials } from '../data';
 
 function Navbar({ bg }) {
+  // const [index, setIndex] = useState(1);
+  // const [isActive,setIsActive] = useState(true)
+  // const activeMenu = (id) =>{
+  // (id+1)===index ?
+  // }
+
   return (
     <nav className={`${bg}`}>
       <div className='w-[70vw] m-auto py-6 flex justify-between gap-6 relative'>
@@ -27,7 +34,7 @@ function Navbar({ bg }) {
               return (
                 <div
                   key={id}
-                  className='p-[5px] h-fit w-fit border-2 border-gray-600 rounded-full text-base text-gray-300'
+                  className='p-[5px] h-fit w-fit border-2 border-gray-600 rounded-full text-base text-gray-300 hover:transition-all hover:bg-gray-600 hover:text-white'
                 >
                   <a href={link}>{icon}</a>
                 </div>

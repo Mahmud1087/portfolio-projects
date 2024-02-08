@@ -11,13 +11,13 @@ const HeroContent = () => {
       <section className='relative w-full flex justify-center items-center gap-5 mt-[5rem]'>
         <a
           href='#aboutme'
-          className=' font-lilita text-[#f3f3f3] text-sm bg-transparent py-3 px-10 transition-all border-2 border-[#f3f3f3]'
+          className=' font-lilita text-[#f3f3f3] text-sm bg-transparent py-3 px-10 transition-all border-2 border-[#f3f3f3] hover:bg-[#f3f3f3] hover:text-[#141414]'
         >
           ABOUT ME
         </a>
         <a
           href='#latestbook'
-          className=' font-lilita text-[#1b1b1b] text-sm bg-[#f3f3f3] py-3 px-10 transition-all'
+          className=' font-lilita text-[#1b1b1b] text-sm border-2 bg-[#f3f3f3] py-3 px-10 transition-all hover:border-2 hover:border-[#f3f3f3] hover:bg-transparent hover:text-[#f3f3f3]'
         >
           LATEST BOOK
         </a>
