@@ -1,5 +1,6 @@
 import amazonLogo from '../assets/amazon.png';
 import selarLogo from '../assets/selar.png';
+import amabLogo from '../assets/amab.jpeg';
 
 const BuyMyBook = () => {
   return (
@@ -13,7 +14,9 @@ const BuyMyBook = () => {
           <a href='amazon_link'>
             <img src={amazonLogo} alt='Amazon Logo' className='w-[5rem]' />
           </a>
-          <a href='https://www.amab.com.ng/products/dare-to-thrive'>amab</a>
+          <a href='https://www.amab.com.ng/product/dare-to-thrive/?v=3c2f23bb6b73'>
+            <img src={amabLogo} alt='AMAB publishing logo' className='w-24' />
+          </a>
           <a href='selar_link'>
             <img src={selarLogo} alt='Selar Logo' className='w-16' />
           </a>
