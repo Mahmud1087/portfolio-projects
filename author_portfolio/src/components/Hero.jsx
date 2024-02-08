@@ -4,7 +4,7 @@ import HeroContent from './HeroContent';
 
 const Hero = () => {
   return (
-    <section className=' bg-[#0000009a] h-screen relative'>
+    <section className=' bg-[#0000009a] h-screen relative w-screen'>
       <img
         src={heroBg}
         alt='Hero background'

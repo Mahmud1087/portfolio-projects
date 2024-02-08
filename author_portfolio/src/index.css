@@ -10,10 +10,17 @@ body {
 * {
   scroll-behavior: smooth;
 }
+
 .container {
   width: 70vw;
   margin: auto;
   padding: 5rem 0;
+}
+
+.container-md {
+  width: 90vw;
+  margin: auto;
+  padding: 1rem 0;
 }
 
 .heading {
