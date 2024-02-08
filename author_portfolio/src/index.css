@@ -17,10 +17,19 @@ body {
   padding: 5rem 0;
 }
 
-.container-md {
+.container-padding {
+  padding: 5rem 0;
+}
+
+.container-md-nav,
+.container-md-others {
   width: 90vw;
   margin: auto;
   padding: 1rem 0;
+}
+
+.container-md-others {
+  padding: 3rem 0;
 }
 
 .heading {

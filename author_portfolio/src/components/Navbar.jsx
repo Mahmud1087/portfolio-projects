@@ -12,7 +12,7 @@ function Navbar({ bg }) {
 
   return (
     <nav className={`${bg}`}>
-      <div className='flex justify-between gap-6 relative container-md lg:w-[70vw] lg:m-auto lg:py-6 '>
+      <div className='flex justify-between gap-6 relative container-md-nav lg:w-[70vw] lg:m-auto lg:py-6 '>
         <img src={logo} alt='Logo' className='w-12' />
         <article className='hidden gap-16 text-sm text-[#f3f3f3e3] font-chelsea lg:flex'>
           <div className='flex gap-6 items-center'>

@@ -4,11 +4,11 @@ import img from '../assets/reviewImg2.jpg';
 const AboutMe = () => {
   return (
     <section id='aboutme'>
-      <article className='container flex gap-8'>
-        <div className='w-1/2'>
+      <article className='container-md-others lg:container flex gap-8 flex-col lg:flex-row'>
+        <div className='w-full lg:w-1/2'>
           <img src={img} alt='About me image' className='w-full h-full' />
         </div>
-        <div className='w-1/2 flex flex-col justify-center gap-5 font-poppins text-sm text-slate-500 py-5'>
+        <div className='lg:w-1/2 lg:text-start text-center flex flex-col justify-center gap-5 font-poppins text-sm text-slate-500 py-5'>
           <h1 className=' heading'>About Me</h1>
           <p>
             I am a Muslimah personal development enthusiast, a Muslimah personal
