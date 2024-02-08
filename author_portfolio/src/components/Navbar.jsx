@@ -13,7 +13,7 @@ function Navbar({ bg }) {
   return (
     <nav className={`${bg}`}>
       <div className='flex justify-between gap-6 relative container-md-nav lg:w-[70vw] lg:m-auto lg:py-6 '>
-        <img src={logo} alt='Logo' className='w-12' />
+        <img src={logo} alt='Logo' className='w-12 sm:w-16 lg:w-12' />
         <article className='hidden gap-16 text-sm text-[#f3f3f3e3] font-chelsea lg:flex'>
           <div className='flex gap-6 items-center'>
             {menuLinks.map((menu) => {
@@ -43,7 +43,7 @@ function Navbar({ bg }) {
             })}
           </section>
         </article>
-        <button className='text-white border-none focus:outline-none text-lg'>
+        <button className='text-white border-none focus:outline-none text-lg sm:text-3xl'>
           <FaBars />
         </button>
       </div>
