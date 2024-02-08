@@ -39,7 +39,7 @@ const ContactMe = () => {
           onChange={handleChange}
           placeholder='Full name'
           required
-          className='p-2 w-[80%] border-none focus:outline-none rounded-md'
+          className='p-2 w-full lg:w-[80%] border-none focus:outline-none rounded-md'
         />
         <input
           type='text'
@@ -48,7 +48,7 @@ const ContactMe = () => {
           onChange={handleChange}
           placeholder='Your email'
           required
-          className='p-2 w-[80%] border-none focus:outline-none rounded-md'
+          className='p-2 w-full lg:w-[80%] border-none focus:outline-none rounded-md'
         />
         <textarea
           name='message'
