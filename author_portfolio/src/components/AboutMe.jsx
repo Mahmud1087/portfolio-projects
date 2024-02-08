@@ -9,13 +9,13 @@ const AboutMe = () => {
           <img src={img} alt='About me image' className='w-full h-full' />
         </div>
         <div className='lg:w-1/2 lg:text-start text-center flex flex-col justify-center gap-5 font-poppins text-sm text-slate-500 py-5'>
-          <h1 className=' heading'>About Me</h1>
-          <p>
+          <h1 className=' heading sm:text-5xl lg:text-[1.8rem]'>About Me</h1>
+          <p className='sm:text-xl lg:text-base'>
             I am a Muslimah personal development enthusiast, a Muslimah personal
             transformation guide, and a non-fiction book writinig mentor.
           </p>
 
-          <p>
+          <p className='sm:text-xl lg:text-base'>
             I help Muslim women tackle perfectionism so that they can show up
             authentically in the world, live their best lives, and make the
             impact that they envisioned. <br />I believe that when Muslim women
@@ -23,7 +23,7 @@ const AboutMe = () => {
             well for them, their loved ones, their community, their deen, and
             the world at large.
           </p>
-          <p>
+          <p className='sm:text-xl lg:text-base'>
             I had my high school certificate from St. Monica's college, Kabba. I
             proceeded to Ahmadu Bello University, Zaria Kaduna, Nigeria where I
             obtained a BSc. Mass Communication and an MSc. Agricultural

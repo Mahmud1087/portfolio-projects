@@ -5,7 +5,7 @@ const Quote = () => {
     <article className=' bg-[#f3f3f3] flex items-center justify-center '>
       <aside className='container-md-others lg:container flex flex-col gap-6 w-86 text-slate-700'>
         <div className='w-full p-[1px] bg-gray-400 rounded-full'></div>
-        <blockquote className='px-4 lg:px-10 text-center font-chelsea italic'>
+        <blockquote className='px-4 sm:text-xl lg:text-base lg:px-10 text-center font-chelsea italic'>
           Iron rusts. Seasons shift. Situations change. And people grow. Some,
           consciously evolving. Other drifting through life. We're Muslims.
           We're here for a purpose. Choose conscious growth. Embrace intentional
@@ -16,7 +16,9 @@ const Quote = () => {
           <FaQuoteRight className='text-5xl text-slate-700' />
           <div className='w-full p-[1px] bg-gray-400 rounded-full'></div>
         </section>
-        <p className='text-center text-lg font-lilita'>Umm Noorayn</p>
+        <p className='text-center text-lg sm:text-2xl lg:text-lg font-lilita'>
+          Umm Noorayn
+        </p>
       </aside>
     </article>
   );

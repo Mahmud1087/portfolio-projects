@@ -4,8 +4,8 @@ import SiteMap from './SiteMap';
 
 const Footer = () => {
   return (
-    <div id='footer' className=' bg-gray-900'>
-      <article className='container-md-others lg:container grid lg:grid-cols-3 justify-between gap-10 w-full'>
+    <div id='footer' className='w-full bg-gray-900'>
+      <article className='container-md-others lg:container grid sm:grid-cols-2 lg:grid-cols-3 justify-between gap-10 sm:gap-24 lg:gap-10 w-full'>
         <ContactMe />
         <SiteMap />
         <ContactDetails />

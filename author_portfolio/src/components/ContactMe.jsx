@@ -24,13 +24,17 @@ const ContactMe = () => {
   return (
     <div className='w-full'>
       <article>
-        <h1 className='font-chelsea text-2xl text-white'>Contact Me</h1>
-        <p className='text-slate-300 font-poppins'>Send me a message</p>
+        <h1 className='font-chelsea text-2xl text-white sm:text-5xl lg:text-[1.8rem]'>
+          Contact Me
+        </h1>
+        <p className='text-slate-300 font-poppins sm:text-xl lg:text-base sm:mt-4 lg:mt-0'>
+          Send me a message
+        </p>
       </article>
 
       <form
         onSubmit={handleSubmit}
-        className='mt-8 flex flex-col gap-4 font-poppins w-full text-sm'
+        className='mt-8 flex flex-col gap-4 font-poppins w-full text-sm sm:text-xl lg:text-base'
       >
         <input
           type='text'
@@ -39,7 +43,7 @@ const ContactMe = () => {
           onChange={handleChange}
           placeholder='Full name'
           required
-          className='p-2 w-full lg:w-[80%] border-none focus:outline-none rounded-md'
+          className='p-2 sm:p-3 lg:p-2 w-full lg:w-[80%] border-none focus:outline-none rounded-md'
         />
         <input
           type='text'
