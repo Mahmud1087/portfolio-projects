@@ -4,7 +4,7 @@ import latest_book from '../assets/frontCover.jpg';
 const LatestBook = () => {
   return (
     <div id='latestbook' className='bg-[#f3f3f3] pb-[4rem]'>
-      <section className='container-md-others flex-col lg:flex-row lg:container flex gap-24 '>
+      <section className='container-md-others flex-col lg:flex-row lg:w-[70vw] lg:m-auto lg:py-[5rem] flex gap-24 '>
         <div className='w-full lg:w-2/3 flex flex-col justify-center gap-5 font-poppins text-sm text-slate-500 leading-6'>
           <aside className='w-full leading-10'>
             <h1 className='heading sm:text-5xl lg:text-[1.8rem]'>

@@ -14,7 +14,7 @@ const MoreReviews = () => {
         </Link>
         <p>Home</p>
       </div>
-      <div className='grid lg:grid-cols-3 gap-5 container-md-others lg:container'>
+      <div className='grid lg:grid-cols-3 gap-5 container-md-others lg:w-[70vw] lg:m-auto lg:py-[5rem]'>
         {reviews.map((rev) => {
           return <SingleReview key={rev.id} {...rev} />;
         })}

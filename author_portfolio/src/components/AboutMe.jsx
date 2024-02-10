@@ -4,7 +4,7 @@ import img from '../assets/reviewImg2.jpg';
 const AboutMe = () => {
   return (
     <section id='aboutme'>
-      <article className='container-md-others lg:container flex gap-8 flex-col lg:flex-row'>
+      <article className='container-md-others lg:w-[70vw] lg:m-auto lg:py-[5rem] flex gap-8 flex-col lg:flex-row'>
         <div className='w-full lg:w-1/2'>
           <img src={img} alt='About me image' className='w-full h-full' />
         </div>

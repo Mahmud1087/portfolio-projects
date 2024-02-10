@@ -9,7 +9,7 @@ const Reviews = () => {
   return (
     <section
       id='reviews'
-      className='container-md-others text-center lg:text-start lg:container flex flex-col justify-center items-center gap-8'
+      className='container-md-others text-center lg:text-start lg:w-[70vw] lg:m-auto lg:py-[5rem] flex flex-col justify-center items-center gap-8'
     >
       <h1 className='heading sm:text-5xl lg:text-[1.8rem]'>
         Praise for Dare To Thrive
