@@ -1,10 +1,12 @@
 import Hero from './Hero';
 import Quote from './Quote';
+import Sidebar from './Sidebar';
 
-const Header = () => {
+const Header = ({ toggle, toggleOpen }) => {
   return (
     <div>
-      <Hero />
+      {toggle && <Sidebar toggle={toggle} toggleOpen={toggleOpen} />}
+      <Hero toggle={toggle} toggleOpen={toggleOpen} />
       <Quote />
     </div>
   );

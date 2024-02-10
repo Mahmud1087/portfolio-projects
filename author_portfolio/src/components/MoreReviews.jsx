@@ -1,12 +1,20 @@
+import { Link } from 'react-router-dom';
 import { reviews } from '../data';
 import Navbar from './Navbar';
 import SingleReview from './SingleReview';
+import { FaArrowLeft } from 'react-icons/fa';
 
 const MoreReviews = () => {
   return (
     <>
       <Navbar bg='bg-gray-900' />
-      <div className='grid grid-cols-3 gap-5 container'>
+      <div className='flex items-center gap-5 mt-6 text-2xl px-5'>
+        <Link to='/'>
+          <FaArrowLeft />
+        </Link>
+        <p>Home</p>
+      </div>
+      <div className='grid lg:grid-cols-3 gap-5 container-md-others lg:container'>
         {reviews.map((rev) => {
           return <SingleReview key={rev.id} {...rev} />;
         })}
