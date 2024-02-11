@@ -10,7 +10,7 @@ const MenuLinks = () => {
             <a
               key={id}
               href={link}
-              className='relative before:absolute before:w-0 before:h-full before:border-orange-400 before:border-b-2 py-[2px] before:rounded-base hover:before:w-full before:transition-all delay-700'
+              className='relative text-lg before:absolute before:w-0 before:h-full before:border-orange-400 before:border-b-[3px] py-[2px] before:rounded-base hover:before:w-full before:transition-all delay-700'
             >
               {text}
             </a>
@@ -23,7 +23,7 @@ const MenuLinks = () => {
           return (
             <div
               key={id}
-              className='p-[5px] h-fit w-fit border-2 border-gray-600 rounded-full text-base text-gray-300 hover:transition-all hover:bg-gray-600 hover:text-white'
+              className='p-[5px] h-fit w-fit border-2 border-gray-600 rounded-full text-lg text-gray-300 hover:transition-all hover:bg-gray-600 hover:text-white'
             >
               <a href={link}>{icon}</a>
             </div>

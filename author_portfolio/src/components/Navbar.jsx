@@ -1,15 +1,8 @@
-// import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import logo from '../assets/logoo.png';
 import MenuLinks from './MenuLinks';
 
 function Navbar({ bg, toggle, toggleOpen }) {
-  // const [index, setIndex] = useState(1);
-  // const [isActive,setIsActive] = useState(true)
-  // const activeMenu = (id) =>{
-  // (id+1)===index ?
-  // }
-
   return (
     <nav className={`${bg}`}>
       <div className='flex justify-between gap-6 relative container-md-nav lg:w-[70vw] lg:m-auto lg:py-6 '>
