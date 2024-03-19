@@ -1,10 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
-    { bgHeroImg: './src/assets/herobg.png' },
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     screens: {
       sm: '375px',
@@ -21,18 +17,18 @@ module.exports = {
         100: '#101010',
         200: '#000000',
       },
-      c_orange: {
+      orange: {
         100: '#FBAF85',
         200: '#D87D4A',
       },
     },
     backgroundImage: {
-      heroImg: this.bgHeroImg,
+      heroImg: 'url(./src/assets/herobg.png)',
     },
-    container: {
-      center: true,
+    fontFamily: {
+      manrope: 'Manrope',
     },
     extend: {},
   },
   plugins: [],
-}
+};
