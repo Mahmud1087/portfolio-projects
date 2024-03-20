@@ -1,6 +1,6 @@
-import headphone1 from './assets/headphone1.png'
-import speaker1 from './assets/speaker1.png'
-import earphone1 from './assets/earphone1.png'
+import headphone1 from './assets/headphone1.png';
+import speaker1 from './assets/speaker1.png';
+import earphone1 from './assets/earphone1.png';
 
 export const products = [
   {
@@ -181,17 +181,17 @@ export const products = [
       },
     },
   },
-]
+];
 export const links = [
   { id: 1, text: 'home', url: '/' },
-  { id: 2, text: 'headphones', url: '/headphones' },
-  { id: 3, text: 'speakers', url: '/speakers' },
-  { id: 4, text: 'earphones', url: '/earphones' },
-  // { id: 5, text: 'checkout', url: '/checkout' },
-]
+  { id: 2, text: 'headphones', url: 'headphones' },
+  { id: 3, text: 'speakers', url: 'speakers' },
+  { id: 4, text: 'earphones', url: 'earphones' },
+  // { id: 5, text: 'checkout', url: 'checkout' },
+];
 
 export const shop = [
   { id: 1, img: headphone1, url: '/headphones' },
   { id: 2, img: speaker1, url: '/speakers' },
   { id: 3, img: earphone1, url: '/earphones' },
-]
+];

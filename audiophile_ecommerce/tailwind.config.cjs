@@ -2,11 +2,11 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    screens: {
-      sm: '375px',
-      md: '768px',
-      lg: '1440px',
-    },
+    // screens: {
+    //   sm: '375px',
+    //   md: '768px',
+    //   lg: '1440px',
+    // },
     colors: {
       light: {
         100: '#FFFFFF',
@@ -15,7 +15,8 @@ module.exports = {
       },
       dark: {
         100: '#101010',
-        200: '#000000',
+        200: '#0e0e0e',
+        300: '#000000',
       },
       orange: {
         100: '#FBAF85',

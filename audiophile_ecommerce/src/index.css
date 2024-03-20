@@ -8,3 +8,12 @@
   font-family: 'Manrope', sans-serif;
   line-height: 1.5;
 }
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+.active {
+  color: #d87d4a;
+}
