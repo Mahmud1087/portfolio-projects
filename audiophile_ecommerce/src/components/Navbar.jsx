@@ -8,8 +8,8 @@ export default function Navbar() {
   const { isSideBarOpen, toggleSideBar } = useProductsContex();
 
   return (
-    <div className='bg-dark-300 h-20 flex items-center justify-center'>
-      <section className='flex items-center justify-between h-[inherit] container border border-b-[#979797]'>
+    <div className='bg-[#141414] h-20 flex items-center justify-center'>
+      <section className='flex items-center justify-between h-[inherit] container border-b border-b-[#979797]'>
         <div className='flex items-center gap-x-44 text-light-100'>
           <Logo />
           <ul className='flex items-center gap-10'>

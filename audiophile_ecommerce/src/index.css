@@ -17,3 +17,7 @@
 .active {
   color: #d87d4a;
 }
+
+.hero_height {
+  height: calc(100vh - 5rem);
+}
