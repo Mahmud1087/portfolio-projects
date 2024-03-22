@@ -191,7 +191,7 @@ export const links = [
 ];
 
 export const shop = [
-  { id: 1, img: headphone1, url: '/headphones' },
-  { id: 2, img: speaker1, url: '/speakers' },
-  { id: 3, img: earphone1, url: '/earphones' },
+  { id: 1, img: headphone1, url: '/headphones', text: 'headphones' },
+  { id: 2, img: speaker1, url: '/speakers', text: 'speakers' },
+  { id: 3, img: earphone1, url: '/earphones', text: 'earphones' },
 ];
