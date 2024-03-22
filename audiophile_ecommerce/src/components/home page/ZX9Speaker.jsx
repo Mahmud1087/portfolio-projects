@@ -1,7 +1,7 @@
 const ZX9Speaker = () => {
   return (
-    <div className='container'>
-      <section className='w-full h-[30rem] mt-40 rounded-md bg-orange-200'></section>
+    <div className='container pt-40'>
+      <section className='w-full h-[30rem] rounded-md bg-orange-200'></section>
     </div>
   );
 };
