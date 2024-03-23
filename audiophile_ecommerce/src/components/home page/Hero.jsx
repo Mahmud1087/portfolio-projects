@@ -1,5 +1,6 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import herobg from '../../assets/herobg.png';
+import { SeeProductButton } from '../../components/main';
 
 export default function Hero() {
   const { id } = useParams();
@@ -18,9 +19,7 @@ export default function Hero() {
             Experience natural, lifelike audio and exceptional <br /> build
             quality made for the passionate music <br /> enthusiast.
           </p>
-          <Link className='text-xs text-light-100 tracking-[2px] w-fit px-7 py-3 bg-orange-200 hover:bg-orange-100 transition-all delay-100'>
-            SEE PRODUCT
-          </Link>
+          <SeeProductButton classes='text-light-100 bg-orange-200 hover:bg-orange-100' />
         </section>
 
         <img src={herobg} alt='headphone image' className='hero_height w-3/5' />
