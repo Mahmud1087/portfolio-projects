@@ -1,4 +1,5 @@
 import airpodImg from '../../assets/ear-pod.png';
+import { SeeProductButton } from '../../components/main';
 
 const YX1Earphones = () => {
   return (
@@ -10,7 +11,12 @@ const YX1Earphones = () => {
           className='w-full h-full object-contain rounded-[inherit]'
         />
       </section>
-      <section className='w-1/2 rounded-md h-[18rem] bg-light-300'></section>
+      <section className='w-1/2 rounded-md h-[18rem] bg-light-300 pl-24 flex items-center'>
+        <div className='flex flex-col gap-6 justify-center'>
+          <h1 className='text-2xl font-bold tracking-[1px]'>YX1 EARPHONES</h1>
+          <SeeProductButton classes='border border-dark-300 bg-transparent hover:bg-dark-300 hover:text-light-100 text-dark-300 font-bold' />
+        </div>
+      </section>
     </div>
   );
 };
