@@ -1,6 +1,10 @@
 import headphone1 from './assets/headphone1.png';
+import headphone2 from './assets/headphone2.png';
+import headphone3 from './assets/headphone3.png';
 import speaker1 from './assets/speaker1.png';
+import speaker2 from './assets/zx7-speaker.png';
 import earphone1 from './assets/earphone1.png';
+import earbud from './assets/earbud.png';
 
 export const products = [
   {
@@ -194,4 +198,73 @@ export const shop = [
   { id: 1, img: headphone1, url: '/headphones', text: 'headphones' },
   { id: 2, img: speaker1, url: '/speakers', text: 'speakers' },
   { id: 3, img: earphone1, url: '/earphones', text: 'earphones' },
+];
+
+export const headphoneProductDetails = [
+  {
+    id: 1,
+    productName: `XX99 MARK II `,
+    desc: `The new XX99 Mark II headphones is the pinnacle of pristine 
+     audio. It redefines you premium headphone experience by 
+    reproducing the balanced depth and precision of studio-quality 
+     sound.`,
+    isNewProduct: true,
+    img: headphone2,
+  },
+  {
+    id: 2,
+    productName: `XX99 MARK I `,
+    desc: `As the gold standard for headphones, the classic XX99 Mark I 
+    offers detailed and accurate audio reproduction for 
+    audiophiles, mixing engineers, and music aficionados alike in 
+    studios and on the go.`,
+    isNewProduct: false,
+    img: headphone1,
+  },
+  {
+    id: 3,
+    productName: `XX59 `,
+    desc: `Enjoy your audio almost anywhere and customize it to your 
+    specific tastes with the XX59 headphones. The stylish yet 
+    durable versatile wireless headset is a brilliant companion at 
+    home or on the move.`,
+    isNewProduct: false,
+    img: headphone3,
+  },
+];
+
+export const speakerProductDetails = [
+  {
+    id: 1,
+    productName: `ZX9 `,
+    desc: `Upgrade your sound system with the all new ZX9 active 
+     speaker. It's a bookshelf speaker system that offers truly 
+    wireless connectivity - creating new possibilities for more 
+     pleasing and practical audio setups.`,
+    isNewProduct: true,
+    img: speaker1,
+  },
+  {
+    id: 2,
+    productName: `ZX7 `,
+    desc: `Stream high quality sound wirelessly with minimal loss. The ZX7 
+    bookshelf speaker uses high-end audiophile components that 
+    represents the top of the line powered speakers for home or 
+    studio use.`,
+    isNewProduct: false,
+    img: speaker2,
+  },
+];
+
+export const eaphoneProductDetails = [
+  {
+    id: 1,
+    productName: `YX1 WIRELESS `,
+    desc: `Tailor your listening experience with bespoke dynamic drivers 
+    from the new YX1 Wireless Earphones. Enjoy incredible 
+    high-fidelity sound even in noisy environments with its active 
+     noise cancellation feature.`,
+    isNewProduct: true,
+    img: earbud,
+  },
 ];

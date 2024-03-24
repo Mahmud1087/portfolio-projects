@@ -9,6 +9,7 @@ import Logo from './Logo';
 import AnimatedCircles from './AnimatedCircles';
 import SeeProductButton from './SeeProductButton';
 import NavLinks from './NavLinks';
+import ProductComponent from './ProductComponent';
 
 export {
   Navbar,
@@ -22,4 +23,5 @@ export {
   AnimatedCircles,
   SeeProductButton,
   NavLinks,
+  ProductComponent,
 };
