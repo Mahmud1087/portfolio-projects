@@ -4,6 +4,7 @@ import headphone3 from './assets/headphone3.png';
 import headphone from './assets/headphone.png';
 import speaker1 from './assets/speaker1.png';
 import speaker2 from './assets/zx7-speaker.png';
+import speaker from './assets/speaker.png';
 import earphone1 from './assets/earphone1.png';
 import earbud from './assets/earbud.png';
 
@@ -243,7 +244,7 @@ export const speakerProductDetails = [
     wireless connectivity - creating new possibilities for more 
      pleasing and practical audio setups.`,
     isNewProduct: true,
-    img: speaker1,
+    img: speaker,
   },
   {
     id: 2,
