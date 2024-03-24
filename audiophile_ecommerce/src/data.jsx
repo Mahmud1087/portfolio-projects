@@ -1,6 +1,7 @@
 import headphone1 from './assets/headphone1.png';
 import headphone2 from './assets/headphone2.png';
 import headphone3 from './assets/headphone3.png';
+import headphone from './assets/headphone.png';
 import speaker1 from './assets/speaker1.png';
 import speaker2 from './assets/zx7-speaker.png';
 import earphone1 from './assets/earphone1.png';
@@ -219,7 +220,7 @@ export const headphoneProductDetails = [
     audiophiles, mixing engineers, and music aficionados alike in 
     studios and on the go.`,
     isNewProduct: false,
-    img: headphone1,
+    img: headphone,
   },
   {
     id: 3,
