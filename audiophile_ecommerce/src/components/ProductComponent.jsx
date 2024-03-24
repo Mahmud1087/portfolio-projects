@@ -10,7 +10,11 @@ const ProductComponent = ({
   return (
     <div className='flex w-full h-[30rem] gap-[7rem] even:flex-row-reverse'>
       <aside className='w-1/2 h-full rounded-md bg-light-300 grid place-items-center'>
-        <img src={img} alt={`${productName} Image`} className='w-1/2' />
+        <img
+          src={img}
+          alt={`${productName} Image`}
+          className='w-1/2 drop-shadow-2xl'
+        />
       </aside>
       <section className='w-1/2 h-full flex flex-col justify-center'>
         {isNewProduct && (
