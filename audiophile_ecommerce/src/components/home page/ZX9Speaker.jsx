@@ -21,7 +21,7 @@ const ZX9Speaker = () => {
             <h1 className='text-[2.3rem] text-light-100 tracking-[3px] leading-10 font-semibold'>
               ZX9 <br /> SPEAKER
             </h1>
-            <p className='text-xs text-[#ffffff9d] leading-5'>
+            <p className='text-sm text-[#ffffff9d] leading-5'>
               Upgrade to premium speakers that are <br /> phenomenally built to
               deliver truly remarkable <br />
               sound.

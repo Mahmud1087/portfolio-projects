@@ -3,7 +3,7 @@ import guyWithHeadphone from '../assets/user.png';
 const SubFooter = () => {
   return (
     <div className='my-44  '>
-      <div className='container flex rounded-md w-full h-[33rem]'>
+      <div className='container flex rounded-md w-full h-[30rem]'>
         <section className='flex flex-col gap-8 justify-center w-1/2'>
           <h1 className='text-4xl font-bold leading-10 tracking-[2px]'>
             BRINGING YOU THE <br />

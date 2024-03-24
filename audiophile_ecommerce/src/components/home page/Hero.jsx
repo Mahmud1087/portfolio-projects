@@ -15,7 +15,7 @@ export default function Hero() {
             XX99 MARK II <br />
             HEADPHONES
           </h1>
-          <p className='text-[12.5px] leading-[25px] text-[#ffffffb7] tracking-wider mb-7'>
+          <p className='text-[12.5px] leading-[25px] text-[#ffffff98] tracking-[1px] mb-7'>
             Experience natural, lifelike audio and exceptional <br /> build
             quality made for the passionate music <br /> enthusiast.
           </p>
