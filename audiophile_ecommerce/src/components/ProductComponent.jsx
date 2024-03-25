@@ -1,6 +1,13 @@
 import { SeeProductButton } from '../components/main';
 
-const ProductComponent = ({ name, desc, isNewProduct, img, product }) => {
+const ProductComponent = ({
+  name,
+  desc,
+  isNewProduct,
+  img,
+  product,
+  children,
+}) => {
   return (
     <div className='flex w-full h-[30rem] gap-[7rem] even:flex-row-reverse'>
       <aside className='w-1/2 h-full rounded-md bg-light-300 grid place-items-center'>
@@ -23,7 +30,7 @@ const ProductComponent = ({ name, desc, isNewProduct, img, product }) => {
         <p className='text-[13px] text-[#00000069] leading-6 mb-10 font-bold pr-8 tracking-[1px]'>
           {desc}
         </p>
-        <SeeProductButton classes='text-light-100 font-bold bg-orange-200 hover:bg-orange-100' />
+        {children}
       </section>
     </div>
   );

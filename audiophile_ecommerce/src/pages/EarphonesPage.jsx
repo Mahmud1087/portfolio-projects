@@ -1,5 +1,10 @@
 import React from 'react';
-import { Header, ProductComponent, ShopProducts } from '../components/main';
+import {
+  Header,
+  ProductComponent,
+  SeeProductButton,
+  ShopProducts,
+} from '../components/main';
 import { products } from '../data';
 
 export default function EarphonesPage() {
@@ -12,7 +17,9 @@ export default function EarphonesPage() {
         <div className='flex flex-col gap-[8rem] container'>
           {data.map((item) => {
             return (
-              <ProductComponent key={item.id} {...item} product='EARPHONES' />
+              <ProductComponent key={item.id} {...item} product='EARPHONES'>
+                <SeeProductButton classes='text-light-100 font-bold bg-orange-200 hover:bg-orange-100' />
+              </ProductComponent>
             );
           })}
         </div>
