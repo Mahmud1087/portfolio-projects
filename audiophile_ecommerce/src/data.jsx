@@ -11,18 +11,18 @@ import earbud from './assets/earbud.png';
 export const products = [
   {
     id: 1,
-    name: 'XX99 MARK II HEADPHONES',
+    name: 'XX99 MARK II',
     shortName: 'XX99 MK II',
-    Category: 'headphones',
-    description:
-      'The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.',
-    img: '../assests/xx99-mark2.png',
+    category: 'headphones',
+    isNewProduct: true,
+    desc: 'The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.',
+    img: headphone2,
     images: {
       image1: '../assests/xx99-user-1.png',
       image2: '../assests/xx99-user-2.png',
       image3: '../assests/xx99-user-3.png',
     },
-    price: '$ 2,999',
+    price: 2999,
     features: {
       point1:
         'Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.',
@@ -42,18 +42,18 @@ export const products = [
   },
   {
     id: 2,
-    name: 'XX99 MARK I HEADPHONES',
+    name: 'XX99 MARK I',
     shortName: 'XX99 MK I',
-    Category: 'headphones',
-    description:
-      'As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.',
-    img: '../assests/xx99-mark1.png',
+    category: 'headphones',
+    isNewProduct: false,
+    desc: 'As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.',
+    img: headphone,
     images: {
       image1: '../assests/mark1-user1.png',
       image2: '../assests/mark2-user2.png',
       image3: '../assests/mark3-user3.png',
     },
-    price: '$ 1,750',
+    price: 1750,
     features: {
       point1:
         'As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades of audio expertise, redefining the critical listening experience. This pair of closed-back headphones are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz.',
@@ -72,18 +72,18 @@ export const products = [
   },
   {
     id: 3,
-    name: 'XX59 Headphones',
+    name: 'XX59',
     shortName: 'XX59',
-    Category: 'headphones',
-    description:
-      'Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.',
-    img: '../assests/xx59.png',
+    category: 'headphones',
+    isNewProduct: false,
+    desc: 'Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.',
+    img: headphone3,
     images: {
       image1: '../assests/xx59-user1.png',
       image2: '../assests/xx59-user2.png',
       image3: '../assests/xx59-user3.png',
     },
-    price: '$ 899',
+    price: 899,
     features: {
       point1:
         'These headphones have been created from durable, high-quality materials tough enough to take anywhere. Its compact folding design fuses comfort and minimalist style making it perfect for travel. Flawless transmission is assured by the latest wireless technology engineered for audio synchronization with videos.',
@@ -102,18 +102,18 @@ export const products = [
   },
   {
     id: 4,
-    name: 'ZX9 SPEAKER',
+    name: 'ZX9',
     shortName: 'ZX9',
-    Category: 'speakers',
-    description:
-      'Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.',
-    img: '../assests/zx9.png',
+    category: 'speakers',
+    isNewProduct: true,
+    desc: 'Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity - creating new possibilities for more pleasing and practical audio setups.',
+    img: speaker,
     images: {
       image1: '../assests/zx9-user1.png',
       image2: '../assests/zx9-user2.png',
       image3: '../assests/zx9-user3.png',
     },
-    price: '$ 4,500',
+    price: 4500,
     features: {
       point1:
         'Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m).',
@@ -133,18 +133,18 @@ export const products = [
   },
   {
     id: 5,
-    name: 'ZX7 SPEAKER',
+    name: 'ZX7',
     shortName: 'ZX7',
-    Category: 'speakers',
-    description:
-      'Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.',
-    img: '../assests/zx7.png',
+    category: 'speakers',
+    isNewProduct: false,
+    desc: 'Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.',
+    img: speaker2,
     images: {
       image1: '../assests/zx7-user1.png',
       image2: '../assests/zx7-user2.png',
       image3: '../assests/zx7-user3.png',
     },
-    price: '$ 3,500',
+    price: 3500,
     features: {
       point1:
         'Reap the advantages of a flat diaphragm tweeter cone. This provides a fast response rate and excellent high frequencies that lower tiered bookshelf speakers cannot provide. The woofers are made from aluminum that produces a unique and clear sound. XLR inputs allow you to connect to a mixer for more advanced usage.',
@@ -164,18 +164,18 @@ export const products = [
   },
   {
     id: 6,
-    name: 'YX1 WIRELESS EARPHONES',
+    name: 'YX1 WIRELESS',
     shortName: 'YX1',
-    Category: 'earphones',
-    description:
-      'Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.',
-    img: '../assests/yx1.png',
+    category: 'earphones',
+    isNewProduct: true,
+    desc: 'Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.',
+    img: earbud,
     images: {
       image1: '../assests/yx1-user1.png',
       image2: '../assests/yx1-user2.png',
       image3: '../assests/yx1-user3.png',
     },
-    price: '$ 599',
+    price: 599,
     features: {
       point1:
         'Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound.',
