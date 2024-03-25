@@ -8,6 +8,7 @@ import {
   ErrorPage,
   HeadphonesPage,
   Homepage,
+  SingleproductPage,
   SpeakersPage,
 } from './pages/main';
 import {
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path='earphones' element={<EarphonesPage />} />
       <Route path='headphones' element={<HeadphonesPage />} />
       <Route path='speakers' element={<SpeakersPage />} />
+      <Route path=':productId' element={<SingleproductPage />} />
     </Route>
   )
 );
