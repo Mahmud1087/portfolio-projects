@@ -29,17 +29,15 @@ export const products = [
       point2:
         'The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.',
     },
-    box: {
-      size: { size1: '1x', size2: '2x', size3: '1x', size4: '1x', size5: '1x' },
-      item: {
-        item1: 'Headphone Unit',
-        item2: 'Replacement Earcups',
-        item3: 'User Manual',
-        item4: '3.5mm 5m Audio Cable',
-        item5: 'Travel Bag',
-      },
-    },
+    box: [
+      { size: '1x', item: 'Headphone Unit' },
+      { size: '2x', item: 'Replacement Earcups' },
+      { size: '1x', item: 'User Manual' },
+      { size: '1x', item: '3.5mm 5m Audio Cable' },
+      { size: '1x', item: 'Travel Bag' },
+    ],
   },
+
   {
     id: 2,
     name: 'XX99 MARK I',
@@ -60,15 +58,12 @@ export const products = [
       point2:
         'From the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers up to 27 dB of passive noise cancellation, reducing resonance by reflecting sound to a dedicated absorber. For connectivity, a specially tuned cable is included with a balanced gold connector.',
     },
-    box: {
-      size: { size1: '1x', size2: '2x', size3: '1x', size4: '1x' },
-      item: {
-        item1: 'Headphone Unit',
-        item2: 'Replacement Earcups',
-        item3: 'User Manual',
-        item4: '3.5mm 5m Audio Cable',
-      },
-    },
+    box: [
+      { size: '1x', item: 'Headphone Unit' },
+      { size: '2x', item: 'Replacement Earcups' },
+      { size: '1x', item: 'User Manual' },
+      { size: '1x', item: '3.5mm 5m Audio Cable' },
+    ],
   },
   {
     id: 3,
@@ -90,15 +85,12 @@ export const products = [
       point2:
         'More than a simple pair of headphones, this headset features a pair of built-in microphones for clear, hands-free calling when paired with a compatible smartphone. Controlling music and calls is also intuitive thanks to easy-access touch buttons on the earcups. Regardless of how you use the XX59 headphones, you can do so all day thanks to an impressive 30-hour battery life that can be rapidly recharged via USB-C.',
     },
-    box: {
-      size: { size1: '1x', size2: '2x', size3: '1x', size4: '1x' },
-      item: {
-        item1: 'Headphone Unit',
-        item2: 'Replacement Earcups',
-        item3: 'User Manual',
-        item4: '3.5mm 5m Audio Cable',
-      },
-    },
+    box: [
+      { size: '1x', item: 'Headphone Unit' },
+      { size: '2x', item: 'Replacement Earcups' },
+      { size: '1x', item: 'User Manual' },
+      { size: '1x', item: '3.5mm 5m Audio Cable' },
+    ],
   },
   {
     id: 4,
@@ -120,16 +112,13 @@ export const products = [
       point2:
         'Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.',
     },
-    box: {
-      size: { size1: '1x', size2: '2x', size3: '1x', size4: '1x', size5: '1x' },
-      item: {
-        item1: 'Speaker Unit',
-        item2: 'Speaker Cloth Panel',
-        item3: 'User Manual',
-        item4: '3.5mm 10m Audio Cable',
-        item5: '10m Optical Cable',
-      },
-    },
+    box: [
+      { size: '1x', item: 'Speaker Unit' },
+      { size: '2x', item: 'Speaker Cloth Panel' },
+      { size: '1x', item: 'User Manual' },
+      { size: '1x', item: '3.5mm 10m Audio Cable' },
+      { size: '1x', item: '10m Optical Cable' },
+    ],
   },
   {
     id: 5,
@@ -151,16 +140,13 @@ export const products = [
       point2:
         'The ZX7 speaker is the perfect blend of stylish design and high performance. It houses an encased MDF wooden enclosure which minimises acoustic resonance. Dual connectivity allows pairing through bluetooth or traditional optical and RCA input. Switch input sources and control volume at your finger tips with the included wireless remote. This versatile speaker is equipped to deliver an authentic listening experience.',
     },
-    box: {
-      size: { size1: '1x', size2: '2x', size3: '1x', size4: '1x', size5: '1x' },
-      item: {
-        item1: 'Speaker Unit',
-        item2: 'Speaker Cloth Panel',
-        item3: 'User Manual',
-        item4: '3.5mm 10m Audio Cable',
-        item5: '10m Optical Cable',
-      },
-    },
+    box: [
+      { size: '1x', item: 'Speaker Unit' },
+      { size: '2x', item: 'Speaker Cloth Panel' },
+      { size: '1x', item: 'User Manual' },
+      { size: '1x', item: '3.5mm 10m Audio Cable' },
+      { size: '1x', item: '10m Optical Cable' },
+    ],
   },
   {
     id: 6,
@@ -192,8 +178,16 @@ export const products = [
         item5: 'Travel Pouch',
       },
     },
+    box: [
+      { size: '2x', item: 'Earphone Unit' },
+      { size: '6x', item: 'Multi-size Earplugs' },
+      { size: '1x', item: 'User Manual' },
+      { size: '1x', item: 'USB-C Charging Cable' },
+      { size: '1x', item: 'Travel Pouch' },
+    ],
   },
 ];
+
 export const links = [
   { id: 1, text: 'home', url: '/' },
   { id: 2, text: 'headphones', url: 'headphones' },

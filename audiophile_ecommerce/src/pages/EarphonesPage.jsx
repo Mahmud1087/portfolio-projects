@@ -17,8 +17,13 @@ export default function EarphonesPage() {
         <div className='flex flex-col gap-[8rem] container'>
           {data.map((item) => {
             return (
-              <ProductComponent key={item.id} {...item} product='EARPHONES'>
-                <SeeProductButton classes='text-light-100 font-bold bg-orange-200 hover:bg-orange-100' />
+              <ProductComponent
+                key={item.id}
+                {...item}
+                product='EARPHONES'
+                flexDir='even:flex-row-reverse'
+              >
+                <SeeProductButton classes='text-light-100 font-bold bg-orange-200 hover:bg-orange-100 mt-10' />
               </ProductComponent>
             );
           })}

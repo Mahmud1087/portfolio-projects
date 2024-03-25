@@ -1,5 +1,3 @@
-import { SeeProductButton } from '../components/main';
-
 const ProductComponent = ({
   name,
   desc,
@@ -7,9 +5,10 @@ const ProductComponent = ({
   img,
   product,
   children,
+  flexDir,
 }) => {
   return (
-    <div className='flex w-full h-[30rem] gap-[7rem] even:flex-row-reverse'>
+    <div className={`flex w-full h-[30rem] gap-[7rem] ${flexDir}`}>
       <aside className='w-1/2 h-full rounded-md bg-light-300 grid place-items-center'>
         <img
           src={img}
@@ -27,7 +26,7 @@ const ProductComponent = ({
           {name} <br />
           {product}
         </h1>
-        <p className='text-[13px] text-[#00000069] leading-6 mb-10 font-bold pr-8 tracking-[1px]'>
+        <p className='text-sm text-[#00000077] leading-6 pr-8 tracking-[1px]'>
           {desc}
         </p>
         {children}
