@@ -1,16 +1,19 @@
-import { Link, useNavigate, useParams } from 'react-router-dom';
-import ProductComponent from '../components/ProductComponent';
+import { useNavigate } from 'react-router-dom';
 import { products } from '../data';
 import { curr } from '../helper';
 import { useProductsContex } from '../context/products_context';
+import {
+  ProductComponent,
+  SeeProductButton,
+  ShopProducts,
+} from '../components/main';
 
 export default function SingleproductPage() {
   const { count, increaseCount, decreaseCount, addToCart } =
     useProductsContex();
-  const { productId } = useParams();
   const navigate = useNavigate();
   const goBack = () => navigate(-1);
-  // console.log(params);
+
   return (
     <div className='container pt-[6rem]'>
       <button
@@ -19,6 +22,7 @@ export default function SingleproductPage() {
       >
         Go Back
       </button>
+
       <div className='mb-[11rem]'>
         <ProductComponent {...products[0]}>
           {/* <p>$ {products[0].price}</p> */}
@@ -42,6 +46,7 @@ export default function SingleproductPage() {
           </section>
         </ProductComponent>
       </div>
+
       <section className='flex justify-between'>
         <div className='flex flex-col gap-10 w-[55%]'>
           <h1 className='text-3xl font-bold'>FEATURES</h1>
@@ -64,6 +69,46 @@ export default function SingleproductPage() {
           </aside>
         </div>
       </section>
+
+      <article className='w-full h-[37rem] flex gap-8 mt-[8.5rem]'>
+        <div className='w-[45%] h-full flex flex-col justify-between'>
+          <img src={products[0].images.image1} alt='images' className='' />
+          <img src={products[0].images.image2} alt='images' className='' />
+        </div>
+        <div className='w-[55%] h-full rounded-md'>
+          <img
+            src={products[0].images.image3}
+            alt='images'
+            className='w-full h-full object-cover rounded-lg'
+          />
+        </div>
+      </article>
+
+      <section className='mt-[11rem] mb-[4.5rem]'>
+        <h1 className='mb-12 text-center font-bold text-3xl tracking-[1px]'>
+          YOU MAY ALSO LIKE
+        </h1>
+        <div className='grid grid-cols-3 gap-9'>
+          {products[0].mayAlsoLike.map((prod, i) => {
+            return (
+              <div
+                key={i}
+                className='flex flex-col justify-center items-center gap-8'
+              >
+                <aside className='flex justify-center items-center h-[18rem] rounded-md bg-light-300 w-full'>
+                  <img src={prod.img} alt='' className='w-[8rem]' />
+                </aside>
+                <h1 className='font-bold text-xl mt-3 tracking-[1px]'>
+                  {prod.name}
+                </h1>
+                <SeeProductButton classes='bg-orange-200 text-light-100 font-bold hover:bg-orange-100' />
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <ShopProducts />
     </div>
   );
 }

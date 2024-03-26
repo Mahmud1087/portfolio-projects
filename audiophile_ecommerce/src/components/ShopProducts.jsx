@@ -4,7 +4,7 @@ import { FaChevronRight } from 'react-icons/fa';
 
 export default function ShopProducts() {
   return (
-    <div className='container mb-10 grid grid-cols-3 gap-7'>
+    <div className='grid grid-cols-3 gap-9'>
       {shop.map((item) => {
         const { id, img, url, text } = item;
         return (

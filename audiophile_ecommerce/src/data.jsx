@@ -1,12 +1,18 @@
 import headphone1 from './assets/headphone1.png';
 import headphone2 from './assets/headphone2.png';
 import headphone3 from './assets/headphone3.png';
+import headphone_white from './assets/headphone_white.png';
 import headphone from './assets/headphone.png';
 import speaker1 from './assets/speaker1.png';
 import speaker2 from './assets/zx7-speaker.png';
 import speaker from './assets/speaker.png';
 import earphone1 from './assets/earphone1.png';
 import earbud from './assets/earbud.png';
+// Images for single components
+// headphones
+import xx99MkII_1 from './assets/single_products_images/xx99-user-1.png';
+import xx99MkII_2 from './assets/single_products_images/xx99-user-2.png';
+import xx99MkII_3 from './assets/single_products_images/xx99-user-3.png';
 
 export const products = [
   {
@@ -18,9 +24,9 @@ export const products = [
     desc: 'The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.',
     img: headphone2,
     images: {
-      image1: '../assests/xx99-user-1.png',
-      image2: '../assests/xx99-user-2.png',
-      image3: '../assests/xx99-user-3.png',
+      image1: xx99MkII_1,
+      image2: xx99MkII_2,
+      image3: xx99MkII_3,
     },
     price: 2999,
     features: {
@@ -35,6 +41,11 @@ export const products = [
       { size: '1x', item: 'User Manual' },
       { size: '1x', item: '3.5mm 5m Audio Cable' },
       { size: '1x', item: 'Travel Bag' },
+    ],
+    mayAlsoLike: [
+      { img: headphone1, name: 'XX9 MARK I' },
+      { img: headphone_white, name: 'XX59' },
+      { img: speaker1, name: 'ZX9 SPEAKER' },
     ],
   },
 
