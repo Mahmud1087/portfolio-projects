@@ -22,7 +22,10 @@ export default function HeadphonesPage() {
                 product='HEADPHONES'
                 flexDir='even:flex-row-reverse'
               >
-                <SeeProductButton classes='text-light-100 font-bold bg-orange-200 hover:bg-orange-100 mt-10' />
+                <SeeProductButton
+                  to={item.shortName}
+                  classes='text-light-100 font-bold bg-orange-200 hover:bg-orange-100 mt-10'
+                />
               </ProductComponent>
             );
           })}

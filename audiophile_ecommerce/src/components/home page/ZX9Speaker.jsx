@@ -26,7 +26,10 @@ const ZX9Speaker = () => {
               deliver truly remarkable <br />
               sound.
             </p>
-            <SeeProductButton classes='bg-dark-300 text-light-100 mt-3 hover:bg-[#4c4c4c]' />
+            <SeeProductButton
+              to='ZX9'
+              classes='bg-dark-300 text-light-100 mt-3 hover:bg-[#4c4c4c]'
+            />
           </div>
         </article>
       </section>

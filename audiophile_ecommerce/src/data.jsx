@@ -9,10 +9,32 @@ import speaker from './assets/speaker.png';
 import earphone1 from './assets/earphone1.png';
 import earbud from './assets/earbud.png';
 // Images for single components
-// headphones
+// headphones Mark II
 import xx99MkII_1 from './assets/single_products_images/xx99-user-1.png';
 import xx99MkII_2 from './assets/single_products_images/xx99-user-2.png';
 import xx99MkII_3 from './assets/single_products_images/xx99-user-3.png';
+// headphones Mark I
+import xx99MkI_1 from './assets/single_products_images/mark1-user1.png';
+import xx99MkI_2 from './assets/single_products_images/mark2-user2.png';
+import xx99MkI_3 from './assets/single_products_images/mark3-user3.png';
+// headphones XX59
+import xx59_1 from './assets/single_products_images/xx59-user1.png';
+import xx59_2 from './assets/single_products_images/xx59-user2.png';
+import xx59_3 from './assets/single_products_images/xx59-user3.png';
+
+// earphones YX1
+import yxI_1 from './assets/single_products_images/yx1-user1.png';
+import yxI_2 from './assets/single_products_images/yx1-user2.png';
+import yxI_3 from './assets/single_products_images/yx1-user3.png';
+
+// speakers ZX9
+import zx9_1 from './assets/single_products_images/zx9-user1.png';
+import zx9_2 from './assets/single_products_images/zx9-user2.png';
+import zx9_3 from './assets/single_products_images/zx9-user3.png';
+// speakers ZX7
+import zx7_1 from './assets/single_products_images/zx7-user1.png';
+import zx7_2 from './assets/single_products_images/zx7-user2.png';
+import zx7_3 from './assets/single_products_images/zx7-user3.png';
 
 export const products = [
   {
@@ -43,9 +65,9 @@ export const products = [
       { size: '1x', item: 'Travel Bag' },
     ],
     mayAlsoLike: [
-      { img: headphone1, name: 'XX9 MARK I' },
-      { img: headphone_white, name: 'XX59' },
-      { img: speaker1, name: 'ZX9 SPEAKER' },
+      { img: headphone1, name: 'XX99 MARK I', shortName: 'XX99 MK I' },
+      { img: headphone_white, name: 'XX59', shortName: 'XX59' },
+      { img: speaker1, name: 'ZX9 SPEAKER', shortName: 'ZX9' },
     ],
   },
 
@@ -58,9 +80,9 @@ export const products = [
     desc: 'As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.',
     img: headphone,
     images: {
-      image1: '../assests/mark1-user1.png',
-      image2: '../assests/mark2-user2.png',
-      image3: '../assests/mark3-user3.png',
+      image1: xx99MkI_1,
+      image2: xx99MkI_2,
+      image3: xx99MkI_3,
     },
     price: 1750,
     features: {
@@ -75,7 +97,13 @@ export const products = [
       { size: '1x', item: 'User Manual' },
       { size: '1x', item: '3.5mm 5m Audio Cable' },
     ],
+    mayAlsoLike: [
+      { img: headphone2, name: 'XX99 MARK II', shortName: 'XX99 MK II' },
+      { img: headphone_white, name: 'XX59', shortName: 'XX59' },
+      { img: speaker1, name: 'ZX9 SPEAKER', shortName: 'ZX9' },
+    ],
   },
+
   {
     id: 3,
     name: 'XX59',
@@ -85,9 +113,9 @@ export const products = [
     desc: 'Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.',
     img: headphone3,
     images: {
-      image1: '../assests/xx59-user1.png',
-      image2: '../assests/xx59-user2.png',
-      image3: '../assests/xx59-user3.png',
+      image1: xx59_1,
+      image2: xx59_2,
+      image3: xx59_3,
     },
     price: 899,
     features: {
@@ -102,7 +130,13 @@ export const products = [
       { size: '1x', item: 'User Manual' },
       { size: '1x', item: '3.5mm 5m Audio Cable' },
     ],
+    mayAlsoLike: [
+      { img: headphone2, name: 'XX99 MARK II', shortName: 'XX99 MK II' },
+      { img: headphone1, name: 'XX99 MARK I', shortName: 'XX99 MK I' },
+      { img: speaker1, name: 'ZX9 SPEAKER', shortName: 'ZX9' },
+    ],
   },
+
   {
     id: 4,
     name: 'ZX9',
@@ -112,9 +146,9 @@ export const products = [
     desc: 'Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity - creating new possibilities for more pleasing and practical audio setups.',
     img: speaker,
     images: {
-      image1: '../assests/zx9-user1.png',
-      image2: '../assests/zx9-user2.png',
-      image3: '../assests/zx9-user3.png',
+      image1: zx9_1,
+      image2: zx9_2,
+      image3: zx9_3,
     },
     price: 4500,
     features: {
@@ -130,7 +164,13 @@ export const products = [
       { size: '1x', item: '3.5mm 10m Audio Cable' },
       { size: '1x', item: '10m Optical Cable' },
     ],
+    mayAlsoLike: [
+      { img: speaker2, name: 'ZX7 SPEAKER', shortName: 'ZX7' },
+      { img: headphone1, name: 'XX99 MARK I', shortName: 'XX99 MK I' },
+      { img: headphone_white, name: 'XX59', shortName: 'XX59' },
+    ],
   },
+
   {
     id: 5,
     name: 'ZX7',
@@ -140,9 +180,9 @@ export const products = [
     desc: 'Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.',
     img: speaker2,
     images: {
-      image1: '../assests/zx7-user1.png',
-      image2: '../assests/zx7-user2.png',
-      image3: '../assests/zx7-user3.png',
+      image1: zx7_1,
+      image2: zx7_2,
+      image3: zx7_3,
     },
     price: 3500,
     features: {
@@ -158,7 +198,13 @@ export const products = [
       { size: '1x', item: '3.5mm 10m Audio Cable' },
       { size: '1x', item: '10m Optical Cable' },
     ],
+    mayAlsoLike: [
+      { img: speaker1, name: 'ZX9 SPEAKER', shortName: 'ZX9' },
+      { img: headphone1, name: 'XX99 MARK I', shortName: 'XX99 MK I' },
+      { img: headphone_white, name: 'XX59', shortName: 'XX59' },
+    ],
   },
+
   {
     id: 6,
     name: 'YX1 WIRELESS',
@@ -168,9 +214,9 @@ export const products = [
     desc: 'Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.',
     img: earbud,
     images: {
-      image1: '../assests/yx1-user1.png',
-      image2: '../assests/yx1-user2.png',
-      image3: '../assests/yx1-user3.png',
+      image1: yxI_1,
+      image2: yxI_2,
+      image3: yxI_3,
     },
     price: 599,
     features: {
@@ -179,22 +225,17 @@ export const products = [
       point2:
         'The YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black.',
     },
-    box: {
-      size: { size1: '2x', size2: '6x', size3: '1x', size4: '1x', size5: '1x' },
-      item: {
-        item1: 'Earphone Unit',
-        item2: 'Multi-size Earplugs',
-        item3: 'User Manual',
-        item4: 'USB-C Charging Cable',
-        item5: 'Travel Pouch',
-      },
-    },
     box: [
       { size: '2x', item: 'Earphone Unit' },
       { size: '6x', item: 'Multi-size Earplugs' },
       { size: '1x', item: 'User Manual' },
       { size: '1x', item: 'USB-C Charging Cable' },
       { size: '1x', item: 'Travel Pouch' },
+    ],
+    mayAlsoLike: [
+      { img: headphone1, name: 'XX99 MARK I', shortName: 'XX99 MK I' },
+      { img: headphone_white, name: 'XX59', shortName: 'XX59' },
+      { img: speaker1, name: 'ZX9 SPEAKER', shortName: 'ZX9' },
     ],
   },
 ];
@@ -212,72 +253,3 @@ export const shop = [
   { id: 2, img: speaker1, url: '/speakers', text: 'speakers' },
   { id: 3, img: earphone1, url: '/earphones', text: 'earphones' },
 ];
-
-// export const headphoneProductDetails = [
-//   {
-//     id: 1,
-//     productName: `XX99 MARK II `,
-//     desc: `The new XX99 Mark II headphones is the pinnacle of pristine
-//      audio. It redefines you premium headphone experience by
-//     reproducing the balanced depth and precision of studio-quality
-//      sound.`,
-//     isNewProduct: true,
-//     img: headphone2,
-//   },
-//   {
-//     id: 2,
-//     productName: `XX99 MARK I `,
-//     desc: `As the gold standard for headphones, the classic XX99 Mark I
-//     offers detailed and accurate audio reproduction for
-//     audiophiles, mixing engineers, and music aficionados alike in
-//     studios and on the go.`,
-//     isNewProduct: false,
-//     img: headphone,
-//   },
-//   {
-//     id: 3,
-//     productName: `XX59 `,
-//     desc: `Enjoy your audio almost anywhere and customize it to your
-//     specific tastes with the XX59 headphones. The stylish yet
-//     durable versatile wireless headset is a brilliant companion at
-//     home or on the move.`,
-//     isNewProduct: false,
-//     img: headphone3,
-//   },
-// ];
-
-// export const speakerProductDetails = [
-//   {
-//     id: 1,
-//     productName: `ZX9 `,
-//     desc: `Upgrade your sound system with the all new ZX9 active
-//      speaker. It's a bookshelf speaker system that offers truly
-//     wireless connectivity - creating new possibilities for more
-//      pleasing and practical audio setups.`,
-//     isNewProduct: true,
-//     img: speaker,
-//   },
-//   {
-//     id: 2,
-//     productName: `ZX7 `,
-//     desc: `Stream high quality sound wirelessly with minimal loss. The ZX7
-//     bookshelf speaker uses high-end audiophile components that
-//     represents the top of the line powered speakers for home or
-//     studio use.`,
-//     isNewProduct: false,
-//     img: speaker2,
-//   },
-// ];
-
-// export const eaphoneProductDetails = [
-//   {
-//     id: 1,
-//     productName: `YX1 WIRELESS `,
-//     desc: `Tailor your listening experience with bespoke dynamic drivers
-//     from the new YX1 Wireless Earphones. Enjoy incredible
-//     high-fidelity sound even in noisy environments with its active
-//      noise cancellation feature.`,
-//     isNewProduct: true,
-//     img: earbud,
-//   },
-// ];

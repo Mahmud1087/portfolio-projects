@@ -1,9 +1,7 @@
-import { useParams } from 'react-router-dom';
 import herobg from '../../assets/herobg.png';
 import { SeeProductButton } from '../../components/main';
 
 export default function Hero() {
-  const { id } = useParams();
   return (
     <div className={`flex bg-[#141414] hero_height overflow-hidden`}>
       <aside className='container flex w-full'>
@@ -19,7 +17,10 @@ export default function Hero() {
             Experience natural, lifelike audio and exceptional <br /> build
             quality made for the passionate music <br /> enthusiast.
           </p>
-          <SeeProductButton classes='text-light-100 bg-orange-200 hover:bg-orange-100' />
+          <SeeProductButton
+            to='XX99 MK II'
+            classes='text-light-100 bg-orange-200 hover:bg-orange-100'
+          />
         </section>
 
         <img src={herobg} alt='headphone image' className='hero_height w-3/5' />
