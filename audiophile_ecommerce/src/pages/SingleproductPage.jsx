@@ -23,18 +23,12 @@ export default function SingleproductPage() {
           {/* <p>$ {products[0].price}</p> */}
           <p className='font-bold mb-10 mt-7'>{curr(products[0].price)}</p>
           <section className='flex gap-3'>
-            <div className='flex gap-4 bg-light-300 px-3 py-2 font-bold'>
-              <button
-                className='text-[#00000062]'
-                onClick={() => decreaseCount('dec')}
-              >
+            <div className='flex gap-4 bg-light-300 px-3 py-2 font-bold justify-between w-24'>
+              <button className='text-[#00000062] btn' onClick={decreaseCount}>
                 -
               </button>
               <h1>{count}</h1>
-              <button
-                className='text-[#00000062]'
-                onClick={() => increaseCount('inc')}
-              >
+              <button className='text-[#00000062] btn' onClick={increaseCount}>
                 +
               </button>
             </div>

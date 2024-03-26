@@ -1,6 +1,6 @@
 import React, { useContext, useReducer } from 'react';
 import reducer from '../reducers/products_reducer';
-import { TOGGLE_SIDEBAR, PRODUCT_COUNT } from '../actions';
+import { TOGGLE_SIDEBAR, DECREASE_COUNT, INCREASE_COUNT } from '../actions';
 
 const ProductsContext = React.createContext();
 
@@ -17,11 +17,11 @@ export const ProductsProvider = ({ children }) => {
   };
 
   const decreaseCount = (id) => {
-    dispatch({ type: PRODUCT_COUNT, payload: id });
+    dispatch({ type: DECREASE_COUNT });
   };
 
   const increaseCount = (id) => {
-    dispatch({ type: PRODUCT_COUNT, payload: id });
+    dispatch({ type: INCREASE_COUNT });
   };
 
   return (

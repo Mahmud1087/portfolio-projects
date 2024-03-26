@@ -26,6 +26,15 @@
   height: calc(100vh - 5rem);
 }
 
+.btn {
+  outline: none;
+  border: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
 /* .drop_shadow::after {
   content: '';
   width: 100%;
