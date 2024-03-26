@@ -5,7 +5,7 @@ import AnimatedCircles from '../AnimatedCircles';
 const ZX9Speaker = () => {
   return (
     <div className='container pt-40 overflow-hidden'>
-      <section className='relative w-full h-[29rem] rounded-md bg-orange-200 z-10'>
+      <section className='relative w-full h-[29rem] rounded-lg bg-orange-200 z-10'>
         <AnimatedCircles />
         <div className='absolute left-[8.9rem] bottom-0 w-80 h-[24rem]'>
           <img

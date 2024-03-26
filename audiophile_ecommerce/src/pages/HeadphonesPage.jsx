@@ -28,7 +28,9 @@ export default function HeadphonesPage() {
           })}
         </div>
       </section>
-      <ShopProducts />
+      <div className='container'>
+        <ShopProducts />
+      </div>
     </div>
   );
 }

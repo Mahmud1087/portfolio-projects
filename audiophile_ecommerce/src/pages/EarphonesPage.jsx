@@ -29,7 +29,9 @@ export default function EarphonesPage() {
           })}
         </div>
       </section>
-      <ShopProducts />
+      <div className='container'>
+        <ShopProducts />
+      </div>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { SeeProductButton } from '../../components/main';
 const ZX7Speaker = () => {
   return (
     <div className='container pt-12'>
-      <section className='relative w-full h-[20rem] rounded-md'>
+      <section className='relative w-full h-[20rem] rounded-lg'>
         <img
           src={img}
           alt='Speaker image background'

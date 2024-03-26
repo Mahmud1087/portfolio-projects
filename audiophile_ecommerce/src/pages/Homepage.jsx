@@ -12,7 +12,9 @@ export default function Homepage() {
   return (
     <div>
       <Hero />
-      <ShopProducts />
+      <div className='container'>
+        <ShopProducts />
+      </div>
       <ZX9Speaker />
       <ZX7Speaker />
       <YX1Earphones />
