@@ -9,7 +9,7 @@ const SubFooter = () => {
             BRINGING YOU THE <br />
             <span className='text-orange-200'>BEST </span>AUDIO GEAR
           </h1>
-          <p className='text-[#00000077] leading-6 text-sm w-[85%]'>
+          <p className='text-[#00000077] font-semibold leading-6 text-sm w-[85%]'>
             Located at the heart of New York City, Audiophile is the premier
             store for high end headphones, earphones, speakers, and audio
             accessories. We have a large showroom and luxury demonstration rooms

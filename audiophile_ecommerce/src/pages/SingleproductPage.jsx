@@ -45,7 +45,7 @@ export default function SingleproductPage() {
       <section className='flex justify-between'>
         <div className='flex flex-col gap-10 w-[55%]'>
           <h1 className='text-3xl font-bold'>FEATURES</h1>
-          <article className='flex flex-col gap-8 text-[14.5px] text-[#00000077]'>
+          <article className='flex flex-col gap-8 text-[14.5px] text-[#00000077] font-semibold'>
             <p>{products[0].features.point1}</p>
             <p>{products[0].features.point2}</p>
           </article>
@@ -57,7 +57,7 @@ export default function SingleproductPage() {
               return (
                 <div key={i} className='flex gap-6 text-[14.5px]'>
                   <h1 className='text-orange-200 font-bold'>{prod.size}</h1>
-                  <p className='text-[#00000077]'>{prod.item}</p>
+                  <p className='text-[#00000077] font-semibold'>{prod.item}</p>
                 </div>
               );
             })}

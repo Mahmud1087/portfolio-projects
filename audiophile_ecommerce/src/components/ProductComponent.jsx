@@ -26,7 +26,7 @@ const ProductComponent = ({
           {name} <br />
           {product}
         </h1>
-        <p className='text-sm text-[#00000077] leading-6 pr-8 tracking-[1px]'>
+        <p className='text-sm text-[#00000077] font-semibold leading-6 pr-8 tracking-[1px]'>
           {desc}
         </p>
         {children}
