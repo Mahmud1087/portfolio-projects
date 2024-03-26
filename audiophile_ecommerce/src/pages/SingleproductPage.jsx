@@ -5,7 +5,8 @@ import { curr } from '../helper';
 import { useProductsContex } from '../context/products_context';
 
 export default function SingleproductPage() {
-  const { count, increaseCount, decreaseCount } = useProductsContex();
+  const { count, increaseCount, decreaseCount, addToCart } =
+    useProductsContex();
   const { productId } = useParams();
   const navigate = useNavigate();
   const goBack = () => navigate(-1);
@@ -32,7 +33,10 @@ export default function SingleproductPage() {
                 +
               </button>
             </div>
-            <button className='px-6 w-fit bg-orange-200 hover:bg-orange-100 text-light-100 font-bold text-xs'>
+            <button
+              onClick={addToCart}
+              className='btn px-6 w-fit bg-orange-200 hover:bg-orange-100 text-light-100 font-bold text-xs'
+            >
               ADD TO CART
             </button>
           </section>

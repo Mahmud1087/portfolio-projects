@@ -4,7 +4,7 @@ import Logo from './Logo';
 import { NavLinks } from '../components/main';
 
 export default function Navbar() {
-  const { isSideBarOpen, toggleSideBar } = useProductsContex();
+  const { isSideBarOpen, toggleSideBar, cartItems } = useProductsContex();
 
   return (
     <div className='bg-[#141414] h-20 flex items-center justify-center'>
@@ -13,8 +13,11 @@ export default function Navbar() {
           <Logo />
           <NavLinks />
         </div>
-        <button className='outline-none'>
+        <button className='outline-none relative'>
           <img src={cart} alt='cart image' className='w-5' />
+          <h1 className='absolute -top-4 -right-1 text-sm text-orange-200'>
+            {cartItems}
+          </h1>
         </button>
       </section>
     </div>

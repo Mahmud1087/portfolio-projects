@@ -1,4 +1,9 @@
-import { TOGGLE_SIDEBAR, INCREASE_COUNT, DECREASE_COUNT } from '../actions';
+import {
+  TOGGLE_SIDEBAR,
+  INCREASE_COUNT,
+  DECREASE_COUNT,
+  ADD_TO_CART,
+} from '../actions';
 
 const products_reducer = (state, action) => {
   switch (action.type) {
@@ -13,6 +18,13 @@ const products_reducer = (state, action) => {
       return {
         ...state,
         count: state.count <= 0 ? (state.count = 1) : state.count--,
+      };
+
+    case ADD_TO_CART:
+      return {
+        ...state,
+        cartItems: state.count,
+        // count: (state.count = 1),
       };
   }
 };
