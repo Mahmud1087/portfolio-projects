@@ -51,7 +51,7 @@ export default function Footer() {
             </div>
 
             <p className='mt-20 text-[#ffffff60] text-sm'>
-              Copyright 2021. All Rights Reserved
+              &copy; Copyright Enesi 2024. All Rights Reserved
             </p>
           </article>
         </section>
