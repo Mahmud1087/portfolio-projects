@@ -3,6 +3,8 @@ import {
   INCREASE_COUNT,
   DECREASE_COUNT,
   ADD_TO_CART,
+  SHOW_CART,
+  HIDE_CART,
 } from '../actions';
 
 const products_reducer = (state, action) => {
@@ -26,6 +28,12 @@ const products_reducer = (state, action) => {
         cartItems: state.count,
         // count: (state.count = 1),
       };
+
+    case SHOW_CART:
+      return { ...state, isCartOpen: true };
+
+    case HIDE_CART:
+      return { ...state, isCartOpen: false };
   }
 };
 

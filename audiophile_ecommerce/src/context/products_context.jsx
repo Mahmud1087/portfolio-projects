@@ -5,12 +5,15 @@ import {
   DECREASE_COUNT,
   INCREASE_COUNT,
   ADD_TO_CART,
+  SHOW_CART,
+  HIDE_CART,
 } from '../actions';
 
 const ProductsContext = React.createContext();
 
 const initialStates = {
   isSideBarOpen: false,
+  isCartOpen: false,
   count: 1,
   cartItems: 0,
 };
@@ -34,6 +37,14 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: ADD_TO_CART });
   };
 
+  const showCart = () => {
+    dispatch({ type: SHOW_CART });
+  };
+
+  const hideCart = () => {
+    dispatch({ type: HIDE_CART });
+  };
+
   return (
     <ProductsContext.Provider
       value={{
@@ -42,6 +53,8 @@ export const ProductsProvider = ({ children }) => {
         increaseCount,
         decreaseCount,
         addToCart,
+        showCart,
+        hideCart,
       }}
     >
       {children}
