@@ -35,6 +35,10 @@
   outline: none;
 }
 
+.custom-stroll::-webkit-scrollbar {
+  display: none;
+}
+
 /* .drop_shadow::after {
   content: '';
   width: 100%;

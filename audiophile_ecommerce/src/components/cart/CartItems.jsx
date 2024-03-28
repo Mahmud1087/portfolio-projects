@@ -21,7 +21,7 @@ const CartItems = () => {
               </button>
             </header>
 
-            <aside className='h-full overflow-y-scroll overflow-x-hidden mb-7 flex flex-col gap-5'>
+            <aside className='custom-stroll h-full overflow-y-scroll overflow-x-hidden mb-7 flex flex-col gap-5'>
               {products.map((prod) => {
                 const { id, shortName, price, amount, img } = prod;
                 return (
