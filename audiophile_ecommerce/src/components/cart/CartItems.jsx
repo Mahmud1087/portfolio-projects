@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useProductsContex } from '../../context/products_context';
 import { products } from '../../data';
 import { curr } from '../../helper';
@@ -64,9 +65,12 @@ const CartItems = () => {
                 </h1>
                 <h1 className='font-bold text-sm'>$ 5,396</h1>
               </div>
-              <button className='btn w-full p-3 bg-orange-200 hover:bg-orange-100 text-light-100 font-bold tracking-[1px] text-xs'>
+              <Link
+                to='/checkout'
+                className='btn block text-center w-full p-3 bg-orange-200 hover:bg-orange-100 text-light-100 font-bold tracking-[1px] text-xs transition-all delay-75'
+              >
                 CHECKOUT
-              </button>
+              </Link>
             </section>
           </div>
         </article>

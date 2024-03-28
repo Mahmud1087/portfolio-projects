@@ -4,6 +4,7 @@ import { ProductsProvider } from './context/products_context';
 import './index.css';
 import Layout from './Layout';
 import {
+  CheckoutPage,
   EarphonesPage,
   ErrorPage,
   HeadphonesPage,
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
       <Route path='headphones' element={<HeadphonesPage />} />
       <Route path='speakers' element={<SpeakersPage />} />
       <Route path=':productId' element={<SingleproductPage />} />
+      <Route path='checkout' element={<CheckoutPage />} />
     </Route>
   )
 );
