@@ -18,8 +18,8 @@ export default function CheckoutPage() {
           Go Back
         </button>
 
-        <div className='mb-[11rem] flex gap-4'>
-          <section className='w-4/5 flex flex-col gap-6 rounded-lg px-14 py-7 pb-16 bg-light-100'>
+        <div className='mb-[11rem] flex gap-6'>
+          <section className='w-[70%] flex flex-col gap-6 rounded-lg px-14 py-7 pb-16 bg-light-100'>
             <h1 className='font-bold text-xl tracking-[1px] mt-5'>CHECKOUT</h1>
 
             <form className='flex flex-col gap-16'>
@@ -85,7 +85,9 @@ export default function CheckoutPage() {
             </form>
           </section>
 
-          <section className='w-1/5'></section>
+          <section className='w-[30%] p-8 rounded-md bg-light-100 h-fit'>
+            <h1 className='text-sm font-bold mb-8 tracking-[1px]'>SUMMARY</h1>
+          </section>
         </div>
       </section>
     </div>
