@@ -30,7 +30,7 @@ export default function SingleproductPage() {
       <div className='mb-[11rem]'>
         <ProductComponent {...data} product={data.category.toUpperCase()}>
           {/* <p>$ {data.price}</p> */}
-          <p className='font-bold mb-10 mt-7'>{curr(data.price)}</p>
+          <p className='font-bold mb-10 mt-7'>$ {curr(data.price)}</p>
           <section className='flex gap-3'>
             <div className='flex gap-4 bg-light-300 px-3 py-2 font-bold justify-between w-24'>
               <button className='text-[#00000062] btn' onClick={decreaseCount}>
@@ -42,7 +42,7 @@ export default function SingleproductPage() {
               </button>
             </div>
             <button
-              onClick={addToCart}
+              onClick={() => addToCart(data)}
               className='btn px-6 w-fit bg-orange-200 hover:bg-orange-100 text-light-100 font-bold text-xs'
             >
               ADD TO CART

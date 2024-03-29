@@ -23,9 +23,11 @@ const products_reducer = (state, action) => {
       };
 
     case ADD_TO_CART:
+      console.log(state.cartList);
       return {
         ...state,
         cartItems: state.count,
+        cartList: [...state.cartList, action.payload],
         // count: (state.count = 1),
       };
 

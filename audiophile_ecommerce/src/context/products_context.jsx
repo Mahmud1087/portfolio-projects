@@ -14,6 +14,7 @@ const ProductsContext = React.createContext();
 const initialStates = {
   isSideBarOpen: false,
   isCartOpen: false,
+  cartList: [],
   count: 1,
   cartItems: 0,
 };
@@ -33,8 +34,8 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: INCREASE_COUNT });
   };
 
-  const addToCart = () => {
-    dispatch({ type: ADD_TO_CART });
+  const addToCart = (id) => {
+    dispatch({ type: ADD_TO_CART, payload: id });
   };
 
   const showCart = () => {
