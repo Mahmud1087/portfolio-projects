@@ -5,9 +5,10 @@ import {
   SeeProductButton,
   ShopProducts,
 } from '../components/main';
-import { products } from '../data';
+import { useProductsContex } from '../context/products_context';
 
 export default function EarphonesPage() {
+  const { products } = useProductsContex();
   const data = products.filter((product) => product.category === 'earphones');
 
   return (

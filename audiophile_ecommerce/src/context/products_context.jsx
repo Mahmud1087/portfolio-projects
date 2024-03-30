@@ -9,6 +9,7 @@ import {
   HIDE_CART,
   CLEAR_CART,
 } from '../actions';
+import { products } from '../data';
 
 const ProductsContext = React.createContext();
 
@@ -16,6 +17,7 @@ const initialStates = {
   isSideBarOpen: false,
   isCartOpen: false,
   cartList: [],
+  products: products,
   count: 1,
   cartItems: 0,
 };
