@@ -8,7 +8,7 @@ import {
 } from '../components/main';
 
 export default function SingleproductPage() {
-  const { count, increaseCount, decreaseCount, addToCart, products } =
+  const { totalAmount, increaseCount, decreaseCount, addToCart, products } =
     useProductsContex();
   const { productId } = useParams();
   const navigate = useNavigate();
@@ -46,7 +46,10 @@ export default function SingleproductPage() {
               </button>
             </div>
             <button
-              onClick={() => addToCart(data)}
+              onClick={() => {
+                addToCart(data);
+                totalAmount();
+              }}
               className='btn px-6 w-fit bg-orange-200 hover:bg-orange-100 text-light-100 font-bold text-xs'
             >
               ADD TO CART

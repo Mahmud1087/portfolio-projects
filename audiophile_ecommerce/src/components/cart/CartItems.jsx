@@ -5,11 +5,12 @@ import { curr } from '../../helper';
 const CartItems = () => {
   const {
     hideCart,
-    products,
+    cartTotal,
     cartList,
     clearCartItems,
     decreaseCount,
     increaseCount,
+    totalAmount,
   } = useProductsContex();
   return (
     <div
@@ -37,10 +38,7 @@ const CartItems = () => {
               )}
               {cartList.map((prod) => {
                 const { id, shortName, price, amount, img } = prod;
-                // console.log(prod);
-                const findOBJ = products.find(
-                  (product) => product.name === prod.name
-                );
+
                 return (
                   <div key={id} className='flex justify-between items-center'>
                     <section className='flex gap-3 items-center'>
@@ -57,14 +55,20 @@ const CartItems = () => {
                     <div className='flex gap-5 items-center bg-light-300 px-3 py-1 font-bold justify-between'>
                       <button
                         className='text-[#00000062] btn'
-                        onClick={() => decreaseCount(findOBJ)}
+                        onClick={() => {
+                          decreaseCount(prod);
+                          totalAmount();
+                        }}
                       >
                         -
                       </button>
-                      <h1 className='text-xs'>{findOBJ.amount}</h1>
+                      <h1 className='text-xs'>{amount}</h1>
                       <button
                         className='text-[#00000062] btn'
-                        onClick={() => increaseCount(findOBJ)}
+                        onClick={() => {
+                          increaseCount(prod);
+                          totalAmount();
+                        }}
                       >
                         +
                       </button>
@@ -79,7 +83,7 @@ const CartItems = () => {
                 <h1 className='text-[13px] text-[#00000077] font-bold'>
                   TOTAL
                 </h1>
-                <h1 className='font-bold text-sm'>$ 5,396</h1>
+                <h1 className='font-bold text-sm'>$ {curr(cartTotal)}</h1>
               </div>
               <Link
                 to='/checkout'

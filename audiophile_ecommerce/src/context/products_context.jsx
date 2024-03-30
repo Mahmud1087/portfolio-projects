@@ -8,6 +8,7 @@ import {
   SHOW_CART,
   HIDE_CART,
   CLEAR_CART,
+  CART_TOTAL,
 } from '../actions';
 import { products } from '../data';
 
@@ -19,6 +20,7 @@ const initialStates = {
   cartList: [],
   products: products,
   cartItems: 0,
+  cartTotal: 0,
 };
 
 export const ProductsProvider = ({ children }) => {
@@ -52,6 +54,10 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: CLEAR_CART });
   };
 
+  const totalAmount = () => {
+    dispatch({ type: CART_TOTAL });
+  };
+
   return (
     <ProductsContext.Provider
       value={{
@@ -63,6 +69,7 @@ export const ProductsProvider = ({ children }) => {
         showCart,
         hideCart,
         clearCartItems,
+        totalAmount,
       }}
     >
       {children}
