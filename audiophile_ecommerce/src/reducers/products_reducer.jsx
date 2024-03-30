@@ -14,13 +14,28 @@ const products_reducer = (state, action) => {
       return { ...state, isSideBarOpen: !state.isSideBarOpen };
 
     case INCREASE_COUNT:
-      return { ...state, count: state.count++ };
+      const incAmount = state.products.map((prod) =>
+        prod.id === action.payload.id
+          ? { ...prod, amount: action.payload.amount + 1 }
+          : prod
+      );
+      return { ...state, products: incAmount };
 
     case DECREASE_COUNT:
-      // state.count <= 0 && state.count = 1
+      const decAmount = state.products.map((prod) =>
+        prod.id === action.payload.id
+          ? {
+              ...prod,
+              amount:
+                action.payload.amount <= 1
+                  ? (action.payload.amount = 1)
+                  : action.payload.amount - 1,
+            }
+          : prod
+      );
       return {
         ...state,
-        count: state.count <= 0 ? (state.count = 1) : state.count--,
+        products: decAmount,
       };
 
     case ADD_TO_CART:
@@ -42,6 +57,9 @@ const products_reducer = (state, action) => {
 
     case CLEAR_CART:
       return { ...state, cartItems: 0, cartList: [] };
+
+    default:
+      throw new Error('No matching type');
   }
 };
 

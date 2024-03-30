@@ -1,5 +1,4 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import { products } from '../data';
 import { curr } from '../helper';
 import { useProductsContex } from '../context/products_context';
 import {
@@ -9,7 +8,7 @@ import {
 } from '../components/main';
 
 export default function SingleproductPage() {
-  const { count, increaseCount, decreaseCount, addToCart } =
+  const { count, increaseCount, decreaseCount, addToCart, products } =
     useProductsContex();
   const { productId } = useParams();
   const navigate = useNavigate();
@@ -29,15 +28,20 @@ export default function SingleproductPage() {
 
       <div className='mb-[11rem]'>
         <ProductComponent {...data} product={data.category.toUpperCase()}>
-          {/* <p>$ {data.price}</p> */}
           <p className='font-bold mb-10 mt-7'>$ {curr(data.price)}</p>
           <section className='flex gap-3'>
             <div className='flex gap-4 bg-light-300 px-3 py-2 font-bold justify-between w-24'>
-              <button className='text-[#00000062] btn' onClick={decreaseCount}>
+              <button
+                className='text-[#00000062] btn'
+                onClick={() => decreaseCount(data)}
+              >
                 -
               </button>
-              <h1>{count}</h1>
-              <button className='text-[#00000062] btn' onClick={increaseCount}>
+              <h1>{data.amount}</h1>
+              <button
+                className='text-[#00000062] btn'
+                onClick={() => increaseCount(data)}
+              >
                 +
               </button>
             </div>

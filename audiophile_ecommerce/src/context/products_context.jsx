@@ -18,7 +18,6 @@ const initialStates = {
   isCartOpen: false,
   cartList: [],
   products: products,
-  count: 1,
   cartItems: 0,
 };
 
@@ -29,16 +28,16 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: TOGGLE_SIDEBAR });
   };
 
-  const decreaseCount = () => {
-    dispatch({ type: DECREASE_COUNT });
+  const decreaseCount = (data) => {
+    dispatch({ type: DECREASE_COUNT, payload: data });
   };
 
-  const increaseCount = () => {
-    dispatch({ type: INCREASE_COUNT });
+  const increaseCount = (data) => {
+    dispatch({ type: INCREASE_COUNT, payload: data });
   };
 
-  const addToCart = (items) => {
-    dispatch({ type: ADD_TO_CART, payload: items });
+  const addToCart = (item) => {
+    dispatch({ type: ADD_TO_CART, payload: item });
   };
 
   const showCart = () => {
