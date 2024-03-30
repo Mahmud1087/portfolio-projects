@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useProductsContex } from '../../context/products_context';
-import { products } from '../../data';
 import { curr } from '../../helper';
 
 const CartItems = () => {
-  const { hideCart } = useProductsContex();
+  const { hideCart, cartList } = useProductsContex();
   return (
     <div
       onClick={hideCart}
@@ -15,7 +14,7 @@ const CartItems = () => {
           <div className='absolute right-0 h-[30rem] w-[24rem] bg-light-100 rounded-md py-7 px-9 flex flex-col'>
             <header className='flex justify-between items-center font-bold mb-6'>
               <h1 className='text-sm tracking-[1px]'>
-                CART <span>(3)</span>
+                CART <span>({cartList.length})</span>
               </h1>
               <button className='text-[#00000077] text-[13px] btn'>
                 Remove all
@@ -23,7 +22,10 @@ const CartItems = () => {
             </header>
 
             <aside className='custom-stroll h-full overflow-y-scroll overflow-x-hidden mb-7 flex flex-col gap-5'>
-              {products.map((prod) => {
+              {cartList.length === 0 && (
+                <h1 className='text-dark-300 font-bold'>No Item Added</h1>
+              )}
+              {cartList.map((prod) => {
                 const { id, shortName, price, amount, img } = prod;
                 return (
                   <div key={id} className='flex justify-between items-center'>
@@ -34,7 +36,7 @@ const CartItems = () => {
                       <div className='flex flex-col gap-1'>
                         <h1 className='text-xs font-bold'>{shortName}</h1>
                         <p className='text-[10.5px] font-bold text-[#00000077]'>
-                          {curr(price)}
+                          $ {curr(price)}
                         </p>
                       </div>
                     </section>

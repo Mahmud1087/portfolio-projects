@@ -34,8 +34,8 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: INCREASE_COUNT });
   };
 
-  const addToCart = (id) => {
-    dispatch({ type: ADD_TO_CART, payload: id });
+  const addToCart = (items) => {
+    dispatch({ type: ADD_TO_CART, payload: items });
   };
 
   const showCart = () => {

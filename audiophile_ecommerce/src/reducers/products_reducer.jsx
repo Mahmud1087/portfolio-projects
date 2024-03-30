@@ -24,10 +24,13 @@ const products_reducer = (state, action) => {
 
     case ADD_TO_CART:
       console.log(state.cartList);
+      const findObj = state.cartList.find(
+        (item) => item.shortName === action.payload.shortName
+      );
       return {
         ...state,
         cartItems: state.count,
-        cartList: [...state.cartList, action.payload],
+        cartList: [...new Set([...state.cartList, findObj || action.payload])],
         // count: (state.count = 1),
       };
 
