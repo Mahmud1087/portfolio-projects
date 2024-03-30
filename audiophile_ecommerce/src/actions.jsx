@@ -7,6 +7,7 @@ export const HIDE_CART = 'HIDE_CART';
 export const REMOVE_CART_ITEM = 'REMOVE_CART_ITEM';
 export const CLEAR_CART = 'CLEAR_CART';
 export const CART_TOTAL = 'CART_TOTAL';
+export const TOTAL_CART_ITEM = 'TOTAL_CART_ITEM';
 // export const GET_PRODUCTS_BEGIN = 'GET_PRODUCTS_BEGIN'
 // export const GET_PRODUCTS_SUCCESS = 'GET_PRODUCTS_SUCCESS'
 // export const GET_PRODUCTS_ERROR = 'GET_PRODUCTS_ERROR'

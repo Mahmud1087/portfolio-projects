@@ -8,8 +8,14 @@ import {
 } from '../components/main';
 
 export default function SingleproductPage() {
-  const { totalAmount, increaseCount, decreaseCount, addToCart, products } =
-    useProductsContex();
+  const {
+    totalAmount,
+    increaseCount,
+    decreaseCount,
+    addToCart,
+    products,
+    totalCartItem,
+  } = useProductsContex();
   const { productId } = useParams();
   const navigate = useNavigate();
   const goBack = () => navigate(-1);
@@ -49,6 +55,7 @@ export default function SingleproductPage() {
               onClick={() => {
                 addToCart(data);
                 totalAmount();
+                totalCartItem();
               }}
               className='btn px-6 w-fit bg-orange-200 hover:bg-orange-100 text-light-100 font-bold text-xs'
             >

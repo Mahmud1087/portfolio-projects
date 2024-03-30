@@ -7,6 +7,7 @@ import {
   HIDE_CART,
   CLEAR_CART,
   CART_TOTAL,
+  TOTAL_CART_ITEM,
 } from '../actions';
 
 const products_reducer = (state, action) => {
@@ -67,8 +68,6 @@ const products_reducer = (state, action) => {
       return {
         ...state,
         cartList: [...new Set([...state.cartList, findObj || action.payload])],
-        cartItems: state.cartList.length + 1,
-        // count: (state.count = 1),
       };
 
     case SHOW_CART:
@@ -87,6 +86,8 @@ const products_reducer = (state, action) => {
       }, 0);
       return { ...state, cartTotal: totalAmount };
 
+    case TOTAL_CART_ITEM:
+      return { ...state, cartItems: state.cartList.length };
     default:
       throw new Error('No matching type');
   }

@@ -9,6 +9,7 @@ import {
   HIDE_CART,
   CLEAR_CART,
   CART_TOTAL,
+  TOTAL_CART_ITEM,
 } from '../actions';
 import { products } from '../data';
 
@@ -58,6 +59,10 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: CART_TOTAL });
   };
 
+  const totalCartItem = () => {
+    dispatch({ type: TOTAL_CART_ITEM });
+  };
+
   return (
     <ProductsContext.Provider
       value={{
@@ -70,6 +75,7 @@ export const ProductsProvider = ({ children }) => {
         hideCart,
         clearCartItems,
         totalAmount,
+        totalCartItem,
       }}
     >
       {children}
