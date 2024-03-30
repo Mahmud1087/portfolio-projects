@@ -7,6 +7,7 @@ import {
   ADD_TO_CART,
   SHOW_CART,
   HIDE_CART,
+  CLEAR_CART,
 } from '../actions';
 
 const ProductsContext = React.createContext();
@@ -46,6 +47,10 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: HIDE_CART });
   };
 
+  const clearCartItems = () => {
+    dispatch({ type: CLEAR_CART });
+  };
+
   return (
     <ProductsContext.Provider
       value={{
@@ -56,6 +61,7 @@ export const ProductsProvider = ({ children }) => {
         addToCart,
         showCart,
         hideCart,
+        clearCartItems,
       }}
     >
       {children}

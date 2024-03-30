@@ -5,6 +5,7 @@ import {
   ADD_TO_CART,
   SHOW_CART,
   HIDE_CART,
+  CLEAR_CART,
 } from '../actions';
 
 const products_reducer = (state, action) => {
@@ -23,14 +24,13 @@ const products_reducer = (state, action) => {
       };
 
     case ADD_TO_CART:
-      console.log(state.cartList);
       const findObj = state.cartList.find(
         (item) => item.shortName === action.payload.shortName
       );
       return {
         ...state,
-        cartItems: state.count,
         cartList: [...new Set([...state.cartList, findObj || action.payload])],
+        cartItems: state.cartList.length + 1,
         // count: (state.count = 1),
       };
 
@@ -39,6 +39,9 @@ const products_reducer = (state, action) => {
 
     case HIDE_CART:
       return { ...state, isCartOpen: false };
+
+    case CLEAR_CART:
+      return { ...state, cartItems: 0, cartList: [] };
   }
 };
 

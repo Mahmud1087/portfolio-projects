@@ -3,7 +3,7 @@ import { useProductsContex } from '../../context/products_context';
 import { curr } from '../../helper';
 
 const CartItems = () => {
-  const { hideCart, cartList } = useProductsContex();
+  const { hideCart, cartList, clearCartItems } = useProductsContex();
   return (
     <div
       onClick={hideCart}
@@ -16,7 +16,10 @@ const CartItems = () => {
               <h1 className='text-sm tracking-[1px]'>
                 CART <span>({cartList.length})</span>
               </h1>
-              <button className='text-[#00000077] text-[13px] btn'>
+              <button
+                onClick={clearCartItems}
+                className='text-[#00000077] text-[13px] btn'
+              >
                 Remove all
               </button>
             </header>
