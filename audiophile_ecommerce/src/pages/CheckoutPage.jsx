@@ -3,10 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import Label from '../components/checkout/Label';
 import Input from '../components/checkout/Input';
 import { FaCircle, FaDotCircle } from 'react-icons/fa';
+import { useProductsContex } from '../context/products_context';
+import CartItems from '../components/cart/CartItems';
+import { curr } from '../helper';
 
 export default function CheckoutPage() {
   const navigate = useNavigate();
   const goBack = () => navigate(-1);
+  const { cartList, cartTotal } = useProductsContex();
 
   return (
     <div className='pt-[6rem] pb-6 bg-light-300'>
@@ -19,7 +23,7 @@ export default function CheckoutPage() {
         </button>
 
         <div className='mb-[11rem] flex gap-6'>
-          <section className='w-[70%] flex flex-col gap-6 rounded-lg px-14 py-7 pb-16 bg-light-100'>
+          <section className='w-[65%] flex flex-col gap-6 rounded-lg px-14 py-7 pb-16 bg-light-100'>
             <h1 className='font-bold text-xl tracking-[1px] mt-5'>CHECKOUT</h1>
 
             <form className='flex flex-col gap-16'>
@@ -85,8 +89,41 @@ export default function CheckoutPage() {
             </form>
           </section>
 
-          <section className='w-[30%] p-8 rounded-md bg-light-100 h-fit'>
+          <section className='w-[35%] p-8 rounded-md bg-light-100 h-fit'>
             <h1 className='text-sm font-bold mb-8 tracking-[1px]'>SUMMARY</h1>
+            <div className='flex flex-col gap-5'>
+              {cartList.map((prod) => {
+                return (
+                  <div key={prod.id} className='flex justify-between'>
+                    <CartItems {...prod} />
+                    <p className='text-xs text-[#00000077] font-bold py-3'>
+                      x{prod.amount}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+            <aside className='text-[13px] font-semibold flex flex-col gap-2 mt-8'>
+              <div className='flex justify-between'>
+                <h1 className='text-[#00000077]'>TOTAL</h1>
+                <p>$ {curr(cartTotal)}</p>
+              </div>
+              <div className='flex justify-between'>
+                <h1 className='text-[#00000077]'>SHIPPING</h1>
+                <p>$ 50</p>
+              </div>
+              <div className='flex justify-between'>
+                <h1 className='text-[#00000077]'>VAT (INCLUDED)</h1>
+                <p>$ 1,079</p>
+              </div>
+              <div className='flex justify-between mt-5'>
+                <h1 className='text-[#00000077]'>GRAND TOTAL</h1>
+                <p className='text-orange-200'>$ 5,446</p>
+              </div>
+            </aside>
+            <button className='block py-3 bg-orange-200 text-light-100 text-xs font-semibold mt-7 w-full tracking-[1px] hover:bg-orange-100'>
+              CONTINUE & PAY
+            </button>
           </section>
         </div>
       </section>
