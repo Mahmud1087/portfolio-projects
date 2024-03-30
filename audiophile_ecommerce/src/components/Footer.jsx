@@ -1,11 +1,14 @@
 import React from 'react';
 import { Logo, NavLinks, SubFooter } from '../components/main';
 import { FaFacebookSquare, FaInstagram, FaTwitter } from 'react-icons/fa';
+import ShowSubFooter from './ShowSubFooter';
 
 export default function Footer() {
   return (
     <div className=''>
-      <SubFooter />
+      <ShowSubFooter>
+        <SubFooter />
+      </ShowSubFooter>
       <aside className='bg-dark-300 text-light-100 pb-16'>
         <section className='container'>
           <div className='w-[6rem] h-[3px] bg-orange-200 rounded-full'></div>
