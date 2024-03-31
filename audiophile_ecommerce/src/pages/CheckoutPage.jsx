@@ -10,7 +10,7 @@ import { curr } from '../helper';
 export default function CheckoutPage() {
   const navigate = useNavigate();
   const goBack = () => navigate(-1);
-  const { cartList, cartTotal } = useProductsContex();
+  const { cartList, cartTotal, vatFee, shippingFee } = useProductsContex();
 
   return (
     <div className='pt-[6rem] pb-6 bg-light-300'>
@@ -119,15 +119,17 @@ export default function CheckoutPage() {
               </div>
               <div className='flex justify-between'>
                 <h1 className='text-[#00000077]'>SHIPPING</h1>
-                <p>$ 50</p>
+                <p>$ {curr(shippingFee)}</p>
               </div>
               <div className='flex justify-between'>
                 <h1 className='text-[#00000077]'>VAT (INCLUDED)</h1>
-                <p>$ 1,079</p>
+                <p>$ {vatFee}</p>
               </div>
               <div className='flex justify-between mt-5'>
                 <h1 className='text-[#00000077]'>GRAND TOTAL</h1>
-                <p className='text-orange-200'>$ 5,446</p>
+                <p className='text-orange-200'>
+                  $ {curr(cartTotal + vatFee + shippingFee)}
+                </p>
               </div>
             </aside>
             <button className='block py-3 bg-orange-200 text-light-100 text-xs font-semibold mt-7 w-full tracking-[1px] hover:bg-orange-100'>

@@ -10,6 +10,7 @@ import {
   CLEAR_CART,
   CART_TOTAL,
   TOTAL_CART_ITEM,
+  VAT_SHIPPING_FEES,
 } from '../actions';
 import { products } from '../data';
 
@@ -22,6 +23,8 @@ const initialStates = {
   products: products,
   cartItems: 0,
   cartTotal: 0,
+  vatFee: 0,
+  shippingFee: 0,
 };
 
 export const ProductsProvider = ({ children }) => {
@@ -63,6 +66,10 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: TOTAL_CART_ITEM });
   };
 
+  const vatAndShippingFee = () => {
+    dispatch({ type: VAT_SHIPPING_FEES });
+  };
+
   return (
     <ProductsContext.Provider
       value={{
@@ -76,6 +83,7 @@ export const ProductsProvider = ({ children }) => {
         clearCartItems,
         totalAmount,
         totalCartItem,
+        vatAndShippingFee,
       }}
     >
       {children}

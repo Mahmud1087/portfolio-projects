@@ -12,6 +12,7 @@ const Cart = () => {
     decreaseCount,
     increaseCount,
     totalAmount,
+    vatAndShippingFee,
   } = useProductsContex();
   return (
     <div
@@ -79,6 +80,7 @@ const Cart = () => {
               </div>
               <Link
                 to='/checkout'
+                onClick={vatAndShippingFee}
                 className='btn block text-center w-full p-3 bg-orange-200 hover:bg-orange-100 text-light-100 font-bold tracking-[1px] text-xs transition-all delay-75'
               >
                 CHECKOUT

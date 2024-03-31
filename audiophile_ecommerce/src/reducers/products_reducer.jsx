@@ -8,6 +8,7 @@ import {
   CLEAR_CART,
   CART_TOTAL,
   TOTAL_CART_ITEM,
+  VAT_SHIPPING_FEES,
 } from '../actions';
 
 const products_reducer = (state, action) => {
@@ -88,6 +89,23 @@ const products_reducer = (state, action) => {
 
     case TOTAL_CART_ITEM:
       return { ...state, cartItems: state.cartList.length };
+
+    case VAT_SHIPPING_FEES:
+      const vat = state.cartList.reduce((totalVat, item) => {
+        totalVat += item.vat;
+        return totalVat;
+      }, 0);
+      const shipping = state.cartList.reduce((totalShipping, item) => {
+        totalShipping += item.shipping;
+        return totalShipping;
+      }, 0);
+
+      return {
+        ...state,
+        vatFee: vat,
+        shippingFee: shipping,
+      };
+
     default:
       throw new Error('No matching type');
   }
