@@ -92,11 +92,15 @@ export default function CheckoutPage() {
           <section className='w-[35%] p-8 rounded-md bg-light-100 h-fit'>
             <h1 className='text-sm font-bold mb-8 tracking-[1px]'>SUMMARY</h1>
             {cartList.length === 0 && (
-              <h1 className='text-xs font-bold mb-8 tracking-[1px]'>
+              <h1 className='text-[13px] font-bold mb-8 tracking-[1px]'>
                 No Item Added
               </h1>
             )}
-            <div className='flex flex-col gap-5 h-[15rem] overflow-scroll custom-scroll'>
+            <div
+              className={`flex flex-col gap-5 ${
+                cartList.length === 0 ? '' : 'h-[15rem]'
+              } overflow-scroll custom-scroll`}
+            >
               {cartList.map((prod) => {
                 return (
                   <div key={prod.id} className='flex justify-between'>
