@@ -10,7 +10,8 @@ import { curr } from '../helper';
 export default function CheckoutPage() {
   const navigate = useNavigate();
   const goBack = () => navigate(-1);
-  const { cartList, cartTotal, vatFee, shippingFee } = useProductsContex();
+  const { cartList, cartTotal, vatFee, shippingFee, showModal } =
+    useProductsContex();
 
   return (
     <div className='pt-[6rem] pb-6 bg-light-300'>
@@ -132,7 +133,10 @@ export default function CheckoutPage() {
                 </p>
               </div>
             </aside>
-            <button className='block py-3 bg-orange-200 text-light-100 text-xs font-semibold mt-7 w-full tracking-[1px] hover:bg-orange-100'>
+            <button
+              onClick={showModal}
+              className='block py-3 bg-orange-200 text-light-100 text-xs font-semibold mt-7 w-full tracking-[1px] hover:bg-orange-100'
+            >
               CONTINUE & PAY
             </button>
           </section>

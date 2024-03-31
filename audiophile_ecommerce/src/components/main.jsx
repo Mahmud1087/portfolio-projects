@@ -10,6 +10,7 @@ import AnimatedCircles from './AnimatedCircles';
 import SeeProductButton from './SeeProductButton';
 import NavLinks from './NavLinks';
 import ProductComponent from './ProductComponent';
+import ThankYouModal from './ThankYouModal';
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   SeeProductButton,
   NavLinks,
   ProductComponent,
+  ThankYouModal,
 };

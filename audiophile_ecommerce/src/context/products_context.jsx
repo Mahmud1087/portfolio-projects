@@ -11,6 +11,8 @@ import {
   CART_TOTAL,
   TOTAL_CART_ITEM,
   VAT_SHIPPING_FEES,
+  SHOW_THANK_YOU_MODAL,
+  HIDE_THANK_YOU_MODAL,
 } from '../actions';
 import { products } from '../data';
 
@@ -19,6 +21,7 @@ const ProductsContext = React.createContext();
 const initialStates = {
   isSideBarOpen: false,
   isCartOpen: false,
+  isModalOpen: false,
   cartList: [],
   products: products,
   cartItems: 0,
@@ -53,6 +56,13 @@ export const ProductsProvider = ({ children }) => {
   const hideCart = () => {
     dispatch({ type: HIDE_CART });
   };
+  const showModal = () => {
+    dispatch({ type: SHOW_THANK_YOU_MODAL });
+  };
+
+  const hideModal = () => {
+    dispatch({ type: HIDE_THANK_YOU_MODAL });
+  };
 
   const clearCartItems = () => {
     dispatch({ type: CLEAR_CART });
@@ -84,6 +94,8 @@ export const ProductsProvider = ({ children }) => {
         totalAmount,
         totalCartItem,
         vatAndShippingFee,
+        showModal,
+        hideModal,
       }}
     >
       {children}

@@ -9,6 +9,8 @@ import {
   CART_TOTAL,
   TOTAL_CART_ITEM,
   VAT_SHIPPING_FEES,
+  SHOW_THANK_YOU_MODAL,
+  HIDE_THANK_YOU_MODAL,
 } from '../actions';
 
 const products_reducer = (state, action) => {
@@ -105,6 +107,12 @@ const products_reducer = (state, action) => {
         vatFee: vat,
         shippingFee: shipping,
       };
+
+    case SHOW_THANK_YOU_MODAL:
+      return { ...state, isModalOpen: true };
+
+    case HIDE_THANK_YOU_MODAL:
+      return { ...state, isModalOpen: false };
 
     default:
       throw new Error('No matching type');
