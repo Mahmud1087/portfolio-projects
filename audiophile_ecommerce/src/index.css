@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 912px) {
   .container {
-    width: 88%;
+    width: 90%;
   }
 
   .hero_height {
