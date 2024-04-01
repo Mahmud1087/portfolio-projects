@@ -4,7 +4,7 @@ const SeeProductButton = ({ classes, to }) => {
   return (
     <Link
       to={`/${to}`}
-      className={`text-xs tracking-[2px] w-fit px-7 py-3 transition-all delay-100 ${classes}`}
+      className={`text-[1.4rem] tracking-[2px] w-fit transition-all delay-100 ${classes} font-semibold px-10 py-5 lg:px-7 lg:py-3 lg:text-xs`}
     >
       SEE PRODUCT
     </Link>

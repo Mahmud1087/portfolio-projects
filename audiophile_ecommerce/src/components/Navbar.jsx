@@ -9,18 +9,18 @@ export default function Navbar() {
     useProductsContex();
 
   return (
-    <div className='bg-[#141414] h-20 flex lg:items-center lg:justify-center'>
+    <div className=' fixed top-0 left-0 z-50 w-full bg-[#141414] h-28 lg:flex lg:items-center lg:justify-center lg:h-20 lg:relative'>
       <section className='flex items-center justify-between h-[inherit] border-b-2 border-b-[#ffffff2a] container'>
         <div className='flex items-center gap-6 text-light-100 lg:gap-x-44'>
-          <button className='block btn lg:hidden'>
+          <button className='block btn text-3xl lg:hidden'>
             <FaBars />
           </button>
           <Logo />
           <NavLinks />
         </div>
         <button className='outline-none relative' onClick={showCart}>
-          <img src={cart} alt='cart image' className='w-5' />
-          <h1 className='absolute -top-4 -right-1 text-sm text-orange-200'>
+          <img src={cart} alt='cart image' className='w-9 lg:w-5' />
+          <h1 className='absolute -top-8 -right-1 font-semibold text-3xl text-orange-200 lg:text-sm lg:-top-4'>
             {cartItems}
           </h1>
         </button>
