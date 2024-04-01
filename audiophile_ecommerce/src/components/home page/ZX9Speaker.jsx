@@ -4,10 +4,10 @@ import AnimatedCircles from '../AnimatedCircles';
 
 const ZX9Speaker = () => {
   return (
-    <div className='container pt-40 overflow-hidden'>
-      <section className='relative w-full h-[29rem] rounded-lg bg-orange-200 z-10'>
+    <div className='container pt-24 overflow-hidden lg:pt-40'>
+      <section className='relative w-full h-[55rem] lg:h-[29rem] rounded-lg bg-orange-200 z-10'>
         <AnimatedCircles />
-        <div className='absolute left-[8.9rem] bottom-0 w-80 h-[24rem]'>
+        <div className='absolute top-10 left-1/2 -translate-x-1/2 w-60 lg:-translate-x-0 lg:top-auto lg:left-[8.9rem] lg:bottom-0 lg:w-80 lg:h-[24rem]'>
           <img
             src={speakerImg}
             alt='ZX9 Speaker image'
@@ -16,12 +16,12 @@ const ZX9Speaker = () => {
         </div>
 
         <article className='w-full h-full flex'>
-          <div className='w-3/5 h-full'></div>
-          <div className='w-2/5 h-full flex flex-col justify-center gap-5'>
-            <h1 className='text-[2.3rem] text-light-100 tracking-[3px] leading-10 font-semibold'>
+          <div className='hidden w-3/5 h-full lg:block'></div>
+          <div className='w-full h-full flex flex-col justify-center items-center text-center gap-8 lg:gap-5 mt-28 lg:mt-0 lg:text-start lg:items-start lg:w-2/5'>
+            <h1 className='text-[3.5rem] text-light-100 tracking-[3px] leading-[4rem] font-bold lg:leading-10 lg:font-semibold lg:text-[2.3rem]'>
               ZX9 <br /> SPEAKER
             </h1>
-            <p className='text-sm text-[#ffffff9d] leading-5'>
+            <p className='text-2xl leading-8 text-[#ffffff9d] lg:leading-5 lg:text-sm'>
               Upgrade to premium speakers that are <br /> phenomenally built to
               deliver truly remarkable <br />
               sound.
