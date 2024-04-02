@@ -57,7 +57,7 @@ export default function SingleproductPage() {
       </section>
 
       <article className='w-full h-[30rem] flex gap-4 mt-[8.5rem] lg:gap-8 lg:h-[37rem]'>
-        <div className='w-[40%] h-full flex flex-col justify-between gap-4 lg:gap-0 lg:w-[45%]'>
+        <div className='w-[40%] h-full flex flex-col justify-between gap-4 lg:gap-8 lg:w-[45%]'>
           <img src={data.images.image1} alt='images' className='h-full' />
           <img src={data.images.image2} alt='images' className='h-full' />
         </div>
