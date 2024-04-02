@@ -1,21 +1,13 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import { curr } from '../helper';
 import { useProductsContex } from '../context/products_context';
 import {
-  ProductComponent,
+  ProductDetails,
   SeeProductButton,
   ShopProducts,
 } from '../components/main';
 
 export default function SingleproductPage() {
-  const {
-    totalAmount,
-    increaseCount,
-    decreaseCount,
-    addToCart,
-    products,
-    totalCartItem,
-  } = useProductsContex();
+  const { products } = useProductsContex();
   const { productId } = useParams();
   const navigate = useNavigate();
   const goBack = () => navigate(-1);
@@ -24,45 +16,16 @@ export default function SingleproductPage() {
   // console.log(data);
 
   return (
-    <div className='container pt-[6rem]'>
+    <div className='container pt-[10rem] lg:pt-[6rem]'>
       <button
         onClick={goBack}
-        className='text-[15px] text-[#00000062] mb-16 font-bold tracking-[1px]'
+        className='text-2xl text-[#00000062] mb-8 font-bold tracking-[1px] lg:mb-16 lg:text-[15px]'
       >
         Go Back
       </button>
 
       <div className='mb-[11rem]'>
-        <ProductComponent {...data} product={data.category.toUpperCase()}>
-          <p className='font-bold mb-10 mt-7'>$ {curr(data.price)}</p>
-          <section className='flex gap-3'>
-            <div className='flex gap-4 bg-light-300 px-3 py-2 font-bold justify-between w-24'>
-              <button
-                className='text-[#00000062] btn'
-                onClick={() => decreaseCount(data)}
-              >
-                -
-              </button>
-              <h1>{data.amount}</h1>
-              <button
-                className='text-[#00000062] btn'
-                onClick={() => increaseCount(data)}
-              >
-                +
-              </button>
-            </div>
-            <button
-              onClick={() => {
-                addToCart(data);
-                totalAmount();
-                totalCartItem();
-              }}
-              className='btn px-6 w-fit bg-orange-200 hover:bg-orange-100 text-light-100 font-bold text-xs'
-            >
-              ADD TO CART
-            </button>
-          </section>
-        </ProductComponent>
+        <ProductDetails data={data} />
       </div>
 
       <section className='flex justify-between'>

@@ -12,6 +12,7 @@ import NavLinks from './NavLinks';
 import ProductComponent from './ProductComponent';
 import ThankYouModal from './ThankYouModal';
 import Socials from './Socials';
+import ProductDetails from './ProductDetails';
 
 export {
   Navbar,
@@ -28,4 +29,5 @@ export {
   ProductComponent,
   ThankYouModal,
   Socials,
+  ProductDetails,
 };
