@@ -14,7 +14,7 @@ export default function SpeakersPage() {
   return (
     <div>
       <Header text='SPEAKERS' />
-      <section className='mt-[8rem] mb-[4rem]'>
+      <section className='mt-56 mb-[4rem] lg:mt-[8rem]'>
         <div className='flex flex-col gap-[8rem] container'>
           {data.map((item) => {
             return (
@@ -22,7 +22,7 @@ export default function SpeakersPage() {
                 key={item.id}
                 {...item}
                 product='SPEAKERS'
-                flexDir='even:flex-row-reverse'
+                flexDir='flex-col lg:even:flex-row-reverse'
               >
                 <SeeProductButton
                   to={item.shortName}
