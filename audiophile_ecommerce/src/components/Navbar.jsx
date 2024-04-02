@@ -16,7 +16,9 @@ export default function Navbar() {
             <FaBars />
           </button>
           <Logo />
-          <NavLinks />
+          <div className=' hidden lg:flex'>
+            <NavLinks Fsize='text-[12px]' />
+          </div>
         </div>
         <button className='outline-none relative' onClick={showCart}>
           <img src={cart} alt='cart image' className='w-9 lg:w-5' />
