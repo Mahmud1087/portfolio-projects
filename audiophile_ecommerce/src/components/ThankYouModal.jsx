@@ -12,7 +12,7 @@ const ThankYouModal = () => {
     <div className='fixed h-screen w-screen top-0 left-0 bg-transparent'>
       <section className='fixed w-full hero_height top-20 left-0 bg-[#00000060]'>
         <article className='relative z-40 h-full w-full grid place-items-center'>
-          <div className='absolute h-[27rem] w-[27rem] bg-light-100 rounded-md py-7 px-9 flex flex-col justify-between'>
+          <div className='absolute bg-light-100 rounded-md py-7 px-9 flex flex-col justify-between h-[38rem] w-[38rem] lg:h-[27rem] lg:w-[27rem]'>
             {cartList.length === 0 ? (
               <h1 className='w-full h-full grid place-items-center text-2xl font-bold '>
                 Oops! you have no order
