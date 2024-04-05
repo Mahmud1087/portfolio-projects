@@ -2,7 +2,8 @@ import { useProductsContex } from '../context/products_context';
 import cart from '../assets/cart.png';
 import Logo from './Logo';
 import { NavLinks } from '../components/main';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const { isSideBarOpen, toggleSideBar, cartItems, toggleCart } =
@@ -12,10 +13,15 @@ export default function Navbar() {
     <div className=' fixed top-0 left-0 z-50 w-full bg-[#141414] h-28 lg:flex lg:items-center lg:justify-center lg:h-20 lg:relative'>
       <section className='flex items-center justify-between h-[inherit] border-b-2 border-b-[#ffffff2a] container'>
         <div className='flex items-center gap-6 text-light-100 lg:gap-x-44'>
-          <button className='block btn text-3xl lg:hidden'>
-            <FaBars />
+          <button
+            onClick={toggleSideBar}
+            className='block btn text-3xl lg:hidden'
+          >
+            {isSideBarOpen ? <FaTimes /> : <FaBars />}
           </button>
-          <Logo />
+          <Link to='/' onClick={toggleSideBar}>
+            <Logo />
+          </Link>
           <div className=' hidden lg:flex'>
             <NavLinks Fsize='text-[12px]' />
           </div>
