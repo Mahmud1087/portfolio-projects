@@ -5,14 +5,15 @@ import {
   DECREASE_COUNT,
   INCREASE_COUNT,
   ADD_TO_CART,
-  SHOW_CART,
-  HIDE_CART,
+  // SHOW_CART,
+  // HIDE_CART,
   CLEAR_CART,
   CART_TOTAL,
   TOTAL_CART_ITEM,
   VAT_SHIPPING_FEES,
   SHOW_THANK_YOU_MODAL,
   HIDE_THANK_YOU_MODAL,
+  TOGGLE_CART,
 } from '../actions';
 import { products } from '../data';
 
@@ -49,13 +50,18 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: ADD_TO_CART, payload: item });
   };
 
-  const showCart = () => {
-    dispatch({ type: SHOW_CART });
+  // const showCart = () => {
+  //   dispatch({ type: SHOW_CART });
+  // };
+
+  // const hideCart = () => {
+  //   dispatch({ type: HIDE_CART });
+  // };
+
+  const toggleCart = () => {
+    dispatch({ type: TOGGLE_CART });
   };
 
-  const hideCart = () => {
-    dispatch({ type: HIDE_CART });
-  };
   const showModal = () => {
     dispatch({ type: SHOW_THANK_YOU_MODAL });
   };
@@ -88,8 +94,9 @@ export const ProductsProvider = ({ children }) => {
         increaseCount,
         decreaseCount,
         addToCart,
-        showCart,
-        hideCart,
+        // showCart,
+        // hideCart,
+        toggleCart,
         clearCartItems,
         totalAmount,
         totalCartItem,

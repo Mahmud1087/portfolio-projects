@@ -3,14 +3,15 @@ import {
   INCREASE_COUNT,
   DECREASE_COUNT,
   ADD_TO_CART,
-  SHOW_CART,
-  HIDE_CART,
+  // SHOW_CART,
+  // HIDE_CART,
   CLEAR_CART,
   CART_TOTAL,
   TOTAL_CART_ITEM,
   VAT_SHIPPING_FEES,
   SHOW_THANK_YOU_MODAL,
   HIDE_THANK_YOU_MODAL,
+  TOGGLE_CART,
 } from '../actions';
 
 const products_reducer = (state, action) => {
@@ -73,11 +74,14 @@ const products_reducer = (state, action) => {
         cartList: [...new Set([...state.cartList, findObj || action.payload])],
       };
 
-    case SHOW_CART:
-      return { ...state, isCartOpen: true };
+    // case SHOW_CART:
+    //   return { ...state, isCartOpen: true };
 
-    case HIDE_CART:
-      return { ...state, isCartOpen: false };
+    // case HIDE_CART:
+    //   return { ...state, isCartOpen: false };
+
+    case TOGGLE_CART:
+      return { ...state, isCartOpen: !state.isCartOpen };
 
     case CLEAR_CART:
       return { ...state, cartItems: 0, cartList: [], cartTotal: 0 };

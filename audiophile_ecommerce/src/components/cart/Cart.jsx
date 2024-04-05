@@ -5,7 +5,8 @@ import CartItems from './CartItems';
 
 const Cart = () => {
   const {
-    hideCart,
+    // hideCart,
+    toggleCart,
     cartTotal,
     cartList,
     clearCartItems,
@@ -15,10 +16,7 @@ const Cart = () => {
     vatAndShippingFee,
   } = useProductsContex();
   return (
-    <div
-      onClick={hideCart}
-      className='fixed h-screen w-screen top-0 left-0 bg-transparent z-50'
-    >
+    <div className='fixed h-screen w-screen top-0 left-0 bg-transparent z-50'>
       <section className='fixed w-full hero_height top-20 left-0 bg-[#00000060]'>
         <article className='relative z-40 top-12 container lg:top-6'>
           <div
@@ -92,7 +90,10 @@ const Cart = () => {
               </div>
               <Link
                 to='/checkout'
-                onClick={vatAndShippingFee}
+                onClick={() => {
+                  vatAndShippingFee();
+                  toggleCart();
+                }}
                 className='btn block text-center w-full p-5 bg-orange-200 hover:bg-orange-100 text-light-100 font-bold tracking-[1px] text-2xl transition-all delay-75 lg:p-3 lg:text-xs'
               >
                 CHECKOUT

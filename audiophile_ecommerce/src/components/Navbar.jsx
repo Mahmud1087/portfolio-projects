@@ -5,7 +5,7 @@ import { NavLinks } from '../components/main';
 import { FaBars } from 'react-icons/fa';
 
 export default function Navbar() {
-  const { isSideBarOpen, toggleSideBar, cartItems, showCart, hideCart } =
+  const { isSideBarOpen, toggleSideBar, cartItems, toggleCart } =
     useProductsContex();
 
   return (
@@ -20,7 +20,7 @@ export default function Navbar() {
             <NavLinks Fsize='text-[12px]' />
           </div>
         </div>
-        <button className='outline-none relative' onClick={showCart}>
+        <button className='outline-none relative' onClick={toggleCart}>
           <img src={cart} alt='cart image' className='w-9 lg:w-5' />
           <h1 className='absolute -top-8 -right-1 font-semibold text-3xl text-orange-200 lg:text-sm lg:-top-4'>
             {cartItems}
