@@ -8,7 +8,7 @@ export default function Layout() {
   return (
     <div
       className={`${
-        (isCartOpen || isModalOpen, isSideBarOpen) &&
+        (isCartOpen || isModalOpen || isSideBarOpen) &&
         'fixed left-0 top-0 right-0'
       }`}
     >

@@ -13,7 +13,7 @@ export default function Sidebar() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className='fixed w-screen h-screen bg-[#00000060] z-50'
+          className='absolute overflow-scroll w-screen h-screen bg-[#00000060] z-50'
         >
           <motion.section
             key='sidebarAnimate'
@@ -21,9 +21,11 @@ export default function Sidebar() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 50 }}
             exit={{ y: '-100%', opacity: 0 }}
-            className='relative top-[7rem] h-fit w-full bg-light-100 rounded-b-xl pb-24 px-8'
+            className='relative top-20 h-fit w-full bg-light-100 rounded-b-xl pb-16 px-5 sm:px-8 sm:top-[7rem]'
           >
-            <ShopProducts />
+            <div className='pt-32 sm:pt-40 sm:pb-12'>
+              <ShopProducts />
+            </div>
           </motion.section>
         </motion.div>
       )}

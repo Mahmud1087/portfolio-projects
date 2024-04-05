@@ -7,18 +7,12 @@ export default function ShopProducts() {
   const { closeSidebar } = useProductsContex();
 
   return (
-    <div className='grid grid-cols-3 gap-3 lg:gap-9'>
+    <div className='grid gap-3 gap-y-28 sm:gap-y-0 sm:grid-cols-3 lg:gap-9'>
       {shop.map((item) => {
         const { id, img, url, text } = item;
         return (
-          <section key={id} className='flex flex-col h-96 relative'>
-            <img
-              src={img}
-              alt={text}
-              className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl w-28'
-            />
-            <div className='bg-light-100 w-full h-1/2'></div>
-            <div className='w-full h-1/2 bg-light-300 rounded-lg flex flex-col gap-3 justify-end items-center pb-7 lg:pb-6'>
+          <section key={id} className='flex flex-col h-52'>
+            <div className='relative w-full h-full bg-light-300 rounded-lg flex flex-col gap-3 justify-end items-center pb-7 lg:pb-6'>
               <h4 className='text-xl tracking-[1.5px] font-bold lg:text-sm'>
                 {text.toUpperCase()}
               </h4>
@@ -32,7 +26,13 @@ export default function ShopProducts() {
                 </p>
                 <FaChevronRight className='text-orange-200' />
               </Link>
+              <img
+                src={img}
+                alt={text}
+                className='absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl w-28'
+              />
             </div>
+            {/* <div className='bg-light-100 w-full h-1/2'></div> */}
           </section>
         );
       })}
