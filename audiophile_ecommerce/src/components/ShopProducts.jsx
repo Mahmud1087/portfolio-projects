@@ -4,7 +4,7 @@ import { FaChevronRight } from 'react-icons/fa';
 import { useProductsContex } from '../context/products_context';
 
 export default function ShopProducts() {
-  const { toggleSideBar } = useProductsContex();
+  const { closeSidebar } = useProductsContex();
 
   return (
     <div className='grid grid-cols-3 gap-3 lg:gap-9'>
@@ -24,7 +24,7 @@ export default function ShopProducts() {
               </h4>
               <Link
                 to={url}
-                onClick={toggleSideBar}
+                onClick={closeSidebar}
                 className='flex items-center gap-2 text-[18px] lg:text-[11px]'
               >
                 <p className='tracking-[1.2px] font-bold text-[#00000080] hover:text-orange-200 transition-all'>

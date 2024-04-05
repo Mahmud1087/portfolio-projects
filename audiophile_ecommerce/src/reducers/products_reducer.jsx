@@ -12,12 +12,16 @@ import {
   SHOW_THANK_YOU_MODAL,
   HIDE_THANK_YOU_MODAL,
   TOGGLE_CART,
+  CLOSE_SIDEBAR,
 } from '../actions';
 
 const products_reducer = (state, action) => {
   switch (action.type) {
     case TOGGLE_SIDEBAR:
       return { ...state, isSideBarOpen: !state.isSideBarOpen };
+
+    case CLOSE_SIDEBAR:
+      return { ...state, isSideBarOpen: false };
 
     case INCREASE_COUNT:
       const incAmount = state.products.map((prod) =>

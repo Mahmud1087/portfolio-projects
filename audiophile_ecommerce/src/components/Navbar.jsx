@@ -6,7 +6,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
-  const { isSideBarOpen, toggleSideBar, cartItems, toggleCart } =
+  const { isSideBarOpen, toggleSideBar, closeSidebar, cartItems, toggleCart } =
     useProductsContex();
 
   return (
@@ -19,7 +19,7 @@ export default function Navbar() {
           >
             {isSideBarOpen ? <FaTimes /> : <FaBars />}
           </button>
-          <Link to='/' onClick={toggleSideBar}>
+          <Link to='/' onClick={closeSidebar}>
             <Logo />
           </Link>
           <div className=' hidden lg:flex'>

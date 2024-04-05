@@ -14,6 +14,7 @@ import {
   SHOW_THANK_YOU_MODAL,
   HIDE_THANK_YOU_MODAL,
   TOGGLE_CART,
+  CLOSE_SIDEBAR,
 } from '../actions';
 import { products } from '../data';
 
@@ -36,6 +37,10 @@ export const ProductsProvider = ({ children }) => {
 
   const toggleSideBar = () => {
     dispatch({ type: TOGGLE_SIDEBAR });
+  };
+
+  const closeSidebar = () => {
+    dispatch({ type: CLOSE_SIDEBAR });
   };
 
   const decreaseCount = (data) => {
@@ -91,6 +96,7 @@ export const ProductsProvider = ({ children }) => {
       value={{
         ...state,
         toggleSideBar,
+        closeSidebar,
         increaseCount,
         decreaseCount,
         addToCart,
