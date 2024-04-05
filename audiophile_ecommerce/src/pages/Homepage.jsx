@@ -12,7 +12,7 @@ export default function Homepage() {
   return (
     <div>
       <Hero />
-      <div className='container pt-32 sm:pt-52 sm:pb-5'>
+      <div className='container pt-32 pb-12 sm:pt-52 sm:pb-5'>
         <ShopProducts />
       </div>
       <ZX9Speaker />
