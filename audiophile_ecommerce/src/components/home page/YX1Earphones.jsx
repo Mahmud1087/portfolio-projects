@@ -4,7 +4,7 @@ import { SeeProductButton } from '../../components/main';
 
 const YX1Earphones = () => {
   return (
-    <div className='flex container lg:gap-x-6 pt-12'>
+    <div className='flex container gap-x-5 lg:gap-x-6 pt-12'>
       <section className='w-1/2 rounded-lg h-[18rem]'>
         <img
           src={airpodImg1}
@@ -14,7 +14,7 @@ const YX1Earphones = () => {
         <img
           src={airpodImg2}
           alt='Earbud image'
-          className='w-full h-full object-contain rounded-[inherit] lg:hidden'
+          className='w-full h-full object-center rounded-[inherit] lg:hidden'
         />
       </section>
       <section className='w-1/2 rounded-lg h-[18rem] bg-light-300 flex items-center pl-8 lg:pl-24'>
