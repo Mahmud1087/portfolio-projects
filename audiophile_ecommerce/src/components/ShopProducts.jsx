@@ -12,7 +12,7 @@ export default function ShopProducts() {
         const { id, img, url, text } = item;
         return (
           <section key={id} className='flex flex-col h-52'>
-            <div className='relative w-full h-full bg-light-300 rounded-lg flex flex-col gap-3 justify-end items-center pb-7 lg:pb-6'>
+            <div className='relative w-full h-full bg-light-300 rounded-xl flex flex-col gap-3 justify-end items-center pb-7 lg:pb-6'>
               <h4 className='text-xl tracking-[1.5px] font-bold lg:text-sm'>
                 {text.toUpperCase()}
               </h4>

@@ -13,7 +13,7 @@ export default function HeadphonesPage() {
   return (
     <div>
       <Header text='HEADPHONES' />
-      <section className='mt-56 mb-[4rem] lg:mt-[8rem]'>
+      <section className='mt-36 mb-[4rem] sm:mt-56 lg:mt-[8rem]'>
         <div className='flex flex-col gap-[8rem] container'>
           {data.map((item) => {
             return (
@@ -32,7 +32,7 @@ export default function HeadphonesPage() {
           })}
         </div>
       </section>
-      <div className='container pt-32 sm:pt-36 sm:pb-5'>
+      <div className='container pt-44 sm:pt-36 sm:pb-5'>
         <ShopProducts />
       </div>
     </div>
