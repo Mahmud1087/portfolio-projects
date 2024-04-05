@@ -32,7 +32,7 @@ export default function HeadphonesPage() {
           })}
         </div>
       </section>
-      <div className='container'>
+      <div className='container pt-32 sm:pt-36 sm:pb-5'>
         <ShopProducts />
       </div>
     </div>
