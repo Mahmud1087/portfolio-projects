@@ -5,10 +5,8 @@ import {
   ZX9Speaker,
 } from '../components/home page/main';
 import { ShopProducts } from '../components/main';
-import { useProductsContex } from '../context/products_context';
 
 export default function Homepage() {
-  const { isSideBarOpen } = useProductsContex();
   return (
     <div>
       <Hero />
