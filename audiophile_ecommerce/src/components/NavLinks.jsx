@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
 import { links } from '../data';
 
-const NavLinks = ({ Fsize }) => {
+const NavLinks = ({ Fsize, dir }) => {
   return (
-    <ul className='flex items-center gap-10'>
+    <ul className={`flex items-center gap-10 ${dir}`}>
       {links.map((list) => {
         const { id, text, url } = list;
         return (
