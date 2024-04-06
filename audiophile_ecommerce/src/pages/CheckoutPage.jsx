@@ -107,7 +107,9 @@ export default function CheckoutPage() {
             )}
             <div
               className={`flex flex-col gap-5 ${
-                cartList.length === 0 ? '' : 'h-[15rem] sm:h-[20rem]'
+                cartList.length === 0
+                  ? 'h-fit'
+                  : 'max-h-[15rem] sm:max-h-[20rem]'
               } overflow-scroll custom-scroll`}
             >
               {cartList.map((prod) => {
@@ -126,27 +128,27 @@ export default function CheckoutPage() {
                 cartList.length === 0 ? 'hidden' : 'flex'
               } flex-col gap-5 mt-8 sm:mt-12 lg:gap-2 lg:mt-8`}
             >
-              <div className='flex justify-between text-xl lg:text-base'>
+              <div className='flex justify-between text-lg lg:text-sm'>
                 <h1 className='text-[#00000077]'>TOTAL</h1>
-                <p className='text-xl font-bold sm:text-2xl lg:text-base lg:font-normal'>
+                <p className='text-lg font-bold sm:text-2xl lg:text-sm'>
                   $ {curr(cartTotal)}
                 </p>
               </div>
-              <div className='flex justify-between text-xl lg:text-base'>
+              <div className='flex justify-between text-lg lg:text-sm'>
                 <h1 className='text-[#00000077]'>SHIPPING</h1>
-                <p className='text-xl font-bold sm:text-2xl lg:text-base lg:font-normal'>
+                <p className='text-lg font-bold sm:text-2xl lg:text-sm'>
                   $ {curr(shippingFee)}
                 </p>
               </div>
-              <div className='flex justify-between text-xl lg:text-base'>
+              <div className='flex justify-between text-lg lg:text-sm'>
                 <h1 className='text-[#00000077]'>VAT (INCLUDED)</h1>
-                <p className='text-xl font-bold sm:text-2xl lg:text-base lg:font-normal'>
+                <p className='text-lg font-bold sm:text-2xl lg:text-sm'>
                   $ {vatFee}
                 </p>
               </div>
-              <div className='flex justify-between mt-5 text-xl lg:text-base'>
+              <div className='flex justify-between mt-5 text-lg lg:text-sm'>
                 <h1 className='text-[#00000077]'>GRAND TOTAL</h1>
-                <p className='text-xl font-bold text-orange-200 sm:text-2xl lg:text-base lg:font-normal'>
+                <p className='text-lg font-bold text-orange-200 sm:text-2xl lg:text-sm'>
                   $ {curr(cartTotal + vatFee + shippingFee)}
                 </p>
               </div>

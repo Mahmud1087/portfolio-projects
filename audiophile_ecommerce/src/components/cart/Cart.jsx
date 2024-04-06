@@ -21,8 +21,10 @@ const Cart = () => {
         <article className='relative z-40 top-8 container sm:top-12 lg:top-6'>
           <div
             className={`absolute right-0 ${
-              cartList.length === 0 ? 'h-auto' : 'h-[31rem] sm:h-[42rem]'
-            } w-full bg-light-100 rounded-lg py-7 px-6 flex flex-col sm:px-9 sm:w-[33rem] lg:h-[30rem] lg:w-[24rem]`}
+              cartList.length === 0
+                ? 'h-fit'
+                : 'max-h-[31rem] sm:max-h-[42rem] lg:max-h-[30rem]'
+            } w-full bg-light-100 rounded-lg py-7 px-6 flex flex-col sm:px-9 sm:w-[33rem] lg:w-[24rem]`}
           >
             <header className='flex justify-between items-center font-bold mb-9 lg:mb-6'>
               <h1 className='text-lg tracking-[1px] sm:text-2xl lg:text-sm'>
@@ -40,7 +42,7 @@ const Cart = () => {
               className={`custom-scroll h-full overflow-y-scroll overflow-x-hidden mb-7 flex flex-col gap-5`}
             >
               {cartList.length === 0 && (
-                <h1 className='text-dark-300 font-bold text-xl my-12 sm:text-3xl lg:text-base'>
+                <h1 className='text-dark-300 font-bold text-xl text-center sm:text-3xl lg:text-base'>
                   No Item Added
                 </h1>
               )}
