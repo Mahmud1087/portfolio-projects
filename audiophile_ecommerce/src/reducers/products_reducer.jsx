@@ -120,7 +120,7 @@ const products_reducer = (state, action) => {
       return { ...state, isModalOpen: true };
 
     case HIDE_THANK_YOU_MODAL:
-      return { ...state, isModalOpen: false };
+      return { ...state, isModalOpen: false, cartList: [], cartItems: 0 };
 
     default:
       throw new Error('No matching type');
