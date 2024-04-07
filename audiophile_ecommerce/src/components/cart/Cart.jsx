@@ -42,6 +42,7 @@ const Cart = () => {
     <AnimatePresence mode='wait' initial={true}>
       {isCartOpen && (
         <motion.div
+          key='cartBackdrop'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -49,6 +50,7 @@ const Cart = () => {
         >
           <section className='fixed w-full hero_height top-20 left-0 bg-[#00000060]'>
             <motion.article
+              key='cartModal'
               variants={dropIn}
               initial='hidden'
               animate='visible'
