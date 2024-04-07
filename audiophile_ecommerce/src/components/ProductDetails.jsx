@@ -1,5 +1,7 @@
 import { useProductsContex } from '../context/products_context';
 import { curr } from '../helper';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ProductDetails = ({ data }) => {
   const {
@@ -11,6 +13,11 @@ const ProductDetails = ({ data }) => {
   } = useProductsContex();
 
   const { name, desc, isNewProduct, price, img, category } = data;
+  const notify = () =>
+    toast.success('Added to cart', {
+      position: 'top-center',
+      theme: 'dark',
+    });
 
   return (
     <div
@@ -61,11 +68,13 @@ const ProductDetails = ({ data }) => {
               addToCart(data);
               totalAmount();
               totalCartItem();
+              notify();
             }}
             className='btn px-6 w-full bg-orange-200 hover:bg-orange-100 text-light-100 font-bold text-[1rem] sm:text-[1.15rem] lg:w-fit lg:text-xs'
           >
             ADD TO CART
           </button>
+          <ToastContainer />
         </section>
       </section>
     </div>

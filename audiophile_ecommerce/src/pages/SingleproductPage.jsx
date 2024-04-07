@@ -13,7 +13,6 @@ export default function SingleproductPage() {
   const goBack = () => navigate(-1);
 
   const data = products.find((prod) => prod.shortName === productId);
-  // console.log(data);
 
   return (
     <div className='container pt-[7rem] sm:pt-[10rem] lg:pt-[6rem]'>
