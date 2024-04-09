@@ -29,7 +29,7 @@ export default function ShopProducts() {
               <img
                 src={img}
                 alt={text}
-                className='absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl w-24 sm:w-28'
+                className='absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl w-[5.5rem] sm:w-28'
               />
             </div>
           </section>
