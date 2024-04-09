@@ -37,9 +37,9 @@ const ThankYouModal = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className='fixed h-screen w-screen top-0 left-0 bg-transparent'
+          className='fixed h-screen w-screen top-0 left-0 bg-transparent z-[60]'
         >
-          <section className='fixed w-full hero_height left-0 bg-[#00000060] sm:top-20'>
+          <section className='fixed w-full hero_height left-0 bg-[#00000060] h-16 sm:top-28 lg:top-20'>
             <motion.article
               key='modal'
               variants={dropIn}
