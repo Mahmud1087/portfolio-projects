@@ -11,7 +11,7 @@ const ProductComponent = ({
 }) => {
   return (
     <div
-      className={`flex w-full h-fit gap-10 sm:gap-[7rem] lg:h-[30rem] ${flexDir}`}
+      className={`flex w-full h-fit gap-10 sm:gap-[7rem] lg:h-[30rem] flex-col lg:flex-row lg:even:flex-row-reverse`}
     >
       <aside className='w-full h-[20rem] rounded-xl bg-light-300 grid place-items-center lg:w-1/2 lg:h-full'>
         <img

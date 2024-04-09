@@ -20,7 +20,7 @@ const ZX7Speaker = () => {
         <img
           src={img3}
           alt='Speaker image background'
-          className='w-full h-full object-contain rounded-[inherit] lg:hidden'
+          className='w-full h-full object-contain rounded-[inherit] sm:hidden'
         />
         <div className='absolute left-0 top-0 h-full w-full z-10 flex flex-col gap-8 justify-center pl-6 sm:gap-12 sm:pl-12 lg:gap-6 lg:pl-24 lg:w-2/5'>
           <h1 className='text-2xl font-bold tracking-[1px] sm:text-4xl lg:text-2xl'>

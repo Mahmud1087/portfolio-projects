@@ -13,12 +13,7 @@ export default function EarphonesPage() {
         <div className='flex flex-col gap-[8rem] container'>
           {data.map((item) => {
             return (
-              <ProductComponent
-                key={item.id}
-                {...item}
-                product='EARPHONES'
-                flexDir='flex-col lg:even:flex-row-reverse'
-              ></ProductComponent>
+              <ProductComponent key={item.id} {...item} product='EARPHONES' />
             );
           })}
         </div>

@@ -13,12 +13,7 @@ export default function SpeakersPage() {
         <div className='flex flex-col gap-[8rem] container'>
           {data.map((item) => {
             return (
-              <ProductComponent
-                key={item.id}
-                {...item}
-                product='SPEAKERS'
-                flexDir='flex-col lg:even:flex-row-reverse'
-              ></ProductComponent>
+              <ProductComponent key={item.id} {...item} product='SPEAKERS' />
             );
           })}
         </div>
