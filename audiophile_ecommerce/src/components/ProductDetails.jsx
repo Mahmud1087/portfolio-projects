@@ -16,7 +16,8 @@ const ProductDetails = ({ data }) => {
   const notify = () =>
     toast.success('Added to cart', {
       position: 'top-center',
-      theme: 'dark',
+      theme: 'light',
+      autoClose: 2000,
     });
 
   return (
@@ -74,7 +75,7 @@ const ProductDetails = ({ data }) => {
           >
             ADD TO CART
           </button>
-          <ToastContainer />
+          <ToastContainer style={{ width: '50%' }} />
         </section>
       </section>
     </div>

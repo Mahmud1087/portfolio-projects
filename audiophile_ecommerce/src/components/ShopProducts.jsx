@@ -13,7 +13,7 @@ export default function ShopProducts() {
         return (
           <section key={id} className='flex flex-col h-44 sm:h-52'>
             <div className='relative w-full h-full bg-light-300 rounded-xl flex flex-col gap-3 justify-end items-center pb-7 lg:pb-6'>
-              <h4 className='text-[17px] tracking-[1.5px] font-bold lg:text-sm'>
+              <h4 className='tracking-[1.5px] font-bold lg:text-sm'>
                 {text.toUpperCase()}
               </h4>
               <Link
