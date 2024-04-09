@@ -39,7 +39,7 @@ const ThankYouModal = () => {
           exit={{ opacity: 0 }}
           className='fixed h-screen w-screen top-0 left-0 bg-transparent'
         >
-          <section className='fixed overflow-scroll w-full hero_height left-0 bg-[#00000060] sm:top-20'>
+          <section className='fixed w-full hero_height left-0 bg-[#00000060] sm:top-20'>
             <motion.article
               key='modal'
               variants={dropIn}
