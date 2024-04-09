@@ -5,12 +5,12 @@ const SubFooter = () => {
   return (
     <div className='my-28 sm:my-32 lg:my-44 '>
       <div className='container flex flex-col-reverse rounded-md w-full lg:h-[30rem] lg:flex-row'>
-        <section className='flex flex-col gap-14 justify-center mt-16 text-center items-center sm:mt-24 lg:gap-8 lg:items-start lg:text-start lg:mt-0 lg:w-1/2'>
-          <h1 className='text-[2rem] font-bold leading-[2.5rem] tracking-[2px] sm:leading-[3.2rem] sm:text-5xl lg:text-4xl lg:leading-10'>
+        <section className='flex flex-col gap-8 justify-center mt-10 text-center items-center sm:gap-14 sm:mt-24 lg:gap-8 lg:items-start lg:text-start lg:mt-0 lg:w-1/2'>
+          <h1 className='text-[1.6rem] font-bold leading-[2rem] tracking-[2px] sm:leading-[3.2rem] sm:text-5xl lg:text-4xl lg:leading-10'>
             BRINGING YOU THE <br className='hidden lg:block' />
             <span className='text-orange-200'>BEST </span>AUDIO GEAR
           </h1>
-          <p className='text-[#00000077] leading-9 text-lg w-full font-bold sm:w-[85%] sm:font-normal sm:text-2xl lg:font-semibold lg:leading-6 lg:text-sm'>
+          <p className='text-[#00000077] leading-6 px-3 text-sm w-full font-semibold sm:w-[85%] sm:px-0 sm:font-normal sm:text-2xl sm:leading-9 lg:font-semibold lg:leading-6 lg:text-sm'>
             Located at the heart of New York City, Audiophile is the premier
             store for high end headphones, earphones, speakers, and audio
             accessories. We have a large showroom and luxury demonstration rooms

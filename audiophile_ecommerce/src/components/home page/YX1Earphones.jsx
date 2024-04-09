@@ -19,7 +19,7 @@ const YX1Earphones = () => {
       </section>
       <section className='w-full rounded-lg h-[18rem] bg-light-300 flex items-center pl-8 sm:w-1/2 lg:pl-24'>
         <div className='flex flex-col justify-center gap-8 sm:gap-12 lg:gap-6'>
-          <h1 className='text-3xl font-bold tracking-[1px] text-center sm:text-[2rem] lg:text-start lg:text-2xl'>
+          <h1 className='text-2xl font-bold tracking-[1px] text-center sm:text-[2rem] lg:text-start lg:text-2xl'>
             YX1 EARPHONES
           </h1>
           <SeeProductButton

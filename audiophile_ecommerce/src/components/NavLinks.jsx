@@ -3,7 +3,7 @@ import { links } from '../data';
 
 const NavLinks = ({ Fsize, dir }) => {
   return (
-    <ul className={`flex items-center gap-10 ${dir}`}>
+    <ul className={`flex items-center gap-7 sm:gap-10 ${dir}`}>
       {links.map((list) => {
         const { id, text, url } = list;
         return (

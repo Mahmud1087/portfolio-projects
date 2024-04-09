@@ -23,7 +23,7 @@ const ZX7Speaker = () => {
           className='w-full h-full object-contain rounded-[inherit] lg:hidden'
         />
         <div className='absolute left-0 top-0 h-full w-full z-10 flex flex-col gap-8 justify-center pl-6 sm:gap-12 sm:pl-12 lg:gap-6 lg:pl-24 lg:w-2/5'>
-          <h1 className='text-3xl font-bold tracking-[1px] sm:text-4xl lg:text-2xl'>
+          <h1 className='text-2xl font-bold tracking-[1px] sm:text-4xl lg:text-2xl'>
             ZX7 SPEAKER
           </h1>
           <SeeProductButton
