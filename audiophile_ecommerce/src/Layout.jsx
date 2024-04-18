@@ -15,7 +15,7 @@ export default function Layout() {
       <ScrollRestoration />
       {isCartOpen && <Cart />}
       {isModalOpen && <ThankYouModal />}
-      {isSideBarOpen && <Sidebar />}
+      <Sidebar />
       <Navbar />
       <Outlet />
       <Footer />
