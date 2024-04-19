@@ -18,26 +18,6 @@ const Cart = () => {
     isCartOpen,
   } = useProductsContex();
 
-  const dropIn = {
-    hidden: {
-      y: '-100vh',
-      opacity: 0,
-    },
-    visible: {
-      y: '0',
-      opacity: 1,
-      transition: {
-        duration: 0.1,
-        type: 'spring',
-        stiffness: 50,
-      },
-    },
-    exit: {
-      y: '-100vh',
-      opacity: 0,
-    },
-  };
-
   return (
     <AnimatePresence mode='wait' initial={true}>
       {isCartOpen && (
@@ -51,10 +31,14 @@ const Cart = () => {
           <section className='fixed w-full hero_height top-16 sm:top-20 left-0 bg-[#00000060]'>
             <motion.article
               key='cartModal'
-              variants={dropIn}
-              initial='hidden'
-              animate='visible'
-              exit='exit'
+              initial={{ y: '-100%', opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: '-100%', opacity: 0 }}
+              transition={{
+                duration: 0.1,
+                type: 'spring',
+                stiffness: 50,
+              }}
               className='relative z-40 top-4 container sm:top-12 lg:top-6'
             >
               <div
