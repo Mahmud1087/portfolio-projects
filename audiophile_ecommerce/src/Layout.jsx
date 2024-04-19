@@ -13,8 +13,8 @@ export default function Layout() {
       }`}
     >
       <ScrollRestoration />
-      {isCartOpen && <Cart />}
-      {isModalOpen && <ThankYouModal />}
+      <Cart />
+      <ThankYouModal />
       <Sidebar />
       <Navbar />
       <Outlet />
