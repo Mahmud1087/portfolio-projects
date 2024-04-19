@@ -31,9 +31,9 @@ const Cart = () => {
           <section className='fixed w-full hero_height top-16 sm:top-20 left-0 bg-[#00000060]'>
             <motion.article
               key='cartModal'
-              initial={{ y: '-100%', opacity: 0 }}
+              initial={{ y: '-100vh', opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              exit={{ y: '-100%', opacity: 0 }}
+              exit={{ y: '-100vh', opacity: 0 }}
               transition={{
                 duration: 0.1,
                 type: 'spring',
