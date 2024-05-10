@@ -13,6 +13,11 @@ export default function CheckoutPage() {
   const { cartList, cartTotal, vatFee, shippingFee, showModal } =
     useProductsContex();
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // console.log(FormData);
+  };
+
   return (
     <div className='pb-6 bg-light-300 pt-20 sm:pt-[10rem] lg:pt-[6rem]'>
       <section className='container'>
@@ -29,17 +34,28 @@ export default function CheckoutPage() {
               CHECKOUT
             </h1>
 
-            <form className='flex flex-col mt-7 gap-8 sm:gap-20 lg:gap-16 lg:mt-0'>
+            <form
+              onSubmit={handleSubmit}
+              id='orderDetails'
+              className='flex flex-col mt-7 gap-8 sm:gap-20 lg:gap-16 lg:mt-0'
+            >
               <div className='flex flex-col gap-3 sm:gap-6 lg:gap-2'>
                 <Label label='BILING DETAILS' />
                 <section className='grid gap-y-6 sm:grid-cols-2 sm:gap-y-10 sm:gap-x-5 lg:gap-y-6 lg:gap-x-3'>
-                  <Input title='Name' type='text' placeholder='Alexei Ward' />
                   <Input
+                    name='name'
+                    title='Name'
+                    type='text'
+                    placeholder='Alexei Ward'
+                  />
+                  <Input
+                    name='email'
                     title='Email Address'
                     type='email'
                     placeholder='alexei@mail.com'
                   />
                   <Input
+                    name='phoneNumber'
                     title='Phone Number'
                     type='text'
                     placeholder='+1202-555-0136'
@@ -50,14 +66,26 @@ export default function CheckoutPage() {
               <aside className='flex flex-col gap-3 lg:gap-2'>
                 <Label label='SHIPPING INFO' />
                 <Input
+                  name='address'
                   title='Your Address'
                   type='text'
                   placeholder='1137 Williams Avenue'
                 />
                 <section className='mt-4 grid gap-y-6 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-10 lg:gap-y-6 lg:gap-x-3'>
-                  <Input title='Zip Code' type='text' placeholder='10001' />
-                  <Input title='City' type='text' placeholder='New York' />
                   <Input
+                    name='zipCode'
+                    title='Zip Code'
+                    type='text'
+                    placeholder='10001'
+                  />
+                  <Input
+                    name='city'
+                    title='City'
+                    type='text'
+                    placeholder='New York'
+                  />
+                  <Input
+                    name='country'
                     title='Country'
                     type='text'
                     placeholder='United States'
@@ -86,11 +114,17 @@ export default function CheckoutPage() {
                     </div>
                   </div>
                   <Input
+                    name='eMoneyNumber'
                     title='e-Money Number'
                     type='text'
                     placeholder='238521993'
                   />
-                  <Input title='e-Money Pin' type='text' placeholder='6891' />
+                  <Input
+                    name='eMoneyPin'
+                    title='e-Money Pin'
+                    type='text'
+                    placeholder='6891'
+                  />
                 </article>
               </div>
             </form>
@@ -152,7 +186,8 @@ export default function CheckoutPage() {
               </div>
             </aside>
             <button
-              onClick={showModal}
+              form='orderDetails'
+              // onClick={showModal}
               className={`${
                 cartList.length === 0 ? 'hidden' : 'block'
               } py-3 bg-orange-200 text-light-100 text-xs font-semibold mt-7 w-full tracking-[1px] hover:bg-orange-100 sm:py-6 sm:text-xl lg:text-xs lg:py-3`}
