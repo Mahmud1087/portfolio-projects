@@ -15,7 +15,19 @@ export default function CheckoutPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(FormData);
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phoneNumber: formData.get('phoneNumber'),
+      address: formData.get('address'),
+      zipCode: formData.get('zipCode'),
+      city: formData.get('name'),
+      country: formData.get('country'),
+      eMoneyNumber: formData.get('eMoneyNumber'),
+      eMoneyPin: formData.get('eMoneyPin'),
+    };
+    console.log(data);
   };
 
   return (
@@ -127,10 +139,13 @@ export default function CheckoutPage() {
                   />
                 </article>
               </div>
+              <button type='submit' className='bg-orange-200 p-4 text-3xl'>
+                submit
+              </button>
             </form>
           </section>
 
-          <section className='w-full p-7 rounded-md bg-light-100 h-fit sm:p-12 lg:p-8 lg:w-[35%]'>
+          {/* <section className='w-full p-7 rounded-md bg-light-100 h-fit sm:p-12 lg:p-8 lg:w-[35%]'>
             <h1 className='font-bold mb-8 tracking-[1px] sm:text-[1.7rem] sm:mb-12 lg:mb-8 lg:text-sm'>
               SUMMARY
             </h1>
@@ -194,7 +209,7 @@ export default function CheckoutPage() {
             >
               CONTINUE & PAY
             </button>
-          </section>
+          </section> */}
         </div>
       </section>
     </div>
