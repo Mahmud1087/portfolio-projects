@@ -8,7 +8,7 @@ const Navbar = () => {
       <section className='w-[90%] mx-auto flex justify-between items-center h-20'>
         <Image src='/logo.png' alt='Logo' width={50} height={50} priority />
         <NavItems />
-        <Button />
+        <Button title='reservation' link='/reservation' />
       </section>
     </nav>
   );

@@ -1,5 +1,6 @@
 'use client';
 
+import { nanoid } from 'nanoid';
 import { Montserrat } from 'next/font/google';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -31,11 +32,11 @@ const navData = [
 const NavItems = () => {
   const pathname = usePathname();
   return (
-    <ul className='flex items-center gap-10'>
-      {navData.map((list, i) => {
+    <ul className='flex items-center gap-12'>
+      {navData.map((list) => {
         return (
           <li
-            key={i}
+            key={nanoid()}
             className={`${montserrat.className} capitalize text-white/90`}
           >
             <Link
