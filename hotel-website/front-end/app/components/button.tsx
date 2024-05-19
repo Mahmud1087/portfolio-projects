@@ -7,21 +7,21 @@ const lato = Lato({
 });
 
 interface ButtonProps {
-  title: string;
+  children: React.ReactNode;
   link: string;
   color: string;
   bgColor: string;
 }
 
 const Button = (props: ButtonProps) => {
-  const { title, link, color, bgColor } = props;
+  const { children, link, color, bgColor } = props;
   return (
     <Link
       href={link}
       type='button'
       className={`${lato.className} capitalize ${bgColor} px-6 py-2 rounded-md font-semibold ${color} hover:scale-[1.05] active:scale-[1.03] transition-all`}
     >
-      {title}
+      {children}
     </Link>
   );
 };
