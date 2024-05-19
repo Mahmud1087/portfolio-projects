@@ -9,15 +9,17 @@ const lato = Lato({
 interface ButtonProps {
   title: string;
   link: string;
+  color: string;
+  bgColor: string;
 }
 
 const Button = (props: ButtonProps) => {
-  const { title, link } = props;
+  const { title, link, color, bgColor } = props;
   return (
     <Link
       href={link}
       type='button'
-      className={`${lato.className} capitalize bg-sec px-6 py-[6px] rounded-md font-semibold text-gray-800 hover:scale-[1.05] active:scale-[1.03] transition-all`}
+      className={`${lato.className} capitalize ${bgColor} px-6 py-2 rounded-md font-semibold ${color} hover:scale-[1.05] active:scale-[1.03] transition-all`}
     >
       {title}
     </Link>
