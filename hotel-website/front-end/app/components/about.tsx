@@ -3,6 +3,12 @@ import Image from 'next/image';
 import Button from './button';
 import SectionTitle from './sectionTitle';
 import { nanoid } from 'nanoid';
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['cyrillic', 'latin'],
+});
 
 const imageData = [
   {
@@ -21,8 +27,8 @@ const imageData = [
 
 const About = () => {
   return (
-    <div className='bg-gray-200 py-20'>
-      <div className='w-[90%] mx-auto flex items-center'>
+    <div className='w-[90%] mx-auto bg-gray-200 py-20'>
+      <div className='flex items-center'>
         <section className='w-1/2'>
           <SectionTitle color='text-gray-900'>about us</SectionTitle>
           <p className='w-[80%] mb-10'>
@@ -39,8 +45,8 @@ const About = () => {
           </div>
         </section>
 
-        <section className='relative w-1/2 h-[30rem] flex flex-col gap-3'>
-          <article className=' grid grid-cols-2 gap-3 h-1/2 w-full'>
+        <section className='relative w-1/2 h-[30rem] flex flex-col gap-5'>
+          <article className=' grid grid-cols-2 gap-5 h-1/2 w-full'>
             {imageData.map((item) => {
               return (
                 <div key={nanoid()} className='w-full h-full group'>
@@ -68,6 +74,57 @@ const About = () => {
           </div>
         </section>
       </div>
+
+      <article className='mt-44 flex justify-between'>
+        <div className='flex flex-col items-center justify-center gap-5 text-center w-full'>
+          <h1
+            className={`${montserrat.className}text-gray-900 text-5xl font-semibold`}
+          >
+            10+
+          </h1>
+          <h2
+            className={`${montserrat.className} font-medium text-lg text-gray-500`}
+          >
+            Years of service
+          </h2>
+        </div>
+        <div className='flex flex-col items-center justify-center gap-5 text-center w-full'>
+          <h1
+            className={`${montserrat.className}text-gray-900 text-5xl font-semibold`}
+          >
+            6+
+          </h1>
+          <h2
+            className={`${montserrat.className} font-medium text-lg text-gray-500`}
+          >
+            Acres of land
+          </h2>
+        </div>
+        <div className='flex flex-col items-center justify-center gap-5 text-center w-full'>
+          <h1
+            className={`${montserrat.className}text-gray-900 text-5xl font-semibold`}
+          >
+            100
+          </h1>
+          <h2
+            className={`${montserrat.className} font-medium text-lg text-gray-500`}
+          >
+            Nice rooms
+          </h2>
+        </div>
+        <div className='flex flex-col items-center justify-center gap-5 text-center w-full'>
+          <h1
+            className={`${montserrat.className}text-gray-900 text-5xl font-semibold`}
+          >
+            10k+
+          </h1>
+          <h2
+            className={`${montserrat.className} font-medium text-lg text-gray-500`}
+          >
+            Happy visitors
+          </h2>
+        </div>
+      </article>
     </div>
   );
 };

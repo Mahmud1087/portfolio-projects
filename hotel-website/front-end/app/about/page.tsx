@@ -5,11 +5,7 @@ import SectionTitle from '../components/sectionTitle';
 const About = () => {
   return (
     <div className='relative my-32 text-center'>
-      <button
-        title='back-button'
-        type='button'
-        className='pl-20 flex font-medium gap-3'
-      >
+      <button title='back-button' className='pl-20 flex font-medium gap-3'>
         <LucideArrowLeftCircle className='text-xs' />
         Back
       </button>
@@ -40,7 +36,7 @@ const About = () => {
             <p className='ml-9'>
               Founded with a vision to provide a haven of tranquility for weary
               travelers, Safe Haven Hotel has been welcoming guests with warmth
-              and hospitality since 1972. What began as a dream to create a
+              and hospitality since 2014. What began as a dream to create a
               retreat away from the chaos of urban life has evolved into a
               cherished destination where guests can unwind, rejuvenate, and
               create lasting memories.
